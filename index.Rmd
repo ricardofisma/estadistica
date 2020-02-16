@@ -32,6 +32,11 @@ description: "Tópicos de geometría analítica"
 
 # Prerequisitos
 
+## Ingresar imagen
+Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno 
+`{r pressure2, echo=FALSE, fig.cap="ww", fig.align="center"}
+knitr::include_graphics("inverse.svg")
+` 
 
 See Theorem \@ref(thm:boring) \[\sum_1^2\]
 ```{r pressure2, echo=FALSE, fig.cap="ww", fig.align="center"}
