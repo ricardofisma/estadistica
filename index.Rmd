@@ -33,7 +33,7 @@ description: "Tópicos de geometría analítica"
 # Prerequisitos
 
 
-See Theorem \@ref(thm:boring)
+See Theorem \@ref(thm:boring) \[\sum_1^2\]
 
 ```{theorem, boring}
 Here is my theorem.
