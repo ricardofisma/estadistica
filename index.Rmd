@@ -33,9 +33,6 @@ description: "Tópicos de geometría analítica"
 # Prerequisitos
 See Theorem \@ref(thm:boring)
 
-
-
-
 ```{theorem, boring}
 Here is my theorem.
 ```{definition, name="ww"}
