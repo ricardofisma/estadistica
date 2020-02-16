@@ -1,7 +1,7 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[12pt,]{book}
+\documentclass[12pt,]{report}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -29,7 +29,7 @@
 }
 \usepackage{hyperref}
 \hypersetup{
-            pdftitle={Geométria analítica},
+            pdftitle={Geometría analítica},
             pdfauthor={Ricardo Michel MALLQUI BAÑOS},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -90,15 +90,6 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
 
 % set default figure placement to htbp
 \makeatletter
@@ -112,44 +103,43 @@
 }
 \makeatother
 \usepackage[spanish,es-noquoting]{babel}
-% \usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amsfonts}
-\usepackage{fontenc}
-%\usepackage{fontspec}
+\usepackage[T1]{fontenc}
 \usepackage{booktabs,longtable}
-%\usepackage[referable]{threeparttablex}
+\usepackage[referable]{threeparttablex}
 \usepackage{dsfont}
 \usepackage[a4paper]{geometry}
-\geometry{tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
-%\usepackage{times}
-%\renewcommand{\rmdefault}{ptm}
-%\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
+\usepackage{booktabs}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 \usepackage{textcase}
 \usepackage{makecell}
 \usepackage{lscape}
 \usepackage{multirow}
 \usepackage{tabto}
-%\usepackage{bigstrut}
+\usepackage{bigstrut}
+\usepackage{titlesec}
+\DeclareFontFamily{U}{mt2ms}{\skewchar\font42}%
+\DeclareFontShape{U}{mt2ms}{m}{n}{<-7>mt2mcf<7-9>mt2mcs<9->mt2mct}{}%
+\DeclareFontShape{U}{mt2ms}{m}{it}{<-7>mt2msf<7-9>mt2mss<9->mt2mst}{}%
+\DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
 
-%\DeclareFontFamily{U}{mt2ms}{\skewchar\font42}%
-%\DeclareFontShape{U}{mt2ms}{m}{n}{<-7>mt2mcf<7-9>mt2mcs<9->mt2mct}{}%
-%\DeclareFontShape{U}{mt2ms}{m}{it}{<-7>mt2msf<7-9>mt2mss<9->mt2mst}{}%
-%\DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
 
-%\usepackage{titlesec}
-%\titlespacing*{\chapter}
-%{0pt}{5em plus .01em minus .01em}{0em plus .01em minus .01em}
-%\titlespacing*{\section}
-%{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-%\titlespacing*{\subsection}
-%{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-%\titlespacing*{\subsubsection}
-%{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-%\titlespacing*{\paragraph} {0pt}{1.25ex plus 1ex minus .2ex}{2em}
-%\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
-%\titleformat*{\section}{\normalsize\bfseries}
-%\titleformat*{\subsection}{\normalsize\bfseries}
-%\setlength{\parskip}{0.7em plus .01em minus .01em}
+\titlespacing*{\chapter}
+{0pt} {5em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\section}
+{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\subsection}
+{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\subsubsection}
+{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\paragraph} {0pt}{1.25ex plus 1ex minus .2ex}{2em}
+\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\setlength{\parskip}{0.7em plus .01em minus .01em}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{xpatch}%space equation
@@ -160,17 +150,16 @@
 \belowdisplayshortskip=0.5em plus 0.01em minus 0.01em
 }{}{}
 %%%%%%%%%%%%%%%%%%%%%
-%\providecommand{\abs}[1]{\lvert#1\rvert}
-%\providecommand{\norm}[1]{\lVert#1\rVert}
 
-%\renewcommand{\thechapter}{\Roman{chapter}}
 
-%\titleformat{\chapter}[display]
-%{\normalfont\normalsize\bfseries\centering}{CAPÍTULO \thechapter}{0.0em}{\normalsize\bfseries}
+\renewcommand{\thechapter}{\Roman{chapter}}
+
+\titleformat{\chapter}[display]
+{\normalfont\normalsize\bfseries\centering}{CAPÍTULO \thechapter}{0.0em}{\normalsize\bfseries}
 %\renewcommand{\thechapter}{\Roman{chapter}}
-%\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
-%\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
-%\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
 % https://github.com/rstudio/rmarkdown/issues/337
 \let\rmarkdownfootnote\footnote%
 \def\footnote{\protect\rmarkdownfootnote}
@@ -190,7 +179,7 @@
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{Geométria analítica}
+\title{Geometría analítica}
 \author{Ricardo Michel MALLQUI BAÑOS}
 \date{2020-02-16}
 
@@ -243,10 +232,11 @@
 \hypertarget{ingresar-imagen}{%
 \section{Ingresar imagen}\label{ingresar-imagen}}
 
-Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno
-\texttt{\{r\ pressure2,\ echo=FALSE,\ fig.cap="ww",\ fig.align="center"\}\ knitr::include\_graphics("inverse.svg")}
+Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno \texttt{ff\ fff}
 
-See Theorem \ref{thm:boring} \[\sum_1^2\]
+See Theorem \ref{thm:boring}
+
+\[\sum_1^2\]
 
 \begin{figure}
 
@@ -265,7 +255,7 @@ See Theorem \ref{thm:boring} \[\sum_1^2\]
 \protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} \iffalse (ww) \fi{} }
 \EndKnitrBlock{definition}
 
-See Figure \ref{fig:cars-plot} \ref{fig:pressure}
+See Figure \ref{fig:cars-plot} \ref{fig:pressure2}
 
 \begin{figure}
 
@@ -297,15 +287,6 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 
 See Table \ref{tab:mtcars}
 
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{inverse} 
-
-}
-
-\caption{A caption}\label{fig:pressure}
-\end{figure}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(mtcars[}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{], }\DataTypeTok{caption =} \StringTok{"A caption"}\NormalTok{, }\DataTypeTok{booktabs=}\OtherTok{TRUE}\NormalTok{)}
@@ -334,7 +315,7 @@ Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15\\
   \label{eq:binom}
 \end{equation}
 
-Este es un \emph{ejemplo} book written in \textbf{Markdown} \eqref{eq:binom}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
+Este es un \emph{ejemplo} book written in **Markdown\emph{.} La ecuacion \eqref{eq:binom}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
 The \textbf{bookdown} package can be installed from CRAN or Github:
 
@@ -372,9 +353,9 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 por lo tanto se cumple.
 \EndKnitrBlock{proof}
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+You can label chapter and section titles using after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
 
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
+Figures and tables with captions will be placed in and environments, respectively.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -392,7 +373,7 @@ Figures and tables with captions will be placed in \texttt{figure} and \texttt{t
 \caption{Here is a nice figure!}\label{fig:nice-fig}
 \end{figure}
 
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
+Reference a figure by its code chunk label with the prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from, e.g., see Table \ref{tab:nice-tab}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
