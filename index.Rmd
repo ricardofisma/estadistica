@@ -34,12 +34,18 @@ description: "Tópicos de geometría analítica"
 
 
 See Theorem \@ref(thm:boring) \[\sum_1^2\]
+```{r pressure2, echo=FALSE, fig.cap="ww", fig.align="center"}
+knitr::include_graphics("inverse.svg")
+```
 
 ```{theorem, boring}
 Here is my theorem.
 ```{definition, name="ww"}
 ```
 See Figure \@ref(fig:cars-plot) \@ref(fig:pressure)
+```{r pressure1, echo=FALSE, fig.cap="ww", fig.align="center",out.width = "20%"}
+knitr::include_graphics("U.svg")
+```
 
 ```{r cars-plot, fig.cap="A plot caption"}
 plot(cars)  # a scatterplot
