@@ -43,7 +43,7 @@ Here is my theorem.
 ```{definition, name="ww"}
 ```
 See Figure \@ref(fig:cars-plot) \@ref(fig:pressure)
-```{r pressure1, echo=FALSE, fig.cap="ww", fig.align="center",out.width = "20%"}
+```{r pressure1, echo=FALSE, fig.cap="ww", fig.align="center",out.width = "20%"} 
 knitr::include_graphics("U.svg")
 ```
 
@@ -92,4 +92,9 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
+```
+
+
+```{r pressure3, echo=FALSE, fig.cap="ww", fig.align="center"} 
+knitr::include_graphics("abstrac.svg")
 ```
