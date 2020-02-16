@@ -168,22 +168,93 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="prerequisitos" class="section level1">
 <h1><span class="header-section-number">Capítulo 1</span> Prerequisitos</h1>
+<p>See Theorem <a href="index.html#thm:boring">1.1</a></p>
 
 <div class="theorem">
-<p><span id="thm:pyth" class="theorem"><strong>Theorem 1.1  (Pythagorean theorem)  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
+<span id="thm:boring" class="theorem"><strong>Theorem 1.1  </strong></span>Here is my theorem.
+</div>
+
+<p>See Figure <a href="index.html#fig:cars-plot">1.1</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">plot</span>(cars)  <span class="co"># a scatterplot</span></a></code></pre></div>
+<div class="figure"><span id="fig:cars-plot"></span>
+<img src="uu_files/figure-html/cars-plot-1.png" alt="A plot caption" width="672" />
+<p class="caption">
+Figure 1.1: A plot caption
+</p>
+</div>
+
+<div class="theorem">
+<p><span id="thm:pyth" class="theorem"><strong>Theorem 1.2  (Pythagorean theorem)  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
 and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
-<p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
+<span class="math display">\[a^2 + b^2 = c^2\]</span>
+</div>
+
+<p>See Table <a href="index.html#tab:mtcars">1.1</a></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(mtcars[<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>], <span class="dt">caption =</span> <span class="st">&quot;A caption&quot;</span>)</a></code></pre></div>
+<table>
+<caption><span id="tab:mtcars">Table 1.1: </span>A caption</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+</tr>
+<tr class="even">
+<td>Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+</tr>
+<tr class="odd">
+<td>Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+</tr>
+<tr class="even">
+<td>Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+</tr>
+<tr class="odd">
+<td>Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+</tr>
+</tbody>
+</table>
 <p><span class="math display" id="eq:binom">\[\begin{equation} 
   f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
   \tag{1.1}
 \end{equation}\]</span></p>
 <p>Este es un <em>ejemplo</em> book written in <strong>Markdown</strong> <a href="index.html#eq:binom">(1.1)</a>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
 <p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
-</div>
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co"># or the development version</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co"># or the development version</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></a></code></pre></div>
 <p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
 <p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>.</p>
 

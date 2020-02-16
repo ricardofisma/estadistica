@@ -1,7 +1,7 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{book}
+\documentclass[12pt,]{book}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -114,13 +114,14 @@
 \usepackage[spanish,es-noquoting]{babel}
 % \usepackage[utf8]{inputenc}
 \usepackage{amsfonts}
-%\usepackage[UTF8]{fontenc}
+\usepackage{fontenc}
+%\usepackage{fontspec}
 \usepackage{booktabs,longtable}
 %\usepackage[referable]{threeparttablex}
 \usepackage{dsfont}
 \usepackage[a4paper]{geometry}
 \geometry{tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
-%\usepackage{booktabs}
+%\usepackage{times}
 %\renewcommand{\rmdefault}{ptm}
 %\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 \usepackage{textcase}
@@ -215,14 +216,84 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\f}{\mathbb{f}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\seq}[1]{\left<#1\right>}
+\newcommand{\co}[1]{\left[#1\right]}
+\newcommand{\cc}[1]{\left(#1\right)}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\F}{\mathcal{F}}
+
 \hypertarget{prerequisitos}{%
 \chapter{Prerequisitos}\label{prerequisitos}}
+
+See Theorem \ref{thm:boring}
+
+\BeginKnitrBlock{theorem}
+\protect\hypertarget{thm:boring}{}{\label{thm:boring} }Here is my theorem.
+\EndKnitrBlock{theorem}
+
+See Figure \ref{fig:cars-plot}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(cars)  }\CommentTok{# a scatterplot}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\centering
+\includegraphics{uu_files/figure-latex/cars-plot-1.pdf}
+\caption{\label{fig:cars-plot}A plot caption}
+\end{figure}
 
 \BeginKnitrBlock{theorem}[Pythagorean theorem]
 \protect\hypertarget{thm:pyth}{}{\label{thm:pyth} \iffalse (Pythagorean theorem) \fi{} }For a right triangle, if \(c\) denotes the length of the hypotenuse
 and \(a\) and \(b\) denote the lengths of the other two sides, we have
 
 \[a^2 + b^2 = c^2\]
+\EndKnitrBlock{theorem}
+
+See Table \ref{tab:mtcars}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(mtcars[}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{], }\DataTypeTok{caption =} \StringTok{"A caption"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:mtcars}A caption}
+\centering
+\begin{tabular}[t]{l|r|r|r|r|r}
+\hline
+  & mpg & cyl & disp & hp & drat\\
+\hline
+Mazda RX4 & 21.0 & 6 & 160 & 110 & 3.90\\
+\hline
+Mazda RX4 Wag & 21.0 & 6 & 160 & 110 & 3.90\\
+\hline
+Datsun 710 & 22.8 & 4 & 108 & 93 & 3.85\\
+\hline
+Hornet 4 Drive & 21.4 & 6 & 258 & 110 & 3.08\\
+\hline
+Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15\\
+\hline
+\end{tabular}
+\end{table}
 
 \begin{equation} 
   f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
@@ -232,7 +303,6 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 Este es un \emph{ejemplo} book written in \textbf{Markdown} \eqref{eq:binom}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
 The \textbf{bookdown} package can be installed from CRAN or Github:
-\EndKnitrBlock{theorem}
 
 \begin{Shaded}
 \begin{Highlighting}[]
