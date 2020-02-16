@@ -171,28 +171,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>See Theorem <a href="index.html#thm:boring">1.1</a></p>
 
 <div class="theorem">
-<span id="thm:boring" class="theorem"><strong>Theorem 1.1  </strong></span>Here is my theorem.
+<span id="thm:boring" class="theorem"><strong>Teorema 1.1  </strong></span>Here is my theorem.
 </div>
 
-<p>See Figure <a href="index.html#fig:cars-plot">1.1</a></p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-1" class="definition"><strong>Definición 1.1  (ww)  </strong></span>
+</div>
+
+<p>See Figure <a href="index.html#fig:cars-plot">1.1</a> <a href="index.html#fig:pressure">1.2</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">plot</span>(cars)  <span class="co"># a scatterplot</span></a></code></pre></div>
 <div class="figure"><span id="fig:cars-plot"></span>
 <img src="uu_files/figure-html/cars-plot-1.png" alt="A plot caption" width="672" />
 <p class="caption">
-Figure 1.1: A plot caption
+Figura 1.1: A plot caption
 </p>
 </div>
 
 <div class="theorem">
-<p><span id="thm:pyth" class="theorem"><strong>Theorem 1.2  (Pythagorean theorem)  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
+<p><span id="thm:pyth" class="theorem"><strong>Teorema 1.2  (Pythagorean theorem)  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
 and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
 <span class="math display">\[a^2 + b^2 = c^2\]</span>
 </div>
 
 <p>See Table <a href="index.html#tab:mtcars">1.1</a></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(mtcars[<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>], <span class="dt">caption =</span> <span class="st">&quot;A caption&quot;</span>)</a></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:pressure"></span>
+<img src="inverse.pdf" alt="A caption" width="100%" />
+<p class="caption">
+Figura 1.2: A caption
+</p>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(mtcars[<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>], <span class="dt">caption =</span> <span class="st">&quot;A caption&quot;</span>, <span class="dt">booktabs=</span><span class="ot">TRUE</span>)</a></code></pre></div>
 <table>
-<caption><span id="tab:mtcars">Table 1.1: </span>A caption</caption>
+<caption><span id="tab:mtcars">Tabla 1.1: </span>A caption</caption>
 <thead>
 <tr class="header">
 <th></th>

@@ -33,11 +33,14 @@ description: "Tópicos de geometría analítica"
 # Prerequisitos
 See Theorem \@ref(thm:boring)
 
+
+
+
 ```{theorem, boring}
 Here is my theorem.
+```{definition, name="ww"}
 ```
-
-See Figure \@ref(fig:cars-plot)
+See Figure \@ref(fig:cars-plot) \@ref(fig:pressure)
 
 ```{r cars-plot, fig.cap="A plot caption"}
 plot(cars)  # a scatterplot
@@ -52,8 +55,12 @@ $$a^2 + b^2 = c^2$$
 ```
 See Table \@ref(tab:mtcars)
 
+```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%', fig.align="center"}
+knitr::include_graphics("inverse.pdf")
+```
+
 ```{r mtcars}
-knitr::kable(mtcars[1:5, 1:5], caption = "A caption")
+knitr::kable(mtcars[1:5, 1:5], caption = "A caption", booktabs=TRUE)
 ```
 
 \begin{equation} 

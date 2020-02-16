@@ -194,20 +194,20 @@
 \date{2020-02-16}
 
 \usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{proposition}{Proposición}[chapter]
+\newtheorem{conjecture}{Conjectura}[chapter]
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
+\newtheorem{definition}{Definición}[chapter]
 \theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
+\newtheorem{example}{Ejemplo}[chapter]
 \theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
+\newtheorem{exercise}{Ejercicio}[chapter]
 \theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
+\newtheorem*{remark}{Observación}
+\newtheorem*{solution}{Solución}
 \let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
 \maketitle
@@ -245,7 +245,11 @@ See Theorem \ref{thm:boring}
 \protect\hypertarget{thm:boring}{}{\label{thm:boring} }Here is my theorem.
 \EndKnitrBlock{theorem}
 
-See Figure \ref{fig:cars-plot}
+\BeginKnitrBlock{definition}[ww]
+\protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} \iffalse (ww) \fi{} }
+\EndKnitrBlock{definition}
+
+See Figure \ref{fig:cars-plot} \ref{fig:pressure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -268,9 +272,18 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 
 See Table \ref{tab:mtcars}
 
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{inverse} 
+
+}
+
+\caption{A caption}\label{fig:pressure}
+\end{figure}
+
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(mtcars[}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{], }\DataTypeTok{caption =} \StringTok{"A caption"}\NormalTok{)}
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(mtcars[}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{], }\DataTypeTok{caption =} \StringTok{"A caption"}\NormalTok{, }\DataTypeTok{booktabs=}\OtherTok{TRUE}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -278,20 +291,16 @@ See Table \ref{tab:mtcars}
 
 \caption{\label{tab:mtcars}A caption}
 \centering
-\begin{tabular}[t]{l|r|r|r|r|r}
-\hline
+\begin{tabular}[t]{lrrrrr}
+\toprule
   & mpg & cyl & disp & hp & drat\\
-\hline
+\midrule
 Mazda RX4 & 21.0 & 6 & 160 & 110 & 3.90\\
-\hline
 Mazda RX4 Wag & 21.0 & 6 & 160 & 110 & 3.90\\
-\hline
 Datsun 710 & 22.8 & 4 & 108 & 93 & 3.85\\
-\hline
 Hornet 4 Drive & 21.4 & 6 & 258 & 110 & 3.08\\
-\hline
 Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15\\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
 
