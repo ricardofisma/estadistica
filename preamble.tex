@@ -1,1 +1,58 @@
-\usepackage{booktabs}
+\usepackage[spanish,es-noquoting]{babel}
+% \usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+%\usepackage[UTF8]{fontenc}
+\usepackage{booktabs,longtable}
+%\usepackage[referable]{threeparttablex}
+\usepackage{dsfont}
+\usepackage[a4paper]{geometry}
+\geometry{tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
+%\usepackage{booktabs}
+%\renewcommand{\rmdefault}{ptm}
+%\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
+\usepackage{textcase}
+\usepackage{makecell}
+\usepackage{lscape}
+\usepackage{multirow}
+\usepackage{tabto}
+%\usepackage{bigstrut}
+
+%\DeclareFontFamily{U}{mt2ms}{\skewchar\font42}%
+%\DeclareFontShape{U}{mt2ms}{m}{n}{<-7>mt2mcf<7-9>mt2mcs<9->mt2mct}{}%
+%\DeclareFontShape{U}{mt2ms}{m}{it}{<-7>mt2msf<7-9>mt2mss<9->mt2mst}{}%
+%\DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
+
+%\usepackage{titlesec}
+%\titlespacing*{\chapter}
+%{0pt}{5em plus .01em minus .01em}{0em plus .01em minus .01em}
+%\titlespacing*{\section}
+%{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+%\titlespacing*{\subsection}
+%{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+%\titlespacing*{\subsubsection}
+%{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+%\titlespacing*{\paragraph} {0pt}{1.25ex plus 1ex minus .2ex}{2em}
+%\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+%\titleformat*{\section}{\normalsize\bfseries}
+%\titleformat*{\subsection}{\normalsize\bfseries}
+%\setlength{\parskip}{0.7em plus .01em minus .01em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xpatch}%space equation
+\xapptocmd\normalsize{%
+\abovedisplayskip=0.5em plus 0.01em minus 0.01em
+\abovedisplayshortskip=0.5em plus 0.01em minus 0.01em
+\belowdisplayskip=0.5em plus 0.01em minus 0.01em
+\belowdisplayshortskip=0.5em plus 0.01em minus 0.01em
+}{}{}
+%%%%%%%%%%%%%%%%%%%%%
+
+
+%\renewcommand{\thechapter}{\Roman{chapter}}
+
+%\titleformat{\chapter}[display]
+%{\normalfont\normalsize\bfseries\centering}{CAPÍTULO \thechapter}{0.0em}{\normalsize\bfseries}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+%\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+%\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}

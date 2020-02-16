@@ -1,5 +1,5 @@
 --- 
-title: "Geoemtria analítica"
+title: "Geométria analítica"
 author: "Ricardo Michel MALLQUI BAÑOS"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -12,7 +12,20 @@ description: "Tópicos de geometría analítica"
 
 # Prerequisitos
 
-Este es un  _ejemplo_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+```{theorem, pyth, name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + b^2 = c^2$$
+
+
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation} 
+
+Este es un  _ejemplo_ book written in **Markdown** \@ref(eq:binom). You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
 The **bookdown** package can be installed from CRAN or Github:
 
