@@ -151,6 +151,17 @@
 }{}{}
 %%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{url}
+
+%\usepackage{breakurl}
+\usepackage{chngcntr}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+%\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+
+%\counterwithout{equation}{chapter}
+
 
 \renewcommand{\thechapter}{\Roman{chapter}}
 
@@ -181,6 +192,8 @@
 
 \title{Geometría analítica}
 \author{Ricardo Michel MALLQUI BAÑOS}
+\providecommand{\institute}[1]{}
+\institute{Universidad Nacional San Cristóbal De Huamanga}
 \date{2020-02-16}
 
 \usepackage{amsthm}
