@@ -1,4 +1,6 @@
 # Introduction {#intro}
+\[\sum_1^{\epsilon}\]
+
 ```{theorem, www, name="russ"}
 Dada el espacio $R$ y $r\in R$ se tiene que $\mathcal{R}(r)=\lim_{t\to\infty}g(y)_r$
 ```
