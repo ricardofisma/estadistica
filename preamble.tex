@@ -22,7 +22,14 @@
 \DeclareFontShape{U}{mt2ms}{m}{it}{<-7>mt2msf<7-9>mt2mss<9->mt2mst}{}%
 \DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
 
+%\usepackage{showframe}
 
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+%\setlength{\headheight}{2.5 cm}
 \titlespacing*{\chapter}
 {0pt} {9em plus .01em minus .01em} {0em plus .01em minus .01em}
 \titlespacing*{\section}
