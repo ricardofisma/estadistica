@@ -24,7 +24,7 @@
 
 
 \titlespacing*{\chapter}
-{0pt} {5em plus .01em minus .01em} {0em plus .01em minus .01em}
+{0pt} {9em plus .01em minus .01em} {0em plus .01em minus .01em}
 \titlespacing*{\section}
 {0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
 \titlespacing*{\subsection}
@@ -55,11 +55,17 @@
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 \renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
 
+\usepackage{amsthm}
+\usepackage{chngcntr} 
+%\newtheorem{thm}{Theorem}[subsection]
+%\newtheorem{theorem}{Teorema}[section]
+%\renewcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
+%\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{theorem}}
 
-\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thechapter}{\Roman{chapter}}
 
 \titleformat{\chapter}[display]
-{\normalfont\normalsize\bfseries\centering}{CAPÍTULO \thechapter}{0.0em}{\normalsize\bfseries}
+{\normalfont\normalsize\bfseries}{CAPÍTULO \thechapter}{0.0em}{\normalsize\bfseries}
 %\renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
