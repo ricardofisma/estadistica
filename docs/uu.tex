@@ -126,13 +126,13 @@
 \DeclareFontShape{U}{mt2ms}{m}{it}{<-7>mt2msf<7-9>mt2mss<9->mt2mst}{}%
 \DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
 
-%\usepackage{showframe}
+\usepackage{showframe}
 
-\usepackage{fancyhdr}
-\pagestyle{fancyplain}
-\fancyhf{}
-\fancyhead[R]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
+%\usepackage{fancyhdr}
+%\pagestyle{fancyplain}
+%\fancyhf{}
+%\fancyhead[R]{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
 %\setlength{\headheight}{2.5 cm}
 \titlespacing*{\chapter}
 {0pt} {9em plus .01em minus .01em} {0em plus .01em minus .01em}
@@ -147,6 +147,37 @@
 \titleformat*{\section}{\normalsize\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 \setlength{\parskip}{0.7em plus .01em minus .01em}
+%%%%%%
+
+
+\usepackage{amsthm}
+\newtheoremstyle{slplain}% name
+  {0.5em plus 0.01em minus 0.01em}% Space above
+  {0em plus 0.01em minus 0.01em}% Space below
+  {\slshape}% Body font
+  {}%Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%  Thm head font
+  {......}%       Punctuation after thm head
+  { }%      Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%       Thm head spec
+
+
+\theoremstyle{slplain}
+\newtheorem{thm}[equation]{Theorem}  % Numbered with the equation counter
+\newtheorem{cor}[equation]{Corollary}     
+\newtheorem{lem}[equation]{Lemma}         
+\newtheorem{prop}[equation]{Proposition}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{proposition}{Proposición}[chapter]
+\newtheorem{conjecture}{Conjectura}[chapter]
+\newtheorem{definition}{Definición}[chapter]
+\newtheorem{example}{Ejemplo}[chapter]
+\newtheorem{exercise}{Ejercicio}[chapter]
+\newtheorem*{remark}{Observación}
+\newtheorem*{solution}{Solución}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{xpatch}%space equation
@@ -181,6 +212,7 @@
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\flushbottom
 % https://github.com/rstudio/rmarkdown/issues/337
 \let\rmarkdownfootnote\footnote%
 \def\footnote{\protect\rmarkdownfootnote}
@@ -204,23 +236,8 @@
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
-\date{2020-02-16}
+\date{2020-02-17}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Teorema}[chapter]
-\newtheorem{lemma}{Lema}[chapter]
-\newtheorem{corollary}{Corolario}[chapter]
-\newtheorem{proposition}{Proposición}[chapter]
-\newtheorem{conjecture}{Conjectura}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definición}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Ejemplo}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Ejercicio}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Observación}
-\newtheorem*{solution}{Solución}
 \let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
 \maketitle
@@ -257,10 +274,14 @@
 
 Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno \texttt{ff\ fff}
 \[\prod_1^2\]
+\#\#\# Vector
+
+\[\vec{w}\]
+
+\hypertarget{recta}{%
+\subsection{Recta}\label{recta}}
 
 See Theorem \ref{thm:boring}
-
-\[\sum_1^2\]
 
 \begin{figure}
 
@@ -271,12 +292,30 @@ See Theorem \ref{thm:boring}
 \caption{ww}\label{fig:pressure2}
 \end{figure}
 
+Here is my theorem.
+Here is my theorem.
+
 \BeginKnitrBlock{theorem}
-\protect\hypertarget{thm:boring}{}{\label{thm:boring} }Here is my theorem.
+\protect\hypertarget{thm:boring}{}{\label{thm:boring} }Here is my theorem. Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
 \EndKnitrBlock{theorem}
 
+sea Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+
 \BeginKnitrBlock{definition}[ww]
-\protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} \iffalse (ww) \fi{} }
+\protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} \iffalse (ww) \fi{} }Sea la siguiente formula Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
 \EndKnitrBlock{definition}
 
 See Figure \ref{fig:cars-plot} \ref{fig:pressure2}
@@ -290,6 +329,10 @@ See Figure \ref{fig:cars-plot} \ref{fig:pressure2}
 \caption{ww}\label{fig:pressure1}
 \end{figure}
 
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{plot}\NormalTok{(cars)  }\CommentTok{# a scatterplot}
@@ -302,12 +345,11 @@ See Figure \ref{fig:cars-plot} \ref{fig:pressure2}
 \caption{\label{fig:cars-plot}A plot caption}
 \end{figure}
 
-\BeginKnitrBlock{theorem}[Pythagorean theorem]
-\protect\hypertarget{thm:pyth}{}{\label{thm:pyth} \iffalse (Pythagorean theorem) \fi{} }For a right triangle, if \(c\) denotes the length of the hypotenuse
+\BeginKnitrBlock{lemma}[Pythagorean theorem]
+\protect\hypertarget{lem:pyth}{}{\label{lem:pyth} \iffalse (Pythagorean theorem) \fi{} }For a right triangle, if \(c\) denotes the length of the hypotenuse
 and \(a\) and \(b\) denote the lengths of the other two sides, we have
-
 \[a^2 + b^2 = c^2\]
-\EndKnitrBlock{theorem}
+\EndKnitrBlock{lemma}
 
 See Table \ref{tab:mtcars}
 

@@ -37,33 +37,58 @@ description: "Tópicos de geometría analítica"
 ## Ingresar imagen
 Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno `ff fff`
 \[\prod_1^2\]
+### Vector
 
+\[\vec{w}\]
+
+### Recta
 See Theorem \@ref(thm:boring) 
-
-\[\sum_1^2\]
 
 ```{r pressure2, echo=FALSE, fig.cap="ww", fig.align="center"}
 knitr::include_graphics("inverse.svg")
 ```
+Here is my theorem.
+Here is my theorem.
 
 ```{theorem, boring}
+Here is my theorem. Here is my theorem.
+ Here is my theorem.
 Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+```
+
+sea Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+
+
 ```{definition, name="ww"}
+Sea la siguiente formula Here is my theorem.
+ Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
 ```
 See Figure \@ref(fig:cars-plot) \@ref(fig:pressure2)
-```{r pressure1, echo=FALSE, fig.cap="ww", fig.align="center",out.width = "20%"} 
+```{r pressure1, echo=FALSE, fig.cap="ww", fig.align="center",out.width = "20%"}
 knitr::include_graphics("U.svg")
 ```
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
 
 ```{r cars-plot, fig.cap="A plot caption"}
 plot(cars)  # a scatterplot
 ```
 
 
-```{theorem, pyth, name="Pythagorean theorem"}
+```{lemma, pyth, name="Pythagorean theorem"}
 For a right triangle, if $c$ denotes the length of the hypotenuse
 and $a$ and $b$ denote the lengths of the other two sides, we have
-
 $$a^2 + b^2 = c^2$$
 ```
 
