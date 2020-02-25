@@ -452,98 +452,51 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 \hypertarget{intro}{%
 \chapter{Números naturales}\label{intro}}
 
-\BeginKnitrBlock{theorem}[russ]
-\protect\hypertarget{thm:www}{}{\label{thm:www} \iffalse (russ) \fi{} }Dada el espacio \(R\) y \(r\in R\) se tiene que \(\mathcal{R}(r)=\lim_{t\to\infty}g(y)_r\)
+\BeginKnitrBlock{definition}[conjunto inductivo]
+\protect\hypertarget{def:unnamed-chunk-4}{}{\label{def:unnamed-chunk-4} \iffalse (conjunto inductivo) \fi{} }Un conjunto \(M\) es inductivo si verifica las siguentes condiciones
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(0\in M\)
+\item
+  si \(x\in M\) entonces \(x+1\in M\)
+\end{enumerate}
+\EndKnitrBlock{definition}
+
+\BeginKnitrBlock{theorem}
+\protect\hypertarget{thm:www}{}{\label{thm:www} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)
 \EndKnitrBlock{theorem}
 
 \BeginKnitrBlock{proof}
-\iffalse{} {Demostracion. } \fi{}En efecto haciendo el intercambio de variables se tiene que \(\sum_{i=1}^{\infty}r_i\)
-\[\vec{r}=\left\vert\frac{\vec{\int_1^2r}}{\left|r_1^2\right|}\right\vert\left\Vert\int_1^2e\right\Vert\]
-por lo tanto se cumple.
+\iffalse{} {Demostracion. } \fi{}En efecto \(0\in M\), \(0+1\in M\)
 \EndKnitrBlock{proof}
 
-You can label chapter and section titles using after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+\BeginKnitrBlock{theorem}[Principio de inducción matemática]
+\protect\hypertarget{thm:w1}{}{\label{thm:w1} \iffalse (Principio de inducción matemática) \fi{} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)
+\EndKnitrBlock{theorem}
+
+\ref{intro}.
 
 Figures and tables with captions will be placed in and environments, respectively.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, }\FloatTok{.1}\NormalTok{, }\FloatTok{.1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{calculoI_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Reference a figure by its code chunk label with the prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from, e.g., see Table \ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
-  \DataTypeTok{booktabs =} \OtherTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
 
 You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \hypertarget{limite-de-una-funciuxf3n}{%
 \chapter{Limite de una función}\label{limite-de-una-funciuxf3n}}
 
-\hypertarget{definiciuxf3n-de-lim-ite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}{%
-\section{\texorpdfstring{Definición de lim ite para funciones \(\mathbb{R}\to \mathbb{R}\) (es decir, funciones que aplican reales en reales)}{Definición de lim ite para funciones \textbackslash{}mathbb\{R\}\textbackslash{}to \textbackslash{}mathbb\{R\} (es decir, funciones que aplican reales en reales)}}\label{definiciuxf3n-de-lim-ite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}}
+\hypertarget{definiciuxf3n-de-limite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}{%
+\section{\texorpdfstring{Definición de limite para funciones \(\mathbb{R}\to \mathbb{R}\) (es decir, funciones que aplican reales en reales)}{Definición de limite para funciones \textbackslash{}mathbb\{R\}\textbackslash{}to \textbackslash{}mathbb\{R\} (es decir, funciones que aplican reales en reales)}}\label{definiciuxf3n-de-limite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}}
 
-\hypertarget{teorema-sobre-lim-ite-de-funciones}{%
-\section{Teorema sobre lim ite de funciones}\label{teorema-sobre-lim-ite-de-funciones}}
+\hypertarget{teorema-sobre-limite-de-funciones}{%
+\section{Teorema sobre limite de funciones}\label{teorema-sobre-limite-de-funciones}}
 
 \hypertarget{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}{%
 \section{Teorema lím ite de la raíz de una función}\label{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}}
 
-\hypertarget{teorema-del-luxedm-ite-para-funciones-com-puestas}{%
-\section{Teorema del lím ite para funciones com puestas}\label{teorema-del-luxedm-ite-para-funciones-com-puestas}}
+\hypertarget{teorema-del-luxedmite-para-funciones-com-puestas}{%
+\section{Teorema del límite para funciones com puestas}\label{teorema-del-luxedmite-para-funciones-com-puestas}}
 
 \hypertarget{teorema-del-sandwich}{%
 \section{Teorema del sandwich}\label{teorema-del-sandwich}}
