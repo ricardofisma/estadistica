@@ -1,12 +1,25 @@
-# Introduction {#intro}
-```{theorem, www, name="russ"}
-Dada el espacio $R$ y $r\in R$ se tiene que $\mathcal{R}(r)=\lim_{t\to\infty}g(y)_r$
+# Números naturales {#intro}
+
+```{definition, name="conjunto inductivo"}
+Un conjunto $M$ es inductivo si verifica las siguentes condiciones
+
+1. $0\in M$
+1. si $x\in M$ entonces $x+1\in M$
+```
+
+
+```{theorem, www}
+Todo conjunto  indcutivo de numeros reales contiene  los numeros 1, 2, 3, $\ldots$
 ```
 
 ```{proof, troll}
-En efecto haciendo el intercambio de variables se tiene que $\sum_{i=1}^{\infty}r_i$ 
-$$\vec{r}=\abs{\frac{\vec{\int_1^2r}}{\left|r_1^2\right|}}\norm{\int_1^2e}$$
-por lo tanto se cumple.
+En efecto $0\in M$, $0+1\in M$
+```
+
+
+
+```{theorem, w1, name="Principio de inducción matemática"}
+Todo conjunto  indcutivo de numeros reales contiene  los numeros 1, 2, 3, $\ldots$
 ```
 
 You can label chapter and section titles using after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).

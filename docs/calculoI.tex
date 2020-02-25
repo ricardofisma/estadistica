@@ -29,7 +29,7 @@
 }
 \usepackage{hyperref}
 \hypersetup{
-            pdftitle={Geometría analítica},
+            pdftitle={Calculo I},
             pdfauthor={Ricardo Michel MALLQUI BAÑOS},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -120,6 +120,7 @@
 \usepackage{multirow}
 \usepackage{tabto}
 \usepackage{bigstrut}
+\usepackage{graphicx}
 \usepackage{titlesec}
 \DeclareFontFamily{U}{mt2ms}{\skewchar\font42}%
 \DeclareFontShape{U}{mt2ms}{m}{n}{<-7>mt2mcf<7-9>mt2mcs<9->mt2mct}{}%
@@ -127,6 +128,21 @@
 \DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
 
 \usepackage{showframe}
+\usepackage[capbesideposition={top,outside},
+facing=yes,capbesidesep=quad]{floatrow}
+
+\usepackage[innercaption]{sidecap}
+\sidecaptionvpos{figure}{t}
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
 
 %\usepackage{fancyhdr}
 %\pagestyle{fancyplain}
@@ -232,11 +248,11 @@
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{Geometría analítica}
+\title{Calculo I}
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
-\date{2020-02-17}
+\date{2020-02-24}
 
 \let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
@@ -266,15 +282,42 @@
 \newcommand{\M}{\mathcal{M}}
 \newcommand{\F}{\mathcal{F}}
 
-\hypertarget{prerequisitos}{%
-\chapter{Prerequisitos}\label{prerequisitos}}
+\hypertarget{nuxfameros-reales}{%
+\chapter{Números reales}\label{nuxfameros-reales}}
 
-\hypertarget{ingresar-imagen}{%
-\section{Ingresar imagen}\label{ingresar-imagen}}
+\hypertarget{los-axiomas-de-cuerpo}{%
+\section{Los axiomas de cuerpo}\label{los-axiomas-de-cuerpo}}
+
+\hypertarget{los-axiomas-de-orden}{%
+\section{Los axiomas de orden}\label{los-axiomas-de-orden}}
+
+\hypertarget{valores-absolutos-y-desigualdad-triangular}{%
+\section{Valores absolutos y desigualdad triangular}\label{valores-absolutos-y-desigualdad-triangular}}
+
+\hypertarget{algebra-de-los-valores-absolutos.}{%
+\section{Algebra de los valores absolutos.}\label{algebra-de-los-valores-absolutos.}}
+
+\hypertarget{proximidad}{%
+\section{Proximidad}\label{proximidad}}
 
 Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno \texttt{ff\ fff}
 \[\prod_1^2\]
-\#\#\# Vector
+
+\begin{figure}[!ht]
+\fcapside
+  {\caption{some text here to represent the caption}}
+  {\includegraphics{inverse}}
+\end{figure}
+
+\begin{figure}[!ht]
+\thisfloatsetup{capbesideposition={bottom}}
+\fcapside
+  {\caption{some text here to represent the caption}}
+  {\includegraphics{inverse}}
+\end{figure}
+
+\hypertarget{vector}{%
+\subsection{Vector}\label{vector}}
 
 \[\vec{w}\]
 
@@ -308,7 +351,7 @@ sea Here is my theorem.
 Here is my theorem.
 Here is my theorem.
 Here is my theorem.
-Here is my theorem.
+Here is my theorem. \(\sum_1^2\)
 
 \BeginKnitrBlock{definition}[ww]
 \protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} \iffalse (ww) \fi{} }Sea la siguiente formula Here is my theorem.
@@ -341,7 +384,7 @@ Here is my theorem.
 
 \begin{figure}
 \centering
-\includegraphics{uu_files/figure-latex/cars-plot-1.pdf}
+\includegraphics{calculoI_files/figure-latex/cars-plot-1.pdf}
 \caption{\label{fig:cars-plot}A plot caption}
 \end{figure}
 
@@ -407,7 +450,7 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 \end{figure}
 
 \hypertarget{intro}{%
-\chapter{Introduction}\label{intro}}
+\chapter{Números naturales}\label{intro}}
 
 \BeginKnitrBlock{theorem}[russ]
 \protect\hypertarget{thm:www}{}{\label{thm:www} \iffalse (russ) \fi{} }Dada el espacio \(R\) y \(r\in R\) se tiene que \(\mathcal{R}(r)=\lim_{t\to\infty}g(y)_r\)
@@ -432,7 +475,7 @@ Figures and tables with captions will be placed in and environments, respectivel
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{uu_files/figure-latex/nice-fig-1} 
+{\centering \includegraphics[width=0.8\linewidth]{calculoI_files/figure-latex/nice-fig-1} 
 
 }
 
@@ -487,10 +530,32 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 
 You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
-\hypertarget{literature}{%
-\chapter{Literature}\label{literature}}
+\hypertarget{limite-de-una-funciuxf3n}{%
+\chapter{Limite de una función}\label{limite-de-una-funciuxf3n}}
 
-Here is a review of existing methods.
+\hypertarget{definiciuxf3n-de-lim-ite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}{%
+\section{\texorpdfstring{Definición de lim ite para funciones \(\mathbb{R}\to \mathbb{R}\) (es decir, funciones que aplican reales en reales)}{Definición de lim ite para funciones \textbackslash{}mathbb\{R\}\textbackslash{}to \textbackslash{}mathbb\{R\} (es decir, funciones que aplican reales en reales)}}\label{definiciuxf3n-de-lim-ite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}}
+
+\hypertarget{teorema-sobre-lim-ite-de-funciones}{%
+\section{Teorema sobre lim ite de funciones}\label{teorema-sobre-lim-ite-de-funciones}}
+
+\hypertarget{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}{%
+\section{Teorema lím ite de la raíz de una función}\label{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}}
+
+\hypertarget{teorema-del-luxedm-ite-para-funciones-com-puestas}{%
+\section{Teorema del lím ite para funciones com puestas}\label{teorema-del-luxedm-ite-para-funciones-com-puestas}}
+
+\hypertarget{teorema-del-sandwich}{%
+\section{Teorema del sandwich}\label{teorema-del-sandwich}}
+
+\hypertarget{limites-laterales}{%
+\section{Limites laterales}\label{limites-laterales}}
+
+\hypertarget{limites-que-contienen-in-finito}{%
+\section{Limites que contienen in finito}\label{limites-que-contienen-in-finito}}
+
+\hypertarget{luxedmites-de-la-forma-lim-fxgxc}{%
+\section{\texorpdfstring{Límites de la forma \(\lim f(x)^{g(x)}=C\)}{Límites de la forma \textbackslash{}lim f(x)\^{}\{g(x)\}=C}}\label{luxedmites-de-la-forma-lim-fxgxc}}
 
 \hypertarget{methods}{%
 \chapter{Methods}\label{methods}}

@@ -16,6 +16,7 @@
 \usepackage{multirow}
 \usepackage{tabto}
 \usepackage{bigstrut}
+\usepackage{graphicx}
 \usepackage{titlesec}
 \DeclareFontFamily{U}{mt2ms}{\skewchar\font42}%
 \DeclareFontShape{U}{mt2ms}{m}{n}{<-7>mt2mcf<7-9>mt2mcs<9->mt2mct}{}%
@@ -23,6 +24,21 @@
 \DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
 
 \usepackage{showframe}
+\usepackage[capbesideposition={top,outside},
+facing=yes,capbesidesep=quad]{floatrow}
+
+\usepackage[innercaption]{sidecap}
+\sidecaptionvpos{figure}{t}
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
 
 %\usepackage{fancyhdr}
 %\pagestyle{fancyplain}
