@@ -8,10 +8,11 @@ Un conjunto $M$ es inductivo si verifica las siguentes condiciones
 
 ```
 
-por lo tanto $$\int_1^2$$
-<<!--git config --global user.email "you@example.com"
+por lo tanto $$\int_1^2$$ es decir debido a la predisposicion deevacuar es necesario poder contener 
+<!--git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
--->>
+-->
+
 Entonces se debe entender que los demas electronicos dependientes a la avocacion tenue entre las demas opciones porque es lo mas idoneo porque es loa mismo que pponer las demas opciones congruentes es decir porque es lo mismo que poner las demas opciones es decir $\int_1^2=\sum_1^2$
 
 \begin{align*}
