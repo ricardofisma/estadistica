@@ -7,12 +7,31 @@ Un conjunto $M$ es inductivo si verifica las siguentes condiciones
 2. si $x\in M$ entonces $x+1\in M$
 
 ```
+<<!--git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+-->>
+Entonces se debe entender que los demas electronicos dependientes a la avocacion tenue entre las demas opciones porque es lo mas idoneo porque es loa mismo que pponer las demas opciones congruentes es decir porque es lo mismo que poner las demas opciones es decir $\int_1^2=\sum_1^2$
 
-
+\begin{align*}
+e&=ee\\
+&=eer
+\end{align*}
 ```{theorem, www}
 Todo conjunto  indcutivo de numeros reales contiene  los numeros 1, 2, 3, $\ldots$
 ```
+Es decir que por los menos se puede decir que las demas opciones son menos congruentes es decir por lo tanto se pueruba que los requisitos  se verifican  s conclye por las razones dadas es decir  las demas opciones contienen el obejtivo buscado por lo tanto
+es decir $\int_1^2=\rho_1^3$
 
+\begin{align*}
+\rho&=\epsilon\\
+&=\zeta 
+\end{align*}
+
+export DISPLAY=192.168.0.102:0
+export PULSE_SERVER=tcp:192.168.0.102:4713
+
+
+es decir que los dmas opciones se restrigen etnre otros a los antecedentes compositivos por lo tanto es meenster enetender que los resultados buscdso son $\int_1^2=\rho$ cuando los que esperaba consigue el resutlado buscado por ende es comptencia de los participantes $\rho$ es la base del vectro en las sitema coordenados $\epsilon_1$ por lo tanto es menster esperar que las indicaciones son mejores que los que se esperaba.
 ```{proof, troll}
 En efecto $0\in M$, $0+1\in M$
 ```
