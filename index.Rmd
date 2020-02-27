@@ -46,7 +46,7 @@ description: ""
 
 
 Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno `ff fff`
-\[\prod_1^2\]
+\[\prod_1^2=\sum_{\alpha}^e\]
 
 \begin{figure}[!ht]
 \fcapside
