@@ -96,13 +96,7 @@
 \def\fps@figure{htbp}
 \makeatother
 
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
-\usepackage[spanish,es-noquoting]{babel}
+%\usepackage[spanish,es-noquoting]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsfonts}
 \usepackage[T1]{fontenc}
@@ -113,7 +107,7 @@
 \geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
 \usepackage{booktabs}
 \renewcommand{\rmdefault}{ptm}
-\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
+%\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 \usepackage{textcase}
 \usepackage{makecell}
 \usepackage{lscape}
@@ -229,22 +223,6 @@ facing=yes,capbesidesep=quad]{floatrow}
 \renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
 \flushbottom
-% https://github.com/rstudio/rmarkdown/issues/337
-\let\rmarkdownfootnote\footnote%
-\def\footnote{\protect\rmarkdownfootnote}
-
-% https://github.com/rstudio/rmarkdown/pull/252
-\usepackage{titling}
-\setlength{\droptitle}{-2em}
-
-\pretitle{\vspace{\droptitle}\centering\huge}
-\posttitle{\par}
-
-\preauthor{\centering\large\emph}
-\postauthor{\par}
-
-\predate{\centering\large\emph}
-\postdate{\par}
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
@@ -252,7 +230,7 @@ facing=yes,capbesidesep=quad]{floatrow}
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
-\date{2020-02-24}
+\date{2020-02-27}
 
 \let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
@@ -301,7 +279,7 @@ facing=yes,capbesidesep=quad]{floatrow}
 \section{Proximidad}\label{proximidad}}
 
 Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno \texttt{ff\ fff}
-\[\prod_1^2\]
+\[\prod_1^2=\sum_{\alpha}^e\]
 
 \begin{figure}[!ht]
 \fcapside
