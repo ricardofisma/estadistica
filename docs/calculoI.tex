@@ -113,6 +113,8 @@
 \geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
 \usepackage{booktabs}
 \renewcommand{\rmdefault}{ptm}
+\usepackage{tikz}
+
 \usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 \usepackage{textcase}
 \usepackage{makecell}
@@ -465,6 +467,7 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 \end{enumerate}
 \EndKnitrBlock{definition}
 
+entonces se debe respetar las demas opciones por lo t
 por lo tanto \[\int_1^2\] es decir debido a la predisposicion deevacuar es necesario poder contener
 
 Entonces se debe entender que los demas electronicos dependientes a la avocacion tenue entre las demas opciones porque es lo mas idoneo porque es loa mismo que pponer las demas opciones congruentes es decir porque es lo mismo que poner las demas opciones es decir \(\int_1^2=\sum_1^2\)
@@ -488,10 +491,160 @@ es decir \(\int_1^2=\rho_1^3\)
 export DISPLAY=192.168.0.102:0
 export PULSE\_SERVER=tcp:192.168.0.102:4713
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(polynom)}
+\NormalTok{p1=}\KeywordTok{polynomial}\NormalTok{(}\DataTypeTok{coef=}\KeywordTok{c}\NormalTok{(}\OperatorTok{-}\DecValTok{2}\NormalTok{,}\OperatorTok{-}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+\NormalTok{raices_p1=}\KeywordTok{solve}\NormalTok{(p1)}
+\end{Highlighting}
+\end{Shaded}
+
+Por tanto, las raíces de \(p_1(x)\) son : -2, -1, 1.
+Y la factorización será:
+\[ p_1(x)= (x+2)(x+1)(x-1)\]
+\textbf{\emph{2. Comprueba gráficamente que las raíces encontradas, lo son. }}
+\textbf{Solución:}
+Para comprobar gráficamente, dibujamos el polinomio, y donde corte con el eje X, debe de
+coincidir con el valor de las raíces:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(p1)}
+\DecValTok{106}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 106
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\DecValTok{2}\NormalTok{,}\DataTypeTok{col=}\StringTok{"red"}\NormalTok{) }\CommentTok{#Marcar el eje X}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{calculoI_files/figure-latex/unnamed-chunk-6-1.pdf}
+Vemos como el polinomio corta al eje en los puntos \(x=-2, x=-1\) y \(x=1\). Por tanto, queda
+comprobado.
+\textbf{\emph{3. Los valores \(x=3\), \(x=-1\) y \(x=12\), ¿son raíces del polinomio \(p(x)=3x^4-2x^3+12x100\)? }}
+
+\textbf{Solución:}
+Para saber si un valor es raíz de un polinomio, sustituimos dicho valor en el polinomio, y si el
+resultado es igual 0, es raíz:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{p=}\KeywordTok{polynomial}\NormalTok{(}\DataTypeTok{coef=}\KeywordTok{c}\NormalTok{(}\OperatorTok{-}\DecValTok{100}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{0}\NormalTok{,}\OperatorTok{-}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{))}
+\KeywordTok{predict}\NormalTok{(p, }\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\OperatorTok{-}\DecValTok{1}\NormalTok{,}\DecValTok{12}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1]   125  -107 58796
+\end{verbatim}
+
+Ningún valor es 0, por tanto no son raíces del polinomio.
+\#\#\# Ejercicio - Estadística y probabilidad
+\textbf{\emph{La profesora de lengua castellana ha contabilizado las faltas de sus alumnos en un examen,
+y ha obtenido los siguientes resultados:}}
+
+3, 4, 5, 1, 0, 2, 4, 3, 6, 3, 4, 5, 2, 6, 4, 3, 5, 4, 5, 2, 1, 0, 1, 1, 5, 6, 4
+\textbf{\emph{1. Represéntalos con el gráfico adecuado}} .
+\textbf{Solución:}
+Como se trata de una variable cuantitativa discreta, podemos representarla con un diagrama
+de barras:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{barplot}\NormalTok{(}\KeywordTok{table}\NormalTok{(faltas_ortografia),}\DataTypeTok{main=}\StringTok{"Diagrama de barras"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{calculoI_files/figure-latex/unnamed-chunk-9-1.pdf}
+\textbf{\emph{2. ¿Qué porcentaje de alumnos ha hecho 4 faltas de ortografía? }}
+\textbf{Solución:}
+Para saberlo, se necesita la tabla de frecuencias relativas y multiplicarla por 100 para obtener
+el porcentaje:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{prop.table}\NormalTok{(}\KeywordTok{table}\NormalTok{(faltas_ortografia))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## faltas_ortografia
+##          0          1          2          3          4          5          6 
+## 0.07407407 0.14814815 0.11111111 0.14814815 0.22222222 0.18518519 0.11111111
+\end{verbatim}
+
+Si miramos la columna que indica que el número de faltas es 4, deducimos que el porcentaje es
+del 22,2\%.
+\textbf{\emph{3. ¿Cuántos alumnos han hecho 5 faltas o más?¿Cuál es el número de faltas más
+frecuente?}}
+\textbf{Solución:}
+Para saberlo, se necesita la tabla de frecuencias absolutas:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{table}\NormalTok{(faltas_ortografia)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## faltas_ortografia
+## 0 1 2 3 4 5 6 
+## 2 4 3 4 6 5 3
+\end{verbatim}
+
+107
+Por lo tanto, 5 faltas o más son los alumnos que han hecho 5 faltas y 6 faltas. En este caso, hay 5
+alumnos que han hecho 5 faltas, y 3 alumnos que han hecho 6 faltas, por tanto 8 alumnos
+han hecho 5 faltas de ortografía o más.
+Para saber el número de faltas más frecuente, tan solo tenemos que buscar la frecuencia
+absoluta más grande,es decir, la que se corresponde con 4 faltas.
+\textbf{\emph{4. Calcula las medidas de centralización y dispersión, escribiendo sus fórmulas.}}
+\textbf{Solución:}
+\textbf{\emph{Medidas de centralización}}
+
+-\textbf{Varianza y desviación típica}, cuyas fórmulas son:
+
+\[ Var= \sigma^2= \frac{\sum (x_i)^2 f_i}{N} - {\bar{x}}^2\]
+\[ \sigma= \sqrt{Var}=\sqrt{\frac{\sum (x_i)^2 f_i}{N} - {\bar{x}}^2} \]
+
+Para calcularlas,
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{varianza=}\KeywordTok{var}\NormalTok{(faltas_ortografia)}
+\NormalTok{desv.tipica=}\KeywordTok{sd}\NormalTok{(faltas_ortografia)}
+\end{Highlighting}
+\end{Shaded}
+
+Y obtenemos, que la varianza, \(\sigma^2\) = 3.3703704, y que la desviación típica, \(\sigma\) =
+1.8358568 .
+\#\# Álgebra - Interpretación geométrica de un sistema de ecuaciones
+\#\#\# Sistemas de dos ecuaciones con dos incógnitas
+Una vez explicada la forma matricial de un sistema, es importante recalcar la \textbf{interpretación
+geométrica de las ecuaciones} que forman nuestro sistema. Recordar, que en un sistema con
+dos ecuaciones y dos incógnitas, no son más que dos rectas, que pueden:
++ Ser \textbf{secantes}, es decir, cortarse en un punto. En este caso el sistema es Compatible
+Determinado (S.C.D)
++ Ser \textbf{coincidentes}. En este caso el sistema es Compatible Indeterminado (S.C.I), pues
+existen infinitas soluciones.
++ Ser \textbf{paralelas}, es decir, no cortarse en ningún punto. En este caso el sistema es
+Incompatible (S.I).
+\textbf{\emph{Ejemplo}}. Sea el sistema:
+
+Entonces se peude deducir que las ecuaciones sededucen con las siguentes opciones or lo tanto se deduce que las ecuciones son de a acuerdo a las espetativas de los numeros dados por las demas opciones consistentes de los demas opciones considerese que cada de las opciones de la acción de la cosas abducidas esten consideradas de aucerdo a las considereaciones consistentes por lo tanto se deduce que las acciones son menos apreciables es decir que las respuestas son muy adecuadas de orden y estructura además es menester observar que los actos mostrados son muy acorde a las ventajas incluidas en el presente párrafo esto es que se debe considerar que las acciones son muy buenas, es decir que las acciones son muy apreciables de acuerdo a las observaciones realizadas de donde se deduce que las acciones pertinentesson apreciables de aucerdo a las opciones consideradas en las emas porquerias de actos despectivos es decir que las acciones de incógnitas son muy apreciables ecuaciones geometría acción entonces configuración es después parís ágil acotó azúcar ámbar dólar dócil domínguez pérez pódium poliéster púber mármol fácil ágil álbum dócil néctar néstor ónix aeróbic las racies de la ecuacion \(p(x)=x^2+3x-1=0\) son \(x_1=2,\) \(x_2=3\) y \(x_3=5\) por lotanto se deduce que las demas ocpicones considerese que las demas raices son de modo consistente en todo caso son muy apreciables de acuerdo a las desventajas es decir que las acciones son uy apreciables esto es considérese esto de acuerdo al una opcion consistente esto es un desqueilirio entonces es no menos consistente por lo tnato se puede entonces soportar una desacuerdo equívoco
+
 es decir que los dmas opciones se restrigen etnre otros a los antecedentes compositivos por lo tanto es meenster enetender que los resultados buscdso son \(\int_1^2=\rho\) cuando los que esperaba consigue el resutlado buscado por ende es comptencia de los participantes \(\rho\) es la base del vectro en las sitema coordenados \(\epsilon_1\) por lo tanto es menster esperar que las indicaciones son mejores que los que se esperaba.
 \BeginKnitrBlock{proof}
 \iffalse{} {Demostracion. } \fi{}En efecto \(0\in M\), \(0+1\in M\)
 \EndKnitrBlock{proof}
+
+Entonces por lotanto se puede esponder a los resultados favorbles entoncespor loa tnato se presponde a una reponsabilidad correspondientes entonces por lo tanto
 
 \BeginKnitrBlock{theorem}[Principio de inducción matemática]
 \protect\hypertarget{thm:w1}{}{\label{thm:w1} \iffalse (Principio de inducción matemática) \fi{} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)

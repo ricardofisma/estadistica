@@ -184,7 +184,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 </div>
 
-<p>por lo tanto <span class="math display">\[\int_1^2\]</span> es decir debido a la predisposicion deevacuar es necesario poder contener
+<p>entonces se debe respetar las demas opciones por lo t
+por lo tanto <span class="math display">\[\int_1^2\]</span> es decir debido a la predisposicion deevacuar es necesario poder contener
 <!--git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 --></p>
@@ -206,12 +207,96 @@ es decir <span class="math inline">\(\int_1^2=\rho_1^3\)</span></p>
 \end{align*}\]</span></p>
 <p>export DISPLAY=192.168.0.102:0
 export PULSE_SERVER=tcp:192.168.0.102:4713</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(polynom)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">p1=<span class="kw">polynomial</span>(<span class="dt">coef=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>,<span class="op">-</span><span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">raices_p1=<span class="kw">solve</span>(p1)</a></code></pre></div>
+<p>Por tanto, las raíces de <span class="math inline">\(p_1(x)\)</span> son : -2, -1, 1.
+Y la factorización será:
+<span class="math display">\[ p_1(x)= (x+2)(x+1)(x-1)\]</span>
+<strong><em>2. Comprueba gráficamente que las raíces encontradas, lo son. </em></strong>
+<strong>Solución:</strong>
+Para comprobar gráficamente, dibujamos el polinomio, y donde corte con el eje X, debe de
+coincidir con el valor de las raíces:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">plot</span>(p1)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="dv">106</span></a></code></pre></div>
+<pre><code>## [1] 106</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>,<span class="dt">lty=</span><span class="dv">2</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>) <span class="co">#Marcar el eje X</span></a></code></pre></div>
+<p><img src="calculoI_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+Vemos como el polinomio corta al eje en los puntos <span class="math inline">\(x=-2, x=-1\)</span> y <span class="math inline">\(x=1\)</span>. Por tanto, queda
+comprobado.
+<strong><em>3. Los valores <span class="math inline">\(x=3\)</span>, <span class="math inline">\(x=-1\)</span> y <span class="math inline">\(x=12\)</span>, ¿son raíces del polinomio <span class="math inline">\(p(x)=3x^4-2x^3+12x100\)</span>? </em></strong></p>
+<p><strong>Solución:</strong>
+Para saber si un valor es raíz de un polinomio, sustituimos dicho valor en el polinomio, y si el
+resultado es igual 0, es raíz:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">p=<span class="kw">polynomial</span>(<span class="dt">coef=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">100</span>,<span class="dv">12</span>,<span class="dv">0</span>,<span class="op">-</span><span class="dv">2</span>,<span class="dv">3</span>))</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="kw">predict</span>(p, <span class="kw">c</span>(<span class="dv">3</span>,<span class="op">-</span><span class="dv">1</span>,<span class="dv">12</span>))</a></code></pre></div>
+<pre><code>## [1]   125  -107 58796</code></pre>
+<p>Ningún valor es 0, por tanto no son raíces del polinomio.
+### Ejercicio - Estadística y probabilidad
+<strong><em>La profesora de lengua castellana ha contabilizado las faltas de sus alumnos en un examen,
+y ha obtenido los siguientes resultados:</em></strong></p>
+<p>3, 4, 5, 1, 0, 2, 4, 3, 6, 3, 4, 5, 2, 6, 4, 3, 5, 4, 5, 2, 1, 0, 1, 1, 5, 6, 4
+<strong><em>1. Represéntalos con el gráfico adecuado</em></strong> .
+<strong>Solución:</strong>
+Como se trata de una variable cuantitativa discreta, podemos representarla con un diagrama
+de barras:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">barplot</span>(<span class="kw">table</span>(faltas_ortografia),<span class="dt">main=</span><span class="st">&quot;Diagrama de barras&quot;</span>)</a></code></pre></div>
+<p><img src="calculoI_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<strong><em>2. ¿Qué porcentaje de alumnos ha hecho 4 faltas de ortografía? </em></strong>
+<strong>Solución:</strong>
+Para saberlo, se necesita la tabla de frecuencias relativas y multiplicarla por 100 para obtener
+el porcentaje:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">prop.table</span>(<span class="kw">table</span>(faltas_ortografia))</a></code></pre></div>
+<pre><code>## faltas_ortografia
+##          0          1          2          3          4          5          6 
+## 0.07407407 0.14814815 0.11111111 0.14814815 0.22222222 0.18518519 0.11111111</code></pre>
+<p>Si miramos la columna que indica que el número de faltas es 4, deducimos que el porcentaje es
+del 22,2%.
+<strong><em>3. ¿Cuántos alumnos han hecho 5 faltas o más?¿Cuál es el número de faltas más
+frecuente?</em></strong>
+<strong>Solución:</strong>
+Para saberlo, se necesita la tabla de frecuencias absolutas:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw">table</span>(faltas_ortografia)</a></code></pre></div>
+<pre><code>## faltas_ortografia
+## 0 1 2 3 4 5 6 
+## 2 4 3 4 6 5 3</code></pre>
+<p>107
+Por lo tanto, 5 faltas o más son los alumnos que han hecho 5 faltas y 6 faltas. En este caso, hay 5
+alumnos que han hecho 5 faltas, y 3 alumnos que han hecho 6 faltas, por tanto 8 alumnos
+han hecho 5 faltas de ortografía o más.
+Para saber el número de faltas más frecuente, tan solo tenemos que buscar la frecuencia
+absoluta más grande,es decir, la que se corresponde con 4 faltas.
+<strong><em>4. Calcula las medidas de centralización y dispersión, escribiendo sus fórmulas.</em></strong>
+<strong>Solución:</strong>
+<strong><em>Medidas de centralización</em></strong></p>
+<p>-<strong>Varianza y desviación típica</strong>, cuyas fórmulas son:</p>
+<p><span class="math display">\[ Var= \sigma^2= \frac{\sum (x_i)^2 f_i}{N} - {\bar{x}}^2\]</span>
+<span class="math display">\[ \sigma= \sqrt{Var}=\sqrt{\frac{\sum (x_i)^2 f_i}{N} - {\bar{x}}^2} \]</span></p>
+<p>Para calcularlas,</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1">varianza=<span class="kw">var</span>(faltas_ortografia)</a>
+<a class="sourceLine" id="cb15-2" data-line-number="2">desv.tipica=<span class="kw">sd</span>(faltas_ortografia)</a></code></pre></div>
+<p>Y obtenemos, que la varianza, <span class="math inline">\(\sigma^2\)</span> = 3.3703704, y que la desviación típica, <span class="math inline">\(\sigma\)</span> =
+1.8358568 .
+## Álgebra - Interpretación geométrica de un sistema de ecuaciones
+### Sistemas de dos ecuaciones con dos incógnitas
+Una vez explicada la forma matricial de un sistema, es importante recalcar la <strong>interpretación
+geométrica de las ecuaciones</strong> que forman nuestro sistema. Recordar, que en un sistema con
+dos ecuaciones y dos incógnitas, no son más que dos rectas, que pueden:
++ Ser <strong>secantes</strong>, es decir, cortarse en un punto. En este caso el sistema es Compatible
+Determinado (S.C.D)
++ Ser <strong>coincidentes</strong>. En este caso el sistema es Compatible Indeterminado (S.C.I), pues
+existen infinitas soluciones.
++ Ser <strong>paralelas</strong>, es decir, no cortarse en ningún punto. En este caso el sistema es
+Incompatible (S.I).
+<strong><em>Ejemplo</em></strong>. Sea el sistema:</p>
+<p>Entonces se peude deducir que las ecuaciones sededucen con las siguentes opciones or lo tanto se deduce que las ecuciones son de a acuerdo a las espetativas de los numeros dados por las demas opciones consistentes de los demas opciones considerese que cada de las opciones de la acción de la cosas abducidas esten consideradas de aucerdo a las considereaciones consistentes por lo tanto se deduce que las acciones son menos apreciables es decir que las respuestas son muy adecuadas de orden y estructura además es menester observar que los actos mostrados son muy acorde a las ventajas incluidas en el presente párrafo esto es que se debe considerar que las acciones son muy buenas, es decir que las acciones son muy apreciables de acuerdo a las observaciones realizadas de donde se deduce que las acciones pertinentesson apreciables de aucerdo a las opciones consideradas en las emas porquerias de actos despectivos es decir que las acciones de incógnitas son muy apreciables ecuaciones geometría acción entonces configuración es después parís ágil acotó azúcar ámbar dólar dócil domínguez pérez pódium poliéster púber mármol fácil ágil álbum dócil néctar néstor ónix aeróbic las racies de la ecuacion <span class="math inline">\(p(x)=x^2+3x-1=0\)</span> son <span class="math inline">\(x_1=2,\)</span> <span class="math inline">\(x_2=3\)</span> y <span class="math inline">\(x_3=5\)</span> por lotanto se deduce que las demas ocpicones considerese que las demas raices son de modo consistente en todo caso son muy apreciables de acuerdo a las desventajas es decir que las acciones son uy apreciables esto es considérese esto de acuerdo al una opcion consistente esto es un desqueilirio entonces es no menos consistente por lo tnato se puede entonces soportar una desacuerdo equívoco</p>
 es decir que los dmas opciones se restrigen etnre otros a los antecedentes compositivos por lo tanto es meenster enetender que los resultados buscdso son <span class="math inline">\(\int_1^2=\rho\)</span> cuando los que esperaba consigue el resutlado buscado por ende es comptencia de los participantes <span class="math inline">\(\rho\)</span> es la base del vectro en las sitema coordenados <span class="math inline">\(\epsilon_1\)</span> por lo tanto es menster esperar que las indicaciones son mejores que los que se esperaba.
 
 <div class="proof">
  <span class="proof"><em>Demostracion. </em></span> En efecto <span class="math inline">\(0\in M\)</span>, <span class="math inline">\(0+1\in M\)</span>
 </div>
 
+<p>Entonces por lotanto se puede esponder a los resultados favorbles entoncespor loa tnato se presponde a una reponsabilidad correspondientes entonces por lo tanto</p>
 
 <div class="theorem">
 <span id="thm:w1" class="theorem"><strong>Teorema 2.2  (Principio de inducción matemática)  </strong></span>Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, <span class="math inline">\(\ldots\)</span>
