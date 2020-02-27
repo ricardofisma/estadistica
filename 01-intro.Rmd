@@ -7,6 +7,8 @@ Un conjunto $M$ es inductivo si verifica las siguentes condiciones
 2. si $x\in M$ entonces $x+1\in M$
 
 ```
+
+por lo tanto $$\int_1^2$$
 <<!--git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 -->>
