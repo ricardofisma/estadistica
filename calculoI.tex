@@ -1,0 +1,514 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[12pt,]{report}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Calculo I},
+            pdfauthor={Ricardo Michel MALLQUI BAÑOS},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+%\usepackage[spanish,es-noquoting]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs,longtable}
+\usepackage[referable]{threeparttablex}
+\usepackage{dsfont}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
+\usepackage{booktabs}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
+\usepackage{textcase}
+\usepackage{makecell}
+\usepackage{lscape}
+\usepackage{multirow}
+\usepackage{tabto}
+\usepackage{bigstrut}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\DeclareFontFamily{U}{mt2ms}{\skewchar\font42}%
+\DeclareFontShape{U}{mt2ms}{m}{n}{<-7>mt2mcf<7-9>mt2mcs<9->mt2mct}{}%
+\DeclareFontShape{U}{mt2ms}{m}{it}{<-7>mt2msf<7-9>mt2mss<9->mt2mst}{}%
+\DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
+
+\usepackage{showframe}
+\usepackage[capbesideposition={top,outside},
+facing=yes,capbesidesep=quad]{floatrow}
+
+\usepackage[innercaption]{sidecap}
+\sidecaptionvpos{figure}{t}
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancyplain}
+%\fancyhf{}
+%\fancyhead[R]{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
+%\setlength{\headheight}{2.5 cm}
+\titlespacing*{\chapter}
+{0pt} {9em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\section}
+{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\subsection}
+{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\subsubsection}
+{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
+\titlespacing*{\paragraph} {0pt}{1.25ex plus 1ex minus .2ex}{2em}
+\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\setlength{\parskip}{0.7em plus .01em minus .01em}
+%%%%%%
+
+
+\usepackage{amsthm}
+\newtheoremstyle{slplain}% name
+  {0.5em plus 0.01em minus 0.01em}% Space above
+  {0em plus 0.01em minus 0.01em}% Space below
+  {\slshape}% Body font
+  {}%Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%  Thm head font
+  {.}%       Punctuation after thm head
+  { }%      Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%       Thm head spec
+
+
+\theoremstyle{slplain}
+\newtheorem{thm}[equation]{Theorem}  % Numbered with the equation counter
+\newtheorem{cor}[equation]{Corollary}     
+\newtheorem{lem}[equation]{Lemma}         
+\newtheorem{prop}[equation]{Proposition}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{proposition}{Proposición}[chapter]
+\newtheorem{conjecture}{Conjectura}[chapter]
+\newtheorem{definition}{Definición}[chapter]
+\newtheorem{example}{Ejemplo}[chapter]
+\newtheorem{exercise}{Ejercicio}[chapter]
+\newtheorem*{remark}{Observación}
+\newtheorem*{solution}{Solución}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xpatch}%space equation
+\xapptocmd\normalsize{%
+\abovedisplayskip=0.5em plus 0.01em minus 0.01em
+\abovedisplayshortskip=0.5em plus 0.01em minus 0.01em
+\belowdisplayskip=0.5em plus 0.01em minus 0.01em
+\belowdisplayshortskip=0.5em plus 0.01em minus 0.01em
+}{}{}
+%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{url}
+
+%\usepackage{breakurl}
+\usepackage{chngcntr}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+
+\usepackage{amsthm}
+\usepackage{chngcntr} 
+%\newtheorem{thm}{Theorem}[subsection]
+%\newtheorem{theorem}{Teorema}[section]
+%\renewcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
+%\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{theorem}}
+
+%\renewcommand{\thechapter}{\Roman{chapter}}
+
+\titleformat{\chapter}[display]
+{\normalfont\normalsize\bfseries}{CAPÍTULO \thechapter}{0.0em}{\normalsize\bfseries}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\flushbottom
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Calculo I}
+\author{Ricardo Michel MALLQUI BAÑOS}
+\providecommand{\institute}[1]{}
+\institute{Universidad Nacional San Cristóbal De Huamanga}
+\date{2020-02-27}
+
+\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\f}{\mathbb{f}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\seq}[1]{\left<#1\right>}
+\newcommand{\co}[1]{\left[#1\right]}
+\newcommand{\cc}[1]{\left(#1\right)}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\F}{\mathcal{F}}
+
+\hypertarget{nuxfameros-reales}{%
+\chapter{Números reales}\label{nuxfameros-reales}}
+
+\hypertarget{los-axiomas-de-cuerpo}{%
+\section{Los axiomas de cuerpo}\label{los-axiomas-de-cuerpo}}
+
+\hypertarget{los-axiomas-de-orden}{%
+\section{Los axiomas de orden}\label{los-axiomas-de-orden}}
+
+\hypertarget{valores-absolutos-y-desigualdad-triangular}{%
+\section{Valores absolutos y desigualdad triangular}\label{valores-absolutos-y-desigualdad-triangular}}
+
+\hypertarget{algebra-de-los-valores-absolutos.}{%
+\section{Algebra de los valores absolutos.}\label{algebra-de-los-valores-absolutos.}}
+
+\hypertarget{proximidad}{%
+\section{Proximidad}\label{proximidad}}
+
+Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno \texttt{ff\ fff}
+\[\prod_1^2=\sum_{\alpha}^e\]
+
+\begin{figure}[!ht]
+\fcapside
+  {\caption{some text here to represent the caption}}
+  {\includegraphics{inverse}}
+\end{figure}
+
+\begin{figure}[!ht]
+\thisfloatsetup{capbesideposition={bottom}}
+\fcapside
+  {\caption{some text here to represent the caption}}
+  {\includegraphics{inverse}}
+\end{figure}
+
+\hypertarget{vector}{%
+\subsection{Vector}\label{vector}}
+
+\[\vec{w}\]
+
+\hypertarget{recta}{%
+\subsection{Recta}\label{recta}}
+
+See Theorem \ref{thm:boring}
+
+\begin{figure}
+
+{\centering \includegraphics{inverse} 
+
+}
+
+\caption{ww}\label{fig:pressure2}
+\end{figure}
+
+Here is my theorem.
+Here is my theorem.
+
+\BeginKnitrBlock{theorem}
+\protect\hypertarget{thm:boring}{}{\label{thm:boring} }Here is my theorem. Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+\EndKnitrBlock{theorem}
+
+sea Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem. \(\sum_1^2\)
+
+\BeginKnitrBlock{definition}[ww]
+\protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} \iffalse (ww) \fi{} }Sea la siguiente formula Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+\EndKnitrBlock{definition}
+
+See Figure \ref{fig:cars-plot} \ref{fig:pressure2}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.2\linewidth]{U} 
+
+}
+
+\caption{ww}\label{fig:pressure1}
+\end{figure}
+
+Here is my theorem.
+Here is my theorem.
+Here is my theorem.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(cars)  }\CommentTok{# a scatterplot}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\centering
+\includegraphics{calculoI_files/figure-latex/cars-plot-1.pdf}
+\caption{\label{fig:cars-plot}A plot caption}
+\end{figure}
+
+\BeginKnitrBlock{lemma}[Pythagorean theorem]
+\protect\hypertarget{lem:pyth}{}{\label{lem:pyth} \iffalse (Pythagorean theorem) \fi{} }For a right triangle, if \(c\) denotes the length of the hypotenuse
+and \(a\) and \(b\) denote the lengths of the other two sides, we have
+\[a^2 + b^2 = c^2\]
+\EndKnitrBlock{lemma}
+
+See Table \ref{tab:mtcars}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(mtcars[}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{], }\DataTypeTok{caption =} \StringTok{"A caption"}\NormalTok{, }\DataTypeTok{booktabs=}\OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:mtcars}A caption}
+\centering
+\begin{tabular}[t]{lrrrrr}
+\toprule
+  & mpg & cyl & disp & hp & drat\\
+\midrule
+Mazda RX4 & 21.0 & 6 & 160 & 110 & 3.90\\
+Mazda RX4 Wag & 21.0 & 6 & 160 & 110 & 3.90\\
+Datsun 710 & 22.8 & 4 & 108 & 93 & 3.85\\
+Hornet 4 Drive & 21.4 & 6 & 258 & 110 & 3.08\\
+Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  \label{eq:binom}
+\end{equation}
+
+Este es un \emph{ejemplo} book written in **Markdown\emph{.} La ecuacion \eqref{eq:binom}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
+
+The \textbf{bookdown} package can be installed from CRAN or Github:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
+\CommentTok{# or the development version}
+\CommentTok{# devtools::install_github("rstudio/bookdown")}
+\end{Highlighting}
+\end{Shaded}
+
+Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
+
+To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+
+\begin{figure}
+
+{\centering \includegraphics{abstrac} 
+
+}
+
+\caption{ww}\label{fig:pressure3}
+\end{figure}
+
+\hypertarget{intro}{%
+\chapter{Números naturales}\label{intro}}
+
+\BeginKnitrBlock{definition}[conjunto inductivo]
+\protect\hypertarget{def:unnamed-chunk-4}{}{\label{def:unnamed-chunk-4} \iffalse (conjunto inductivo) \fi{} }Un conjunto \(M\) es inductivo si verifica las siguentes condiciones
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(0\in M\)
+\item
+  si \(x\in M\) entonces \(x+1\in M\)
+\end{enumerate}
+\EndKnitrBlock{definition}
+
+\BeginKnitrBlock{theorem}
+\protect\hypertarget{thm:www}{}{\label{thm:www} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)
+\EndKnitrBlock{theorem}
+
+\BeginKnitrBlock{proof}
+\iffalse{} {Demostracion. } \fi{}En efecto \(0\in M\), \(0+1\in M\)
+\EndKnitrBlock{proof}
+
+\BeginKnitrBlock{theorem}[Principio de inducción matemática]
+\protect\hypertarget{thm:w1}{}{\label{thm:w1} \iffalse (Principio de inducción matemática) \fi{} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)
+\EndKnitrBlock{theorem}
+
+\ref{intro}.
+
+Figures and tables with captions will be placed in and environments, respectively.
+
+You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+
+\hypertarget{limite-de-una-funciuxf3n}{%
+\chapter{Limite de una función}\label{limite-de-una-funciuxf3n}}
+
+\hypertarget{definiciuxf3n-de-limite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}{%
+\section{\texorpdfstring{Definición de limite para funciones \(\mathbb{R}\to \mathbb{R}\) (es decir, funciones que aplican reales en reales)}{Definición de limite para funciones \textbackslash{}mathbb\{R\}\textbackslash{}to \textbackslash{}mathbb\{R\} (es decir, funciones que aplican reales en reales)}}\label{definiciuxf3n-de-limite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}}
+
+\hypertarget{teorema-sobre-limite-de-funciones}{%
+\section{Teorema sobre limite de funciones}\label{teorema-sobre-limite-de-funciones}}
+
+\hypertarget{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}{%
+\section{Teorema lím ite de la raíz de una función}\label{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}}
+
+\hypertarget{teorema-del-luxedmite-para-funciones-com-puestas}{%
+\section{Teorema del límite para funciones com puestas}\label{teorema-del-luxedmite-para-funciones-com-puestas}}
+
+\hypertarget{teorema-del-sandwich}{%
+\section{Teorema del sandwich}\label{teorema-del-sandwich}}
+
+\hypertarget{limites-laterales}{%
+\section{Limites laterales}\label{limites-laterales}}
+
+\hypertarget{limites-que-contienen-in-finito}{%
+\section{Limites que contienen in finito}\label{limites-que-contienen-in-finito}}
+
+\hypertarget{luxedmites-de-la-forma-lim-fxgxc}{%
+\section{\texorpdfstring{Límites de la forma \(\lim f(x)^{g(x)}=C\)}{Límites de la forma \textbackslash{}lim f(x)\^{}\{g(x)\}=C}}\label{luxedmites-de-la-forma-lim-fxgxc}}
+
+\hypertarget{methods}{%
+\chapter{Methods}\label{methods}}
+
+We describe our methods in this chapter.
+
+\hypertarget{applications}{%
+\chapter{Applications}\label{applications}}
+
+Some \emph{significant} applications are demonstrated in this chapter.
+
+\hypertarget{example-one}{%
+\section{Example one}\label{example-one}}
+
+\hypertarget{example-two}{%
+\section{Example two}\label{example-two}}
+
+\hypertarget{final-words}{%
+\chapter{Final Words}\label{final-words}}
+
+We have finished a nice book.
+
+\bibliography{book.bib,packages.bib}
+
+\end{document}
