@@ -1,5 +1,7 @@
 # Números naturales {#intro}
 
+## Teoremas
+
 ```{definition, name="conjunto inductivo"}
 Un conjunto $M$ es inductivo si verifica las siguentes condiciones
 
