@@ -1,51 +1,40 @@
-\usepackage[spanish,es-noquoting]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsfonts}
-\usepackage[T1]{fontenc}
-\usepackage{booktabs,longtable}
-\usepackage[referable]{threeparttablex}
-\usepackage{dsfont}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm}
+\usepackage[spanish]{babel}
 \usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{makeidx}
+\makeindex
+\usepackage{imakeidx}
+%\usepackage{showframe}
+%\usepackage[a4paper]{geometry}
+%\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
+\makeindex[columns=2, title=\'Indice ]
+\flushbottom
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+	\hbox{}%
+	\thispagestyle{empty}%
+	\newpage%
+	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+\usepackage{times}
 \renewcommand{\rmdefault}{ptm}
 \usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
-\usepackage{textcase}
-\usepackage{makecell}
-\usepackage{lscape}
-\usepackage{multirow}
-\usepackage{tabto}
-\usepackage{bigstrut}
-\usepackage{graphicx}
-\usepackage{titlesec}
-\DeclareFontFamily{U}{mt2ms}{\skewchar\font42}%
-\DeclareFontShape{U}{mt2ms}{m}{n}{<-7>mt2mcf<7-9>mt2mcs<9->mt2mct}{}%
-\DeclareFontShape{U}{mt2ms}{m}{it}{<-7>mt2msf<7-9>mt2mss<9->mt2mst}{}%
-\DeclareFontShape{U}{mt2ms}{b}{it}{<-7>mt2bmsf<7-9>mt2bmss<9->mt2bmst}{}%
 
-\usepackage{showframe}
-\usepackage[capbesideposition={top,outside},
-facing=yes,capbesidesep=quad]{floatrow}
+\usepackage{makeidx}
+\makeindex
 
-\usepackage[innercaption]{sidecap}
-\sidecaptionvpos{figure}{t}
 
-\usepackage{float}
-\let\origfigure=\figure
-\let\endorigfigure=\endfigure
-\renewenvironment{figure}[1][]{%
-  \origfigure[H]
-}{%
-  \endorigfigure
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
 }
+\makeatother
 
-
-%\usepackage{fancyhdr}
-%\pagestyle{fancyplain}
-%\fancyhf{}
-%\fancyhead[R]{\thepage}
-%\renewcommand{\headrulewidth}{0pt}
-%\setlength{\headheight}{2.5 cm}
+\usepackage{titlesec}
 \titlespacing*{\chapter}
 {0pt} {9em plus .01em minus .01em} {0em plus .01em minus .01em}
 \titlespacing*{\section}
@@ -56,73 +45,28 @@ facing=yes,capbesidesep=quad]{floatrow}
 {0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
 \titlespacing*{\paragraph} {0pt}{1.25ex plus 1ex minus .2ex}{2em}
 \titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
-\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 \setlength{\parskip}{0.7em plus .01em minus .01em}
-%%%%%%
-
-
-\usepackage{amsthm}
-\newtheoremstyle{slplain}% name
-  {0.5em plus 0.01em minus 0.01em}% Space above
-  {0em plus 0.01em minus 0.01em}% Space below
-  {\slshape}% Body font
-  {}%Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries}%  Thm head font
-  {.--}%       Punctuation after thm head
-  { }%      Space after thm head: " " = normal interword space;
-        %       \newline = linebreak
-  {}%       Thm head spec
-
-
-\theoremstyle{slplain}
-\newtheorem{thm}[equation]{Theorem}  % Numbered with the equation counter
-\newtheorem{cor}[equation]{Corollary}     
-\newtheorem{lem}[equation]{Lemma}         
-\newtheorem{prop}[equation]{Proposition}
-\newtheorem{theorem}{Teorema}[chapter]
-\newtheorem{lemma}{Lema}[chapter]
-\newtheorem{corollary}{Corolario}[chapter]
-\newtheorem{proposition}{Proposición}[chapter]
-\newtheorem{conjecture}{Conjectura}[chapter]
-\newtheorem{definition}{Definición}[chapter]
-\newtheorem{example}{Ejemplo}[chapter]
-\newtheorem{exercise}{Ejercicio}[chapter]
-\newtheorem*{remark}{Observación}
-\newtheorem*{solution}{Solución}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{xpatch}%space equation
-\xapptocmd\normalsize{%
-\abovedisplayskip=0.5em plus 0.01em minus 0.01em
-\abovedisplayshortskip=0.5em plus 0.01em minus 0.01em
-\belowdisplayskip=0.5em plus 0.01em minus 0.01em
-\belowdisplayshortskip=0.5em plus 0.01em minus 0.01em
-}{}{}
-%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{url}
-
-%\usepackage{breakurl}
-\usepackage{chngcntr}
-\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
-\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
-\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
-
-\usepackage{amsthm}
-\usepackage{chngcntr} 
-%\newtheorem{thm}{Theorem}[subsection]
-%\newtheorem{theorem}{Teorema}[section]
-%\renewcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
-%\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{theorem}}
-
-%\renewcommand{\thechapter}{\Roman{chapter}}
 
 \titleformat{\chapter}[display]
-{\normalfont\normalsize\bfseries}{CAPÍTULO \thechapter}{0.0em}{\normalsize\bfseries}
+{\normalfont\Large\bfseries}{--\thechapter--}{0.0em}{\Large\itshape\bfseries}
 %\renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\usepackage{fancyhdr}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\itshape\nouppercase{\rightmark}}
+\fancyhead[RE]{\itshape\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{0pt}
+
 \flushbottom 
+
+\frontmatter
 
