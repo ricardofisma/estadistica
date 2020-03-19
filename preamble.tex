@@ -8,15 +8,6 @@
 %\usepackage{showframe}
 %\usepackage[a4paper]{geometry}
 %\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
-\makeindex[columns=2, title=\'Indice ]
-\flushbottom
-\makeatletter
-\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
-	\hbox{}%
-	\thispagestyle{empty}%
-	\newpage%
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\makeatother
 
 \usepackage{times}
 \renewcommand{\rmdefault}{ptm}
@@ -34,37 +25,7 @@
 }
 \makeatother
 
-\usepackage{titlesec}
-\titlespacing*{\chapter}
-{0pt} {9em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\section}
-{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\subsection}
-{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\subsubsection}
-{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\paragraph} {0pt}{1.25ex plus 1ex minus .2ex}{2em}
-\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
-\titleformat*{\section}{\large\bfseries}
-\titleformat*{\subsection}{\normalsize\bfseries}
-\setlength{\parskip}{0.7em plus .01em minus .01em}
 
-\titleformat{\chapter}[display]
-{\normalfont\Large\bfseries}{--\thechapter--}{0.0em}{\Large\itshape\bfseries}
-%\renewcommand{\thechapter}{\Roman{chapter}}
-\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
-\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
-\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
-
-\usepackage{fancyhdr}
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{#1}}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE,RO]{\thepage}
-\fancyhead[LO]{\itshape\nouppercase{\rightmark}}
-\fancyhead[RE]{\itshape\nouppercase{\leftmark}}
-\renewcommand{\headrulewidth}{1pt}
 
 \flushbottom 
 

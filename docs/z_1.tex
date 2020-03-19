@@ -1,7 +1,7 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[12pt,]{book}
+\documentclass[12pt,]{krantz}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -106,15 +106,6 @@
 %\usepackage{showframe}
 %\usepackage[a4paper]{geometry}
 %\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
-\makeindex[columns=2, title=\'Indice ]
-\flushbottom
-\makeatletter
-\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
-	\hbox{}%
-	\thispagestyle{empty}%
-	\newpage%
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\makeatother
 
 \usepackage{times}
 \renewcommand{\rmdefault}{ptm}
@@ -132,37 +123,7 @@
 }
 \makeatother
 
-\usepackage{titlesec}
-\titlespacing*{\chapter}
-{0pt} {9em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\section}
-{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\subsection}
-{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\subsubsection}
-{0pt} {0em plus .01em minus .01em} {0em plus .01em minus .01em}
-\titlespacing*{\paragraph} {0pt}{1.25ex plus 1ex minus .2ex}{2em}
-\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
-\titleformat*{\section}{\large\bfseries}
-\titleformat*{\subsection}{\normalsize\bfseries}
-\setlength{\parskip}{0.7em plus .01em minus .01em}
 
-\titleformat{\chapter}[display]
-{\normalfont\Large\bfseries}{--\thechapter--}{0.0em}{\Large\itshape\bfseries}
-%\renewcommand{\thechapter}{\Roman{chapter}}
-\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
-\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
-\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
-
-\usepackage{fancyhdr}
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{#1}}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE,RO]{\thepage}
-\fancyhead[LO]{\itshape\nouppercase{\rightmark}}
-\fancyhead[RE]{\itshape\nouppercase{\leftmark}}
-\renewcommand{\headrulewidth}{1pt}
 
 \flushbottom 
 
@@ -234,13 +195,285 @@
 \chapter*{Resumen}\label{resumen}}
 \addcontentsline{toc}{chapter}{Resumen}
 
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
+
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
+
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
+
 \hypertarget{introducciuxf3n}{%
 \chapter*{Introducción}\label{introducciuxf3n}}
 \addcontentsline{toc}{chapter}{Introducción}
 
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
+
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
+
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
+
 \hypertarget{preliminares}{%
 \chapter*{Preliminares}\label{preliminares}}
 \addcontentsline{toc}{chapter}{Preliminares}
+
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
+
+Consideramos que es un ``sistema'' en tanto integra el conjunto de
+conocimientos
+objetivos
+de
+una
+misma
+naturaleza
+que
+están
+interrelacionados y que interactúan mutuamente.
+Es un ``producto de la actividad del hombre'' dado que el conocimiento
+se adquiere, en primera instancia a partir de la práctica, en un proceso que
+va de la contemplación viva al pensamiento abstracto y de este a la práctica
+como forma de verificación.
+Tiene un ``carácter histórico y en permanente cambio'' debido a que la
+ciencia no es estática, va surgiendo bajo determinadas circunstancias y
+momentos históricos, y se desarrolla en evolución permanente, apoyándose
+en las necesidades de la sociedad humana y a partir de los cambios que se
+producen en la naturaleza, la sociedad y el pensamiento.
+Por su parte el término ``investigar'' no es más que ``hacer diligencias para
+descubrir algo; profundizar en el estudio de una disciplina'' 6
+.
+La ``investigación''
+expresa el modo de llegar al conocimiento de algo,
+siguiendo un camino de forma sistemática, utilizando métodos propios de la
+ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
+ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
+factor inseparable de cualquier actividad cognoscitiva u operación mental que se
+realice para abordar un problema, duda o curiosidad''.7
+La investigación se concibe como un procedimiento reflexivo, dirigido,
+controlado, sistemático y crítico que permite llegar a descubrir nuevos
+hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
+humano.
 
 \mainmatter
 
@@ -647,10 +880,30 @@ Some \emph{significant} applications are demonstrated in this chapter.
 
 We describe our methods in this chapter\index{chapter}.
 
+\hypertarget{appendix-apendice}{%
+\appendix \addcontentsline{toc}{chapter}{\appendixname}}
+
+
 \hypertarget{final-words}{%
 \chapter{Final Words}\label{final-words}}
 
-We have finished a nice book.
+\hypertarget{deftones}{%
+\section{Deftones}\label{deftones}}
+
+\hypertarget{deftones2}{%
+\section{Deftones2}\label{deftones2}}
+
+\hypertarget{we-have-finished-a-nice-book.}{%
+\chapter{We have finished a nice book.}\label{we-have-finished-a-nice-book.}}
+
+\hypertarget{deftones3}{%
+\section{Deftones3}\label{deftones3}}
+
+\hypertarget{deftones4}{%
+\section{Deftones4}\label{deftones4}}
+
+\hypertarget{deftones5}{%
+\section{Deftones5}\label{deftones5}}
 
 \bibliography{book.bib,packages.bib}
 
