@@ -1,10 +1,7 @@
-# ww {-}
-
-\mainmatter 
-
-# Números naturales {#intro}
+# Números naturales
 
 ## Teoremas
+
 
 ```{definition, name="conjunto inductivo"}
 Un conjunto $M$ es inductivo si verifica las siguentes condiciones
@@ -152,7 +149,7 @@ Entonces por lotanto se puede esponder a los resultados favorbles entoncespor lo
 ```{theorem, w1, name="Principio de inducción matemática"}
 Todo conjunto  indcutivo de numeros reales contiene  los numeros 1, 2, 3, $\ldots$
 ```
-\@ref(intro).
+
 
 Figures and tables with captions will be placed in and environments, respectively.
 

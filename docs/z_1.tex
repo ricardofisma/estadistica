@@ -162,7 +162,7 @@
 \fancyhead[LE,RO]{\thepage}
 \fancyhead[LO]{\itshape\nouppercase{\rightmark}}
 \fancyhead[RE]{\itshape\nouppercase{\leftmark}}
-\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headrulewidth}{1pt}
 
 \flushbottom 
 
@@ -229,6 +229,20 @@
 \newcommand{\K}{\mathcal{K}}
 \newcommand{\M}{\mathcal{M}}
 \newcommand{\F}{\mathcal{F}}
+
+\hypertarget{resumen}{%
+\chapter*{Resumen}\label{resumen}}
+\addcontentsline{toc}{chapter}{Resumen}
+
+\hypertarget{introducciuxf3n}{%
+\chapter*{Introducción}\label{introducciuxf3n}}
+\addcontentsline{toc}{chapter}{Introducción}
+
+\hypertarget{preliminares}{%
+\chapter*{Preliminares}\label{preliminares}}
+\addcontentsline{toc}{chapter}{Preliminares}
+
+\mainmatter
 
 \hypertarget{nuxfameros-reales}{%
 \chapter{Números reales}\label{nuxfameros-reales}}
@@ -384,14 +398,8 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 \caption{ww}\label{fig:pressure3}
 \end{figure}
 
-\hypertarget{ww}{%
-\chapter*{ww}\label{ww}}
-\addcontentsline{toc}{chapter}{ww}
-
-\mainmatter
-
-\hypertarget{intro}{%
-\chapter{Números naturales}\label{intro}}
+\hypertarget{nuxfameros-naturales}{%
+\chapter{Números naturales}\label{nuxfameros-naturales}}
 
 \hypertarget{teoremas}{%
 \section{Teoremas}\label{teoremas}}
@@ -592,8 +600,6 @@ Entonces por lotanto se puede esponder a los resultados favorbles entoncespor lo
 \protect\hypertarget{thm:w1}{}{\label{thm:w1} \iffalse (Principio de inducción matemática) \fi{} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)
 \EndKnitrBlock{theorem}
 
-\ref{intro}.
-
 Figures and tables with captions will be placed in and environments, respectively.
 
 You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
@@ -625,11 +631,6 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 \hypertarget{luxedmites-de-la-forma-lim-fxgxc}{%
 \section{\texorpdfstring{Límites de la forma \(\lim f(x)^{g(x)}=C\)}{Límites de la forma \textbackslash{}lim f(x)\^{}\{g(x)\}=C}}\label{luxedmites-de-la-forma-lim-fxgxc}}
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
-
-We describe our methods in this chapter\index{chapter}.
-
 \hypertarget{applications}{%
 \chapter{Applications}\label{applications}}
 
@@ -640,6 +641,11 @@ Some \emph{significant} applications are demonstrated in this chapter.
 
 \hypertarget{example-two}{%
 \section{Example two}\label{example-two}}
+
+\hypertarget{methods}{%
+\chapter{Methods}\label{methods}}
+
+We describe our methods in this chapter\index{chapter}.
 
 \hypertarget{final-words}{%
 \chapter{Final Words}\label{final-words}}
