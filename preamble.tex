@@ -12,9 +12,24 @@
 \renewcommand{\rmdefault}{ptm}
 \usepackage[lite,subscriptcorrection,nofontinfo,zswash]{mtpro2}
 
-\usepackage{makeidx}
-\makeindex
+\usepackage{graphicx}
 
+% Determine if the image is too wide for the page.
+\makeatletter
+\def\ScaleIfNeeded{%
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+% Resize figures that are too wide for the page.
+\let\oldincludegraphics\includegraphics
+\renewcommand\includegraphics[2][]{%
+  \oldincludegraphics[scale=0.85]{#2}
+}
 
 \usepackage{amsthm}
 \makeatletter
