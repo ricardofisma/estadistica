@@ -89,20 +89,20 @@
 \date{2020-03-20}
 
 \usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{proposition}{Proposición}[chapter]
+\newtheorem{conjecture}{Conjectura}[chapter]
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
+\newtheorem{definition}{Definición}[chapter]
 \theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
+\newtheorem{example}{Ejemplo}[chapter]
 \theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
+\newtheorem{exercise}{Ejercicio}[chapter]
 \theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
+\newtheorem*{remark}{Observación}
+\newtheorem*{solution}{Solución}
 \let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
 \maketitle
@@ -560,7 +560,7 @@ similarmente la ecuación de la recta tangente a \((x-h)^2=4p(y-k)\) en el punto
 \EndKnitrBlock{theorem}
 
 \BeginKnitrBlock{proof}
-\iffalse{} {Proof. } \fi{}En efecto sea \ldots{}
+\iffalse{} {Demostracion. } \fi{}En efecto sea \ldots{}
 \EndKnitrBlock{proof}
 
 \BeginKnitrBlock{exercise}
@@ -572,7 +572,7 @@ similarmente la ecuación de la recta tangente a \((x-h)^2=4p(y-k)\) en el punto
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
-\iffalse{} {Solution. } \fi{}\(P_0=C_0\pm r\vec{u}_{\mathcal{L}}\) donde \(r=5\), \(C_0=(3,8)\) y \(\vec{u}_{\mathcal{L}}=\frac{(3,4)}{5}\) es decir \(P_0=(3,8)\pm 5\frac{(3,4)}{5}\) de esto consideramos \(P_0=(x_0,y_0)=(6,12)\) por condición del problema con esto la recta tangente a \(\mathcal{C}\) y \(\mathcal{P}\) es \(\mathcal{L}_T:(x,y)(3,4)=(3,4)(6,12)\) equivalentemente \(\mathcal{L}_T:3x+4y=66\).
+\iffalse{} {Solución. } \fi{}\(P_0=C_0\pm r\vec{u}_{\mathcal{L}}\) donde \(r=5\), \(C_0=(3,8)\) y \(\vec{u}_{\mathcal{L}}=\frac{(3,4)}{5}\) es decir \(P_0=(3,8)\pm 5\frac{(3,4)}{5}\) de esto consideramos \(P_0=(x_0,y_0)=(6,12)\) por condición del problema con esto la recta tangente a \(\mathcal{C}\) y \(\mathcal{P}\) es \(\mathcal{L}_T:(x,y)(3,4)=(3,4)(6,12)\) equivalentemente \(\mathcal{L}_T:3x+4y=66\).
 
 Ya que \(\left|\vec{C_0P_0}\right|=5=\left|\vec{P_0R}\right|\) y \(d[P_0;\text{eje focal}]=d[P_0; Q]=4\) entonces el triángulo \(P_0QR\) es un triángulo rectángulo notable, por lo tanto \(\left|\vec{QR}\right|=3\) por el Teorema de Pitágoras, además \(\vec{P_0R}=\vec{P_0Q}+\vec{QR}\) es decir si \(\vec{P_0Q}=(v_1,v_2)\) se tiene la ecuacion \((3,4)=4(v_1,v_2)\pm 3(-v_2,v_1)\) que al resolverla se tiene \(\vec{P_0R}=(v_1,v_2)=(1,0)\) o \(\vec{P_0R}=(v_1,v_2)=\left(\frac{24}{25},\frac{7}{25}\right)\) entonces \(Q=P_0+4(0,1)=(6,16)\) o \(Q=P_0+4\left(\frac{24}{25},\frac{7}{25}\right)=\left(6+\frac{96}{25},12+\frac{28}{25}\right)\) esto indica considerar \(Q=(6,16)\) pues el vertice (tiene absisa menor que 6), debe estar a la derecha de \(P_0\) pues la recta \(\mathcal{L}_T\) tiene pendiente negativa. Por lo tanto \(\mathcal{L}_T\cap \mathcal{F}:x=16=(\frac{2}{3},16)\) y por propiedad de la tangente a una parábola se tiene el vértice \(V=\left(\frac{\mathcal{L}_T\cap \mathcal{F}+Q}{2}\right)=\left(\frac{10}{3}, 16\right)\). La ecuación de la parabola en le sistema original es \((y-h)^2=4\rho(x-k)\) donde \((h,k)=\left(\frac{10}{3}, 16\right)\) y \((6,12)\in\mathcal{P}\) se tiene \((-4)^2=4\rho(8/3)\) de donde \(\rho=\frac{3}{2}\) entonces la recta directriz pasa por \(\left(\frac{10}{3}, 16\right)+\frac{3}{2}(1,0)=\left(\frac{7}{3}, 16\right)\) por tanto \(\mathcal{L}_D:x=\frac{7}{3}\) y la ecuacion de la parábola es \[(y-16)^2=4\rho\left(x-\frac{10}{3}\right)\] por ser paralela al eje \(x.\)
 \EndKnitrBlock{solution}
@@ -582,7 +582,7 @@ Ya que \(\left|\vec{C_0P_0}\right|=5=\left|\vec{P_0R}\right|\) y \(d[P_0;\text{e
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
-\iffalse{} {Solution. } \fi{}Ya que \(A\) y \(B\) son simétricas entonces \(P_0=\frac{A+B}{2}=(28,37) \in \mathcal{L}_F\) donde \(\mathcal{L}_F\) es el eje focal paralelo al vector \(\vec{AB}^\perp=(B-A)^\perp=(-64,48)\parallel(-4,3)=\vec{v}_L\) es decir \(\vec{v}_F\) y \(P_0\) nos genera la ecuación del eje focal \(\mathcal{L}_F:4x+3y=1\). De otro lado dado el punto \(Q=(20,x)\in\mathcal{L}_F\) que al reemplazarlo en la recta del eje focal nos genera \(x=-27\) de donde \(Q=(20,-27)\) ademas el vértice de la parabola es \(V=\frac{Q+P_0}{2}=(4,5)\) por propiedad.
+\iffalse{} {Solución. } \fi{}Ya que \(A\) y \(B\) son simétricas entonces \(P_0=\frac{A+B}{2}=(28,37) \in \mathcal{L}_F\) donde \(\mathcal{L}_F\) es el eje focal paralelo al vector \(\vec{AB}^\perp=(B-A)^\perp=(-64,48)\parallel(-4,3)=\vec{v}_L\) es decir \(\vec{v}_F\) y \(P_0\) nos genera la ecuación del eje focal \(\mathcal{L}_F:4x+3y=1\). De otro lado dado el punto \(Q=(20,x)\in\mathcal{L}_F\) que al reemplazarlo en la recta del eje focal nos genera \(x=-27\) de donde \(Q=(20,-27)\) ademas el vértice de la parabola es \(V=\frac{Q+P_0}{2}=(4,5)\) por propiedad.
 
 Con el objetivo de hallar el valor de \(\rho\) en la ecuación \(y'^2=4\rho x'\) se halla las coordenadas de \(B\) en el nuevo sistema de coordenadas centrada en \(V\) con vector director \(\vec{u}=\frac{(3,4)}{5}\), haciendo uso de la relación \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp\] se obtiene \(x'=\left[B-V\right]\vec{u}=40\) y \(y'=\left[B-V\right]\vec{u}^\perp=40\) por tanto reemplazando \(B=(-4,61)=(40,40)'\) en \(y'^2=4\rho x'\) se tiene que \(\rho=10\)
 
@@ -642,7 +642,7 @@ Dado \(P\in \mathcal{E}\), la excentricidad \(e\) se define como
 \EndKnitrBlock{theorem}
 
 \BeginKnitrBlock{proof}
-\iffalse{} {Proof. } \fi{}
+\iffalse{} {Demostracion. } \fi{}
 1. Ya que \(d\left[B_1;F_1\right]+d\left[B_1;F_2\right]=2a=d\left[B_2;F_1\right]+d\left[B_2;F_2\right]\) es decir \(2d\left[B_1;F_i\right]=2a=2d\left[B_2;F_i\right]\) entonces \(d\left[B_1;F_i\right]=a=d\left[B_2;F_i\right]\) \(i=1,2\).
 
 \begin{enumerate}
@@ -703,7 +703,7 @@ Cuando el eje es paralelo al eje \(y\); \(\vec{u}=j=(0,1)\) entonces \((x,y)=V+x
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
-\iffalse{} {Solution. } \fi{}Applying Theorem, we have
+\iffalse{} {Solución. } \fi{}Applying Theorem, we have
 \[\varphi _{\bar{X}}(t)=\prod_{i=1}^n \varphi _{X_i}\left(\frac{t}{n}\right)=\left[\varphi _{X}\left(\frac{t}{n}\right)\right]^n.\]
 \EndKnitrBlock{solution}
 

@@ -114,7 +114,7 @@
 <div class="figure" style="text-align: center"><span id="fig:pressure1"></span>
 <img src="elipse.svg" alt="Elipse vectorial"  />
 <p class="caption">
-Figure 5.1: Elipse vectorial
+Figura 5.1: Elipse vectorial
 </p>
 </div>
 <p>Dado <span class="math inline">\(P\in \mathcal{E}\)</span>, la excentricidad <span class="math inline">\(e\)</span> se define como</p>
@@ -125,7 +125,7 @@ Figure 5.1: Elipse vectorial
 <p><span class="math inline">\(d\left[B_i;F_1\right]=d\left[B_i;F_2\right]= a\)</span> y <span class="math inline">\(d\left[V_i;C\right]=d\left[V_i;C\right]=a\)</span>, <span class="math inline">\(i=1,2\)</span>.</p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-8" class="theorem"><strong>Theorem 5.1  </strong></span>En la elipse se verifican las siguientes igualdades</p>
+<p><span id="thm:unnamed-chunk-8" class="theorem"><strong>Teorema 5.1  </strong></span>En la elipse se verifican las siguientes igualdades</p>
 <ol style="list-style-type: decimal">
 <li><p><span class="math inline">\(d\left[B_1;F_i\right]=d\left[B_2;F_i\right]=a\)</span></p></li>
 <li><p><span class="math inline">\(d\left[V_1;C\right]=d\left[V_2;C\right]=a\)</span></p></li>
@@ -136,7 +136,7 @@ Figure 5.1: Elipse vectorial
 
 
 <div class="proof">
-<p> <span class="proof"><em>Proof. </em></span> 
+<p> <span class="proof"><em>Demostracion. </em></span> 
 1. Ya que <span class="math inline">\(d\left[B_1;F_1\right]+d\left[B_1;F_2\right]=2a=d\left[B_2;F_1\right]+d\left[B_2;F_2\right]\)</span> es decir <span class="math inline">\(2d\left[B_1;F_i\right]=2a=2d\left[B_2;F_i\right]\)</span> entonces <span class="math inline">\(d\left[B_1;F_i\right]=a=d\left[B_2;F_i\right]\)</span> <span class="math inline">\(i=1,2\)</span>.</p>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Por la definición <a href="elipse.html#eq:binom">(5.1)</a> de la elipse se tiene
@@ -174,18 +174,18 @@ Por lo tanto
 <p>Cuando el eje es paralelo al eje <span class="math inline">\(y\)</span>; <span class="math inline">\(\vec{u}=j=(0,1)\)</span> entonces <span class="math inline">\((x,y)=V+x&#39;\vec{u}+y&#39;\vec{u}^\perp=(h-y&#39;,k+x&#39;)\implies x&#39;=y-k\)</span> y <span class="math inline">\(y&#39;=h-x\)</span> en <span class="math inline">\(\frac{x&#39;^2}{a^2}+\frac{y&#39;^2}{b^2}=1\)</span> resulta <span class="math inline">\(\frac{(y-k)^2}{a^2}+\frac{(y-k)^2}{b^2}=1\)</span> (<span class="math inline">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\)</span> si <span class="math inline">\(V\)</span> está en el origen); entonces <span class="math inline">\(F_1=C+c\vec{u}=(h+c,k)\)</span>; <span class="math inline">\(\mathcal{L}_1: x=k+\frac{a}{e}\)</span> y <span class="math inline">\(\mathcal{L}_2: x=k-\frac{a}{e}\)</span>.</p>
 
 <div class="corollary">
-<span id="cor:unnamed-chunk-10" class="corollary"><strong>Corollary 5.1  </strong></span>The characteristic function of the sum of two independent random variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> is the product of characteristic functions of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>, i.e.,
+<span id="cor:unnamed-chunk-10" class="corollary"><strong>Corolario 5.1  </strong></span>The characteristic function of the sum of two independent random variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> is the product of characteristic functions of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>, i.e.,
 <span class="math display">\[\varphi _{X_1+X_2}(t)=\varphi _{X_1}(t) \varphi _{X_2}(t)\]</span>
 </div>
 
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-11" class="exercise"><strong>Exercise 5.1  (Characteristic Function of the Sample Mean)  </strong></span>Let <span class="math inline">\(\bar{X}=\sum_{i=1}^n \frac{1}{n} X_i\)</span> be the sample mean of <span class="math inline">\(n\)</span> independent and identically distributed random variables, each with characteristic function <span class="math inline">\(\varphi_{X}.\)</span> Compute the characteristic function of <span class="math inline">\(\bar{X}\)</span>.
+<span id="exr:unnamed-chunk-11" class="exercise"><strong>Ejercicio 5.1  (Characteristic Function of the Sample Mean)  </strong></span>Let <span class="math inline">\(\bar{X}=\sum_{i=1}^n \frac{1}{n} X_i\)</span> be the sample mean of <span class="math inline">\(n\)</span> independent and identically distributed random variables, each with characteristic function <span class="math inline">\(\varphi_{X}.\)</span> Compute the characteristic function of <span class="math inline">\(\bar{X}\)</span>.
 </div>
 
 
 <div class="solution">
- <span class="solution"><em>Solution. </em></span> Applying Theorem, we have
+ <span class="solution"><em>Solución. </em></span> Applying Theorem, we have
 <span class="math display">\[\varphi _{\bar{X}}(t)=\prod_{i=1}^n \varphi _{X_i}\left(\frac{t}{n}\right)=\left[\varphi _{X}\left(\frac{t}{n}\right)\right]^n.\]</span>
 </div>
 
