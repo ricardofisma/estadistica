@@ -1,4 +1,3 @@
-%% This is file `Krantz.cls'
 %%% Created by Shashi Kumar / ITC [August 2008]
 
 
@@ -114,7 +113,7 @@
 \ExecuteOptions{letterpaper,10pt,twoside,onecolumn,final,openright}
 \ProcessOptions
 
-%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 
 \def\helv@scale{.82}
 %
@@ -167,7 +166,7 @@
 \newcommand\SubsubsectionHeadFont{\fontsize{10}{12}\bfseries\selectfont}
 \newcommand\ParagraphHeadFont{\fontsize{10}{12}\itshape\selectfont}
 \newcommand\SubParagraphHeadFont{\fontsize{10}{12}\itshape\selectfont}
-\newcommand\FMHeadFont{\reset@font\fontsize{18}{20}\bfseries\selectfont}
+\newcommand\FMHeadFont{\reset@font\fontsize{18}{20}\slshape\bfseries\selectfont}
 \newcommand\RunningHeadFont{\fontsize{10}{12}\itshape\selectfont}
 \newcommand\NameFont{\fontsize{10}{12}\itshape\selectfont}
 \newcommand\AffiliationFont{\fontsize{8}{10}\selectfont}
@@ -221,7 +220,7 @@
 %
 % SIDE MARGINS:
 %
-\oddsidemargin  6pc %6pc
+\oddsidemargin  6pc %5pc
 \evensidemargin 5.7pc %5pc
 \marginparwidth 4pc
 \marginparsep   1pc
@@ -714,7 +713,7 @@
                    \@topnewpage[\@makeschapterhead{#1}]%
                  \else
                    \@makeschapterhead{#1}%
-%                   \addcontentsline{toc}{fm}{#1}
+                   \addcontentsline{toc}{fm}{#1}
                    \markboth{#1}{#1}
                    \@afterheading
                  \fi}
@@ -1944,4 +1943,3 @@
 \endinput
 %%
 %% End of file `krantz.cls'.
-

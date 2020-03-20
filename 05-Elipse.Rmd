@@ -1,5 +1,5 @@
 # Elipse
-Dados dos puntos distintos $F_1$ y $F_2$ llamados focos; la elipse $\mathcal{E}$ es el conjunto formado por  los puntos $P$ que satisfacen la ecuacion 
+Dados dos puntos distintos $F_1$ y $F_2$ llamados focos; la elipse\index{elipse} $\mathcal{E}$ es el conjunto formado por  los puntos $P$ que satisfacen la ecuacion 
 \begin{equation} 
 \left|P-F_1\right|+\left|P-F_2\right|=2a
 (\#eq:binom)

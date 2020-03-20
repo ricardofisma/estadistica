@@ -1,5 +1,6 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[10pt,]{krantz}
 \usepackage{lmodern}
@@ -13,6 +14,7 @@
 \else % if luatex or xelatex
   \usepackage{unicode-math}
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmonofont[Mapping=tex-ansi,Scale=0.7]{Source Code Pro}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -27,11 +29,16 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 }
+\usepackage{xcolor}
 \usepackage{hyperref}
 \hypersetup{
             pdftitle={Geometria-vectorial},
             pdfauthor={Ricardo Michel MALLQUI BAÑOS},
-            pdfborder={0 0 0},
+            colorlinks=true,
+            linkcolor=Maroon,
+            filecolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage{longtable,booktabs}
@@ -53,7 +60,6 @@
 \usepackage{amsmath}
 \usepackage{makeidx}
 \makeindex
-\usepackage{imakeidx}
 %\usepackage{showframe}
 %\usepackage[a4paper]{geometry}
 %\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
@@ -119,9 +125,12 @@
 %\setlength{\abovedisplayshortskip}{-5pt}
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\listoftables
+\listoffigures
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\CC}{\mathbb{C}}
@@ -144,287 +153,11 @@
 
 \hypertarget{resumen}{%
 \chapter*{Resumen}\label{resumen}}
-\addcontentsline{toc}{chapter}{Resumen}
 
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
-
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
-
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
 
 \hypertarget{introducciuxf3n}{%
 \chapter*{Introducción}\label{introducciuxf3n}}
-\addcontentsline{toc}{chapter}{Introducción}
 
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
-
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
-
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
-
-\hypertarget{preliminares}{%
-\chapter*{Preliminares}\label{preliminares}}
-\addcontentsline{toc}{chapter}{Preliminares}
-
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
-
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
 
 \mainmatter
 
@@ -599,7 +332,7 @@ Los vectores directores de las rectas tangentes en el sistema \(x'y'\) son \((2,
 \hypertarget{elipse}{%
 \chapter{Elipse}\label{elipse}}
 
-Dados dos puntos distintos \(F_1\) y \(F_2\) llamados focos; la elipse \(\mathcal{E}\) es el conjunto formado por los puntos \(P\) que satisfacen la ecuacion
+Dados dos puntos distintos \(F_1\) y \(F_2\) llamados focos; la elipse\index{elipse} \(\mathcal{E}\) es el conjunto formado por los puntos \(P\) que satisfacen la ecuacion
 \begin{equation} 
 \left|P-F_1\right|+\left|P-F_2\right|=2a
 \label{eq:binom}
@@ -759,6 +492,8 @@ Cuando el eje es paralelo al eje \(y\); \(\vec{u}=j=(0,1)\) entonces \((x,y)=V+x
 
 \hypertarget{final-words}{%
 \chapter{Final Words}\label{final-words}}
+
+\citep{xie2015}
 
 \hypertarget{deftones}{%
 \section{Deftones}\label{deftones}}
