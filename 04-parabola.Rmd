@@ -11,7 +11,7 @@ $\mathcal{L}$ es  la  _recta directriz_ cuya ecuación es $x'=-p$ en el sistema 
 
 
 
-```{r hiperbola1, echo=FALSE, fig.cap="Elipse vectorial", fig.align="center"}
+```{r hiperbola1, echo=FALSE, fig.cap="Prábola", fig.align="center"}
 knitr::include_graphics("parabola.svg")
 ```
 Los puntos $P$ en el sistema $x'y'$ satisfacen 

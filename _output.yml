@@ -20,9 +20,12 @@ bookdown::pdf_book:
   citation_package: natbib
   template: null
   pandoc_args: --top-level-division=chapter
+  toc_depth: 3
   toc_unnumbered: no
   toc_appendix: yes
   quote_footer: ["\\VA{", "}{}"]
-  highlight_bw: yes
+bookdown::epub_book:
+  dev: svglite
+  stylesheet: style.css
 
 

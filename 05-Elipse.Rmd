@@ -6,7 +6,7 @@ Dados dos puntos distintos $F_1$ y $F_2$ llamados focos; la elipse\index{elipse}
 \end{equation}
 
 $C=(h,k)$ es el centro de la elipse; $x'$ eje focal, $V_1$ y $V_2$ son los vértices de la elipse; $\overline{V_1V_2}$ el eje mayor $\overline{RR'}$ el lado recto; $\overline{B_1B_2}$ el eje menor de longitud $2b$. En el sistema $X'Y'$ se tiene $B_1=(0,b)'$; $B_2=(0,-b)'$; $F_1=(-c,0)'$; $F_2=(c,0)'$  y $C=(0,0)'$. 
-```{r pressure1, echo=FALSE, fig.cap="Elipse vectorial", fig.align="center"}
+```{r pressure1, echo=FALSE, fig.cap="Elipse", fig.align="center"}
 knitr::include_graphics("elipse.svg")
 ```
 

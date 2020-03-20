@@ -9,7 +9,7 @@ $F_1=(-c,0)$; $F_1=(c,0)$ en el sistema coordenado $x'y'$; $\mathcal{C}$ circunf
 \[d\left[V_1;C\right]=d\left[V_2;C\right]=a\]
 
 
-```{r hiperbola, echo=FALSE, fig.cap="Elipse vectorial", fig.align="center"}
+```{r hiperbola, echo=FALSE, fig.cap="Hipérbola", fig.align="center"}
 knitr::include_graphics("hiperbola.svg")
 ```
 $$\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e=\frac{d\left[P;F_2\right]}{d\left[P;\mathcal{L}_2\right]}$$
@@ -37,3 +37,5 @@ De este modo $P\in\mathcal{H}$ si $P$ satisface la ecuación vectorial $$P=(x,y)
 Cuando el eje es paralelo al eje $x$; $\vec{u}=i=(1,0)$ entonces $(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h+x',k+y')\implies x'=x-h$ y $y'=y-k$ en $\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1$; resulta $\frac{(y-k)^2}{a^2}-\frac{(y-k)^2}{b^2}=1$; ($\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$; si $V$ está en el origen); entonces $F_1=C+c\vec{u}=(h-\frac{a}{e},k)$ y $F_2=C+c\vec{u}=(h-\frac{a}{e},k)$; $\mathcal{L}_1: x=h-\frac{a}{e}$ y  $\mathcal{L}_2: x=h+\frac{a}{e}$ y las asíntotas de $y'=\pm\frac{a}{b}x'$ se convierte en  $(y-k)=\pm\frac{a}{b}(x-h)$.
 
 Cuando el eje es paralelo al eje $y$; $\vec{u}=j=(0,1)$ entonces $(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h-y',k+x')\implies x'=y-k$ y $y'=h-x$  en $\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1$; resulta $\frac{(y-k)^2}{a^2}-\frac{(y-k)^2}{b^2}=1$; ($\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$; si $V$ está en el origen); entonces $F_1=C+c\vec{u}=(h+c,k)$; $\mathcal{L}_1: x=k+\frac{a}{e}$ y  $\mathcal{L}_2: x=k-\frac{a}{e}$ y las asíntotas de $y'=\pm\frac{b}{a}x'$ se convierte en  $(y-k)=\pm\frac{b}{a}(x-h)$.
+
+## Ejercicios
