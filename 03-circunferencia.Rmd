@@ -7,11 +7,11 @@ Dada el espacio $R$ y $r\in R$ se tiene que $\mathcal{R}(r)=\lim_{t\to\infty}g(y
 ```
 $\sum$
 
-```{r C1, echo=FALSE, fig.cap="Elipse vectorial", fig.align="center"}
+```{r C1, echo=FALSE, out.width = '80%', fig.cap="Elipse vectorial", fig.align="center"}
 knitr::include_graphics("circunferencia.svg")
 ```
 
-```{r C2, echo=FALSE, fig.cap="Elipse vectorial", fig.align="center"}
+```{r C2, echo=FALSE, out.width = '80%', fig.cap="Elipse vectorial", fig.align="center"}
 knitr::include_graphics("vector.svg")
 ```
 Dos vectores son ortogonales ($\vec{a}\perp\vec{b}$) si $\left|\vec{a}-\vec{b}\right|=\left|\vec{a}+\vec{b}\right|$ y verifican

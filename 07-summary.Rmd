@@ -1,0 +1,13 @@
+# (APPENDIX) Apendice {-}
+
+# Ecuaciones de primer grado
+[@xie2015]
+
+## Raices de una ecuacion de segundo grado
+## Propiedades de una ecuacion de segundo grado
+
+# Ecacuaciones lineales de primer grado
+
+## Soluciones de ecuacuiones lineales de primer grado
+## Soluciones ...
+## Forma matricial de una ecuación lineal
