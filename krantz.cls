@@ -692,15 +692,15 @@
     \vskip -2\p@
     \ChapNumFont
 %Remove comment if "Chapter"  word required before Number
-\if@chapnumonly\else
-    \@chapapp\
-\fi
-    \thechapter%--
+%\if@chapnumonly\else
+%    \@chapapp\
+%\fi
+    \thechapter
     \vskip -15\p@
     \chap@rule
     \vskip 6\p@
     {\baselineskip 20\p@\lineskip 20\p@\ChapTitleFont #1\par\vskip-15pt}%
-    \noindent\hbox{\vrule height.5pt width100pt}
+    \noindent\hbox{\vrule height.5pt width84pt}
     \vskip28\p@}
             \if@ChapterTOCs
       \make@chaptoc
@@ -721,12 +721,12 @@
 
 \def\@makeschapterhead#1{%
   {\parindent \z@ \raggedright \baselineskip 6\p@ \lineskip \z@ \parskip \z@
-    \vbox{ 
+    \vbox{
     \vskip 22\p@
     \unnumchap@rule
     \vskip 5\p@
     \FMHeadFont #1\par\vskip-12pt
-    \noindent\hbox{\vrule height.5pt width100pt}
+    \noindent\hbox{\vrule height.5pt width84pt}
     \vskip 41\p@}}%
   \def\theequation{\thechapter.\arabic{equation}}}
 
@@ -1046,7 +1046,7 @@
     \unnumchap@rule
     \vskip 5\p@
     \FMHeadFont \contentsname\par\vskip-12pt
-    \noindent\hbox{\vrule height.5pt width100pt}
+    \noindent\hbox{\vrule height.5pt width84pt}
     \vskip 41\p@}}
 %%%    \chapter*{\contentsname
 %%%        \@mkboth{%
@@ -1549,9 +1549,9 @@
 \else
   \onecolumn
 \fi
-\newcommand\unnumcrcrule{\hbox to\textwidth{\rlap{\rule[-3.5\p@]{100\p@}{3\p@}}}}
+\newcommand\unnumcrcrule{\hbox to\textwidth{\rlap{\rule[-3.5\p@]{84\p@}{4\p@}}}}
 \newcommand\unnumchap@rule{\unnumcrcrule}
-\newcommand\crcrule{\hbox to\textwidth{\rlap{\rule[-3.5\p@]{100\p@}{3\p@}}\rule{\textwidth}{.5\p@}}}
+\newcommand\crcrule{\hbox to\textwidth{\rlap{\rule[-3.5\p@]{84\p@}{4\p@}}\rule{\textwidth}{.5\p@}}}
 \newcommand\chap@rule{\crcrule}
 \newcommand\sec@rule{\crcrule}
 \def\@affiliate[#1]{\gdef\@affiliation{#1}}
