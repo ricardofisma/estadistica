@@ -1,7 +1,7 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[12pt,]{krantz}
+\documentclass[10pt,]{krantz}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -34,58 +34,9 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.33,0.33,0.33}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.61,0.61,0.61}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.14,0.14,0.14}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.43,0.43,0.43}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Fix footnotes in tables (requires footnote package)
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
-\usepackage{graphicx,grffile}
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -477,499 +428,330 @@ humano.
 
 \mainmatter
 
-\hypertarget{nuxfameros-reales}{%
-\chapter{Números reales}\label{nuxfameros-reales}}
+\hypertarget{intro}{%
+\chapter{Rectas}\label{intro}}
 
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
+\hypertarget{lugar-geomuxe9trico}{%
+\chapter{Lugar geométrico}\label{lugar-geomuxe9trico}}
 
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
-que
-están
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-Tiene un ``carácter histórico y en permanente cambio'' debido a que la
-ciencia no es estática, va surgiendo bajo determinadas circunstancias y
-momentos históricos, y se desarrolla en evolución permanente, apoyándose
-en las necesidades de la sociedad humana y a partir de los cambios que se
-producen en la naturaleza, la sociedad y el pensamiento.
-Por su parte el término ``investigar'' no es más que ``hacer diligencias para
-descubrir algo; profundizar en el estudio de una disciplina'' 6
-.
-La ``investigación''
-expresa el modo de llegar al conocimiento de algo,
-siguiendo un camino de forma sistemática, utilizando métodos propios de la
-ciencia o de la actividad científica. La investigación ``\ldots{} aparece estrechamente
-ligada a la vida social, intelectual, tecnológica y cultural; constituyéndose en un
-factor inseparable de cualquier actividad cognoscitiva u operación mental que se
-realice para abordar un problema, duda o curiosidad''.7
-La investigación se concibe como un procedimiento reflexivo, dirigido,
-controlado, sistemático y crítico que permite llegar a descubrir nuevos
-hechos, datos, relaciones o leyes, en cualquier campo del conocimiento
-humano.
+Here is a review of existing methods.
 
-Consideramos que es un ``sistema'' en tanto integra el conjunto de
-conocimientos
-objetivos
-de
-una
-misma
-naturaleza
+\hypertarget{circunferencia}{%
+\chapter{Circunferencia}\label{circunferencia}}
 
-\hypertarget{los-axiomas-de-cuerpo}{%
-\section{Los axiomas de cuerpo}\label{los-axiomas-de-cuerpo}}
+Sea \(\vec{a}=(a_1,a_2)\) entonces el vector escalado es \(r\vec{a}\parallel\vec{a}\); el vector perpendicular a este es \(\vec{a}^\perp=(-a_2,a_1)\) la norma del vector \(\vec{a}\) es \(\left\|a\right\|=\sqrt{a_1^2+a_2^2}\) el vector unitario en la dirección de \(\vec{a}\) es \(\vec{\mu}=\frac{\vec{a}}{\left\|a\right\|}\) que es paralela a este. Dado dos puntos \(P_1\) y \(P_2\) estos definen un vector \(\vec{P_1P_2}=P_2-P_1\). Los vectores en dirección de los ejes positivos son \(i=(1,0)\) y \(j=(0,1)\); cualquier vector se pueden expresar en términos de estos es decir \(\vec{a}=(a_1,a_2)=a_1(1,0)+a_2(0,1)=a_1i+a_2j\). De acuerdo al ángulo de inclinación del vector se tiene la siguiente representación \(\vec{a}=\left\|\vec{a}\right\|(\cos\theta,\sin\theta)\).
 
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-
-\hypertarget{los-axiomas-de-orden}{%
-\section{Los axiomas de orden}\label{los-axiomas-de-orden}}
-
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-
-\hypertarget{valores-absolutos-y-desigualdad-triangular}{%
-\section{Valores absolutos y desigualdad triangular}\label{valores-absolutos-y-desigualdad-triangular}}
-
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-
-\hypertarget{algebra-de-los-valores-absolutos.}{%
-\section{Algebra de los valores absolutos.}\label{algebra-de-los-valores-absolutos.}}
-
-interrelacionados y que interactúan mutuamente.
-Es un ``producto de la actividad del hombre'' dado que el conocimiento
-se adquiere, en primera instancia a partir de la práctica, en un proceso que
-va de la contemplación viva al pensamiento abstracto y de este a la práctica
-como forma de verificación.
-
-\hypertarget{proximidad}{%
-\section{Proximidad}\label{proximidad}}
-
-Generar pdf y svg en inskape(ajustar Shift+Ctrl+R) o relativos luego se debe guardar en el mismo directorio general luego se usa el entorno \texttt{ff\ fff}
-\[\prod_1^2=\sum_{\alpha}^e\]
-
-\hypertarget{vector}{%
-\subsection{Vector}\label{vector}}
-
-\[\vec{w}\]
-
-\hypertarget{recta}{%
-\subsection{Recta}\label{recta}}
-
-See Theorem \ref{thm:boring}
-
-\begin{figure}
-
-{\centering \includegraphics{inverse} 
-
-}
-
-\caption{ww}\label{fig:pressure2}
-\end{figure}
-
-Here is my theorem.
-Here is my theorem.
-
-\BeginKnitrBlock{theorem}
-\protect\hypertarget{thm:boring}{}{\label{thm:boring} }Here is my theorem. Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-Here is my theorem.
+\BeginKnitrBlock{theorem}[russ]
+\protect\hypertarget{thm:www}{}{\label{thm:www} \iffalse (russ) \fi{} }Dada el espacio \(R\) y \(r\in R\) se tiene que \(\mathcal{R}(r)=\lim_{t\to\infty}g(y)_r\)
 \EndKnitrBlock{theorem}
 
-sea Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-Here is my theorem. \(\sum_1^2\)
-
-\BeginKnitrBlock{definition}[ww]
-\protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} \iffalse (ww) \fi{} }Sea la siguiente formula Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-\EndKnitrBlock{definition}
-
-See Figure \ref{fig:cars-plot} \ref{fig:pressure2}
+\(\sum\)
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.2\linewidth]{U} 
+{\centering \includegraphics{circunferencia} 
 
 }
 
-\caption{ww}\label{fig:pressure1}
+\caption{Elipse vectorial}\label{fig:C1}
 \end{figure}
-
-Here is my theorem.
-Here is my theorem.
-Here is my theorem.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{plot}\NormalTok{(cars)  }\CommentTok{# a scatterplot}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{figure}
-\centering
-\includegraphics{z_1_files/figure-latex/cars-plot-1.pdf}
-\caption{\label{fig:cars-plot}A plot caption}
+
+{\centering \includegraphics{vector} 
+
+}
+
+\caption{Elipse vectorial}\label{fig:C2}
 \end{figure}
 
-\BeginKnitrBlock{lemma}[Pythagorean theorem]
-\protect\hypertarget{lem:pyth}{}{\label{lem:pyth} \iffalse (Pythagorean theorem) \fi{} }For a right triangle, if \(c\) denotes the length of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the other two sides, we have
-\[a^2 + b^2 = c^2\]
-\EndKnitrBlock{lemma}
+Dos vectores son ortogonales (\(\vec{a}\perp\vec{b}\)) si \(\left|\vec{a}-\vec{b}\right|=\left|\vec{a}+\vec{b}\right|\) y verifican
 
-See Table \ref{tab:mtcars}
+\(\left|\vec{b}\right|^2+\left|\vec{b}\right|^2+=\left|\vec{a}+\vec{b}\right|^2\)
+\(\vec{a}\vec{b}=0\)
+\(\vec{a}\parallel\vec{b}^\perp\)
+\(\vec{a}\) y \(\vec{b}\) son LI si y solo si \(r\vec{a}+s\vec{b}=0\) implica \(r=0\) y \(s=0\).
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(mtcars[}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{], }\DataTypeTok{caption =} \StringTok{"A caption"}\NormalTok{, }\DataTypeTok{booktabs=}\OtherTok{TRUE}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+La proyeccion de \(\vec{a}\) sobre \(\vec{b}\) es otro vector \(\text{Proy}_{\vec{b}}\vec{a}\)
 
-\begin{table}
+\(\vec{a}=\text{Proy}_{\vec{b}}\vec{a}+\text{Proy}_{\vec{b}^\perp}\vec{a}\) si hacemos \(\vec{a}=p\vec{b}+q\vec{b}^\perp\) entonces \(q=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|^2}\) y \(p=\frac{\vec{a}\vec{b}^\perp}{\left\|\vec{b}\right\|^2}\) pues \(\left\|\vec{b}\right\|=\left\|\vec{b}^\perp\right\|\) entonces \(\text{Proy}_{\vec{b}}\vec{a}=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|^2}\vec{b}=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|}\frac{\vec{b}}{\left\|\vec{b}\right\|}=\text{Cp}_{\vec{b}}\vec{a}\frac{\vec{b}}{\left\|\vec{b}\right\|}\); \(\text{Cp}_{\vec{b}}\vec{a}=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|}\) recibe el nombre de componente de \(\vec{a}\) en la dirección de \(\vec{b}\)
 
-\caption{\label{tab:mtcars}A caption}
-\centering
-\begin{tabular}[t]{lrrrrr}
-\toprule
-  & mpg & cyl & disp & hp & drat\\
-\midrule
-Mazda RX4 & 21.0 & 6 & 160 & 110 & 3.90\\
-Mazda RX4 Wag & 21.0 & 6 & 160 & 110 & 3.90\\
-Datsun 710 & 22.8 & 4 & 108 & 93 & 3.85\\
-Hornet 4 Drive & 21.4 & 6 & 258 & 110 & 3.08\\
-Hornet Sportabout & 18.7 & 8 & 360 & 175 & 3.15\\
-\bottomrule
-\end{tabular}
-\end{table}
+Dado \(P_0\) y un vector \(\vec{a}\) entonces la recta se define como el conjunto de puntos \(\mathcal{L}=\left\{P\in\mathbb{R}^2/P=P_0+t\vec{a};\: t\in \mathbb{R}\right\}\) que recibe el nombre de ecuación vectorial de la recta. \(P\in\mathcal{L}\iff (P-P_0)\cdot\vec{a}^\perp=0\). De la ecuación vectorial de la recta se tiene si \(P=(x.y)\); \(P_0=(x_0,y_0)\) y \(\vec{a}=(a_1,a_2)\) se tiene la ecuación paramétrica de la recta. \(x=x_0+ta_1\); \(y=y_0+ta_2\) de esto se obtiene la ecuación simétrica de la recta \[\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}.\] Sea \(\vec{n}=(a,b)=\vec{a}^\perp\) entonces se tiene que si \(P\in \mathcal{L}\) entonces \((P-P_0)\cdot \vec{n}=0\) pues son perpendicualres; entonces \(P\cdot \vec{n}=P_0\cdot \vec{n}\iff ax+by=-c\implies ax+by+c=0\) que recibe el nombre de ecuación general de la recta. Sea \(Q=(x_1,y_1)\) un punto exterior a \(\mathcal{L}\) entonces la distancia de \(Q\) a \(\mathcal{L}\) se define como
+
+\begin{align*}d[Q;\mathcal{L}] & =\left|\text{Cp}_{\vec{n}}(Q-P_0)\right| \\
+& =\left|\frac{(Q-P_0)\cdot\vec{n}}{\left|\vec{n}\right|}\right| \\
+& =\left|\frac{Q\cdot\vec{n}-P_0\cdot\vec{n}}{\left|\vec{n}\right|}\right| \\
+& =\frac{\left|ax_1+by_1+c\right|}{\sqrt{a^2+b^2}}
+\end{align*}
+
+Sean \(\mathcal{L}_1\) y \(\mathcal{L}_2\) dos rectas; con vectores directores \(\vec{a}=(a_1,a_2)\) y \(\vec{b}=(b_1,b_2)\) respectivamente; entonces \(\mathcal{L}_1\cap\mathcal{L}_2=(d_1,d_2)\) donde \(d_1\) y \(d_2\) satisfacen el sistema generado por las ecuaciones generales de \(\mathcal{L}_1\) y \(\mathcal{L}_2\); \(a_1x+a_1y+k_1=0\) y \(b_1x+b_1y+k_2=0\).
+
+La pendiente de una recta se deduce de su vector director es decir si \(\vec{a}=(a_1,a_2)\) entonces \(m=\frac{a_2}{a_1}\); de esto se deduce \(\vec{a}=(a_1,a_2)=a_1(1,\frac{a_2}{a_1})=a_1(1,m)\). El angulo generado por las \(\mathcal{L}_1\) con pendiente \(m_1\) y \(\mathcal{L}_2\) con pendiente \(m_1\); está dada por \(\theta=\arctan\left(\frac{m_1-m_2}{1+m_1m_2}\right)\).
+
+El círculo se define como el conjunto de punto \(P=(x,y)\) que satisfacen la ecuación \[\left \|P-C\right\|=r\] \(r>0\) es el radio, \(C=(h,k)\) es el centro entonces la ecuación del círculo es \[\left \|P-C\right\|=r\iff (x-h)^2+(y-k)^2=r^2.\]
+
+La ecuación de la recta tangente en \(P_0=(x_0,y_0)\) (\(P=P_0\) en el gráfico) está dada por \[(Q-P_0)\cdot(P_0-C)=0\] donde \(Q=(x,y)\neq P\) cualquiera; entonces \[(Q-P_0)\cdot(P_0-C)=0\iff  (x-x_0,y-y_0)(x_0-h,y_0-k)=0\] lo cual es equivalente a \[(x-h)(x_0-h)+(x-k)(y_0-k)=r^2\]
+
+\hypertarget{paruxe1bola}{%
+\chapter{Parábola}\label{paruxe1bola}}
+
+Sean la recta \(\mathcal{L}\) y el punto \(F\) fijos; los puntos \(P\) que satisfacen la ecuación
 
 \begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
+d\left[P;F\right]=d\left[P;\mathcal{L}\right]=\left|p\right|\label{eq:www}
 \end{equation}
 
-Este es un \emph{ejemplo} book written in **Markdown\emph{.} La ecuacion \eqref{eq:binom}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
+generan una curva llamada \emph{parábola}, la excentricidad es el cociente de estas dos distancias que es igual a \(1\) pues ambas son iguales a \(\left|p\right|\).
 
-The \textbf{bookdown} package can be installed from CRAN or Github:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{# or the development version}
-\CommentTok{# devtools::install_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
-
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
-
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+\(\mathcal{L}\) es la \emph{recta directriz} cuya ecuación es \(x'=-p\) en el sistema \(x'y'\); \(F\) es el \emph{foco}, \(V=(h,k)\) el \emph{vertice}; \(p\) es el parámetro de la parábola; y \(RR'\) el \emph{lado recto} de la parábola.
 
 \begin{figure}
 
-{\centering \includegraphics{abstrac} 
+{\centering \includegraphics{parabola} 
 
 }
 
-\caption{ww}\label{fig:pressure3}
+\caption{Elipse vectorial}\label{fig:hiperbola1}
 \end{figure}
 
-\hypertarget{nuxfameros-naturales}{%
-\chapter{Números naturales}\label{nuxfameros-naturales}}
+Los puntos \(P\) en el sistema \(x'y'\) satisfacen
+\(P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp\) de donde al despejar \(x'\) e \(y'\) resultan \(x'=[(x,y)-V]\vec{u}\) e \(y'=[(x,y)-V]\vec{u}^\perp\)
+la recta directriz en el sitema \(x'y'\) es
+\(\mathcal{L}=\left\{Q/Q=(V-p\vec{u})+t\vec{u}^\perp,\:t\in \mathbb{R}\right\}\); donde el vértice es \(F=V+p\vec{u}\) luego se tiene las ecuaciónes
 
-\hypertarget{teoremas}{%
-\section{Teoremas}\label{teoremas}}
+\begin{equation}
+d[P;\mathcal{L}]=\left|\text{Cp}_{\vec{u}}\vec{PQ}\right|=\left|(Q-P)\cdot\vec{u}\right|=\left|x'+p\right|\label{eq:1w}
+\end{equation}
 
-\BeginKnitrBlock{definition}[conjunto inductivo]
-\protect\hypertarget{def:unnamed-chunk-4}{}{\label{def:unnamed-chunk-4} \iffalse (conjunto inductivo) \fi{} }Un conjunto \(M\) es inductivo si verifica las siguentes condiciones
+\begin{equation}
+d[P;F]=\left|P-F\right|=\left|(x'-p)\vec{u}+y'\vec{u}^{\perp}\right|\label{eq:2w}
+\end{equation}
+
+por lo tanto reemplazando \eqref{eq:1w} y \eqref{eq:2w} en \eqref{eq:www}
+\begin{align*}
+d\left[P;F\right]^2=d\left[P;\mathcal{L}\right]^2
+& \implies \left|(x'+p)\vec{u}+y'\vec{u}^\perp\right|^2=\left|x'+p\right|^2 \\
+&\implies (x'-p)^2+y'^2=(x'+p)^2\\
+&\implies y'^2=4px'
+\end{align*}
+
+De este modo \(P\in\mathcal{P}\) si \(P\) satisface la \emph{ecuacion vectorial} de \(\mathcal{P}\) \[P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp;\: \text{donde } y'^2=4px'; \:\left|\vec{u}\right|=1\]
+
+Cuando el eje es paralelo al eje \(x\); se tiene \(\vec{u}=i=(1,0)\) entonces \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h+x',k+y')\] implica \(x'=x-h\) y \(y'=y-k\) en \(y'^2=4px'\) resulta \((y-k)^2=4p(x-h)\) (\(y^2=4px\) si \(V\) está en el origen); entonces \(F=V+p\vec{u}=(h+p,k)\); \(\mathcal{L}: x=h-p\). Si \(p<1\) la parábola se invierte simétricamente a la directriz.
+
+Cuando el eje es paralelo al eje \(y\); \(\vec{u}=j=(0,1)\) entonces \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h-y',k+x')\] implica \(x'=y-k\) y \(y'=h-x\) en \(y'^2=4px'\) resulta \((x-h)^2=4p(y-k)\) (\(x^2=4py\) si \(V\) está en el origen); entonces \(F=V+p\vec{u}=(h,k+p)\); \(\mathcal{L}: x=k-p\). Si \(p<1\) la parábola se invierte simétricamente a la directriz.
+
+\BeginKnitrBlock{theorem}[Ecuaciones de la recta tangente de una parábola]
+\protect\hypertarget{thm:unnamed-chunk-1}{}{\label{thm:unnamed-chunk-1} \iffalse (Ecuaciones de la recta tangente de una parábola) \fi{} }La ecuación de la recta tangente a \(y^2=4px\) en el punto \(P_0=(x_0,y_0)\) está dada por
+\begin{equation}
+y=\frac{2p}{y_0}(x+x_0)
+\label{eq:w1}
+\end{equation}
+y la ecuación de la recta tangente a \((y-k)^2=4p(x-h)\) en el punto \(P_0=(x_0,y_0)\) está dada por
+\begin{equation}
+(y_0-k)(x_0-k)=4p\left[\left(\frac{x+x_0}{2}-h\right)\right]
+\label{eq:w2}
+\end{equation}
+similarmente la ecuación de la recta tangente a \((x-h)^2=4p(y-k)\) en el punto \(P_0=(x_0,y_0)\) está dada por
+\begin{equation}
+(x_0-h)(x_0-h)=4p\left[\left(\frac{y+y_0}{2}-h\right)\right].
+\label{eq:w3}
+\end{equation}
+\EndKnitrBlock{theorem}
+
+\BeginKnitrBlock{proof}
+\iffalse{} {Proof. } \fi{}En efecto sea \ldots{}
+\EndKnitrBlock{proof}
+
+\BeginKnitrBlock{exercise}
+\protect\hypertarget{exr:unnamed-chunk-3}{}{\label{exr:unnamed-chunk-3} }Al realizarse una transformacion de coordenadas, el eje de una parabola \(\mathcal{P}\) resulta orientada segun el vector \((3,4)\). En \(x'y'\) un punto \(Q'=(20,-20)'\in\mathcal{P}\) en els sistema \(xy\) el foco de \(\mathcal{P}\) \(E=(11,5)\). Determinar en el sistema \(xy\) un punto \(R\) de la parabola \(\mathcal{P}\) tal que el trinagulo \(QVR\) sea rectangulo en \(V\) vertice de la parábola.
+\EndKnitrBlock{exercise}
+
+\BeginKnitrBlock{exercise}
+\protect\hypertarget{exr:unnamed-chunk-4}{}{\label{exr:unnamed-chunk-4} }La circunferencia \(\mathcal{C}=(x-3)^2+(y-3)^2=25\) es tangente a una parábola \(\mathcal{P}\) en \(P_0=(x_0,y_0)\), \(y_0>7\). La recta \(\mathcal{L}:4x-3y+12=0\) es normal a \(\mathcal{P}\) y \(\mathcal{C}\) en \(P_0\) y corta al eje focal de \(\mathcal{P}\) en el punto \(R\). Si \(\left|\vec{C_0P_0}\right|=\left|\vec{P_0R}\right|\) y si la distancia \(d[P_0; \text{eje focal}]=4\), hallar la ecuación de la parábola \(\mathcal{P}\). \(C_0\) es el centro de la circunferencia y la absisa del vértice es menor que 6.
+\EndKnitrBlock{exercise}
+
+\BeginKnitrBlock{solution}
+\iffalse{} {Solution. } \fi{}\(P_0=C_0\pm r\vec{u}_{\mathcal{L}}\) donde \(r=5\), \(C_0=(3,8)\) y \(\vec{u}_{\mathcal{L}}=\frac{(3,4)}{5}\) es decir \(P_0=(3,8)\pm 5\frac{(3,4)}{5}\) de esto consideramos \(P_0=(x_0,y_0)=(6,12)\) por condición del problema con esto la recta tangente a \(\mathcal{C}\) y \(\mathcal{P}\) es \(\mathcal{L}_T:(x,y)(3,4)=(3,4)(6,12)\) equivalentemente \(\mathcal{L}_T:3x+4y=66\).
+
+Ya que \(\left|\vec{C_0P_0}\right|=5=\left|\vec{P_0R}\right|\) y \(d[P_0;\text{eje focal}]=d[P_0; Q]=4\) entonces el triángulo \(P_0QR\) es un triángulo rectángulo notable, por lo tanto \(\left|\vec{QR}\right|=3\) por el Teorema de Pitágoras, además \(\vec{P_0R}=\vec{P_0Q}+\vec{QR}\) es decir si \(\vec{P_0Q}=(v_1,v_2)\) se tiene la ecuacion \((3,4)=4(v_1,v_2)\pm 3(-v_2,v_1)\) que al resolverla se tiene \(\vec{P_0R}=(v_1,v_2)=(1,0)\) o \(\vec{P_0R}=(v_1,v_2)=\left(\frac{24}{25},\frac{7}{25}\right)\) entonces \(Q=P_0+4(0,1)=(6,16)\) o \(Q=P_0+4\left(\frac{24}{25},\frac{7}{25}\right)=\left(6+\frac{96}{25},12+\frac{28}{25}\right)\) esto indica considerar \(Q=(6,16)\) pues el vertice (tiene absisa menor que 6), debe estar a la derecha de \(P_0\) pues la recta \(\mathcal{L}_T\) tiene pendiente negativa. Por lo tanto \(\mathcal{L}_T\cap \mathcal{F}:x=16=(\frac{2}{3},16)\) y por propiedad de la tangente a una parábola se tiene el vértice \(V=\left(\frac{\mathcal{L}_T\cap \mathcal{F}+Q}{2}\right)=\left(\frac{10}{3}, 16\right)\). La ecuación de la parabola en le sistema original es \((y-h)^2=4\rho(x-k)\) donde \((h,k)=\left(\frac{10}{3}, 16\right)\) y \((6,12)\in\mathcal{P}\) se tiene \((-4)^2=4\rho(8/3)\) de donde \(\rho=\frac{3}{2}\) entonces la recta directriz pasa por \(\left(\frac{10}{3}, 16\right)+\frac{3}{2}(1,0)=\left(\frac{7}{3}, 16\right)\) por tanto \(\mathcal{L}_D:x=\frac{7}{3}\) y la ecuacion de la parábola es \[(y-16)^2=4\rho\left(x-\frac{10}{3}\right)\] por ser paralela al eje \(x.\)
+\EndKnitrBlock{solution}
+
+\BeginKnitrBlock{exercise}
+\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }Los puntos \(A=(60,13)\) y \(B=(-4,61)\) estan sobre una parábola \(\mathcal{P}\) además son simétricos con recpecto al eje focal. Desde un punto \(Q\) sobre el eje focal se traza un recta tangente a \(\mathcal{P}\) que pasa por \(B,\) hallar la ecuación de \(\mathcal{P}\) y las ecuaciones de las rectas tangentes trazadas desde \(Q\).
+\EndKnitrBlock{exercise}
+
+\BeginKnitrBlock{solution}
+\iffalse{} {Solution. } \fi{}Ya que \(A\) y \(B\) son simétricas entonces \(P_0=\frac{A+B}{2}=(28,37) \in \mathcal{L}_F\) donde \(\mathcal{L}_F\) es el eje focal paralelo al vector \(\vec{AB}^\perp=(B-A)^\perp=(-64,48)\parallel(-4,3)=\vec{v}_L\) es decir \(\vec{v}_F\) y \(P_0\) nos genera la ecuación del eje focal \(\mathcal{L}_F:4x+3y=1\). De otro lado dado el punto \(Q=(20,x)\in\mathcal{L}_F\) que al reemplazarlo en la recta del eje focal nos genera \(x=-27\) de donde \(Q=(20,-27)\) ademas el vértice de la parabola es \(V=\frac{Q+P_0}{2}=(4,5)\) por propiedad.
+
+Con el objetivo de hallar el valor de \(\rho\) en la ecuación \(y'^2=4\rho x'\) se halla las coordenadas de \(B\) en el nuevo sistema de coordenadas centrada en \(V\) con vector director \(\vec{u}=\frac{(3,4)}{5}\), haciendo uso de la relación \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp\] se obtiene \(x'=\left[B-V\right]\vec{u}=40\) y \(y'=\left[B-V\right]\vec{u}^\perp=40\) por tanto reemplazando \(B=(-4,61)=(40,40)'\) en \(y'^2=4\rho x'\) se tiene que \(\rho=10\)
+
+Los vectores directores de las rectas tangentes en el sistema \(x'y'\) son \((2,1)\) y \((2,-1)\) respectivamente por tanto sus ecuaciones son \(\mathcal{L}_A: 2y'=x'+40\) y \(\mathcal{L}_B=-2y'=x'+40\) estas ecuaciones en el sistema original con \(x'=\left[(x,y)-(4,5)\right]\frac{(3,4)}{5}\) y \(y'=\left[(x,y)-(4,5)\right]\frac{(-4,3)}{5}\) reemplazadas resultan \(\mathcal{L}_A:2y-11x-166=0\) y \(\mathcal{L}_B:5x-10y-170=0\)
+\EndKnitrBlock{solution}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \(0\in M\)
-\item
-  si \(x\in M\) entonces \(x+1\in M\)
+  ww
 \end{enumerate}
-\EndKnitrBlock{definition}
 
-entonces se debe respetar las demas opciones por lo t
-por lo tanto \[\int_1^2\] es decir debido a la predisposicion deevacuar es necesario poder contener
+\hypertarget{elipse}{%
+\chapter{Elipse}\label{elipse}}
 
-Entonces se debe entender que los demas electronicos dependientes a la avocacion tenue entre las demas opciones porque es lo mas idoneo porque es loa mismo que pponer las demas opciones congruentes es decir porque es lo mismo que poner las demas opciones es decir \(\int_1^2=\sum_1^2\)
+Dados dos puntos distintos \(F_1\) y \(F_2\) llamados focos; la elipse \(\mathcal{E}\) es el conjunto formado por los puntos \(P\) que satisfacen la ecuacion
+\begin{equation} 
+\left|P-F_1\right|+\left|P-F_2\right|=2a
+\label{eq:binom}
+\end{equation}
 
-\begin{align*}
-e&=ee\\
-&=eer
-\end{align*}
+\(C=(h,k)\) es el centro de la elipse; \(x'\) eje focal, \(V_1\) y \(V_2\) son los vértices de la elipse; \(\overline{V_1V_2}\) el eje mayor \(\overline{RR'}\) el lado recto; \(\overline{B_1B_2}\) el eje menor de longitud \(2b\). En el sistema \(X'Y'\) se tiene \(B_1=(0,b)'\); \(B_2=(0,-b)'\); \(F_1=(-c,0)'\); \(F_2=(c,0)'\) y \(C=(0,0)'\).
+
+\begin{figure}
+
+{\centering \includegraphics{elipse} 
+
+}
+
+\caption{Elipse vectorial}\label{fig:pressure1}
+\end{figure}
+
+Dado \(P\in \mathcal{E}\), la excentricidad \(e\) se define como
+
+\begin{equation}
+\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e=\frac{d\left[P;F_2\right]}{d\left[P;\mathcal{L}_2\right]}
+\label{eq:ww}
+\end{equation}
+
+\(d\left[B_i;F_1\right]=d\left[B_i;F_2\right]= a\) y \(d\left[V_i;C\right]=d\left[V_i;C\right]=a\), \(i=1,2\).
+
 \BeginKnitrBlock{theorem}
-\protect\hypertarget{thm:www}{}{\label{thm:www} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)
+\protect\hypertarget{thm:unnamed-chunk-8}{}{\label{thm:unnamed-chunk-8} }En la elipse se verifican las siguientes igualdades
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(d\left[B_1;F_i\right]=d\left[B_2;F_i\right]=a\)
+\item
+  \(d\left[V_1;C\right]=d\left[V_2;C\right]=a\)
+\item
+  \(d\left[C;\mathcal{L}_1\right]=d\left[C;\mathcal{L}_2\right]=\frac{c}{e}\)
+\item
+  \(c=d\left[P;F_1\right]=d\left[P;F_2\right]\implies c=ae\)
+\end{enumerate}
 \EndKnitrBlock{theorem}
 
-Es decir que por los menos se puede decir que las demas opciones son menos congruentes es decir por lo tanto se pueruba que los requisitos se verifican s conclye por las razones dadas es decir las demas opciones contienen el obejtivo buscado por lo tanto
-es decir \(\int_1^2=\rho_1^3\)
-
-\begin{align*}
-\rho&=\epsilon\\
-&=\zeta 
-\end{align*}
-
-export DISPLAY=192.168.0.102:0
-export PULSE\_SERVER=tcp:192.168.0.102:4713
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(polynom)}
-\NormalTok{p1=}\KeywordTok{polynomial}\NormalTok{(}\DataTypeTok{coef=}\KeywordTok{c}\NormalTok{(}\OperatorTok{-}\DecValTok{2}\NormalTok{,}\OperatorTok{-}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{))}
-\NormalTok{raices_p1=}\KeywordTok{solve}\NormalTok{(p1)}
-\end{Highlighting}
-\end{Shaded}
-
-Por tanto, las raíces de \(p_1(x)\) son : -2, -1, 1.
-Y la factorización será:
-\[ p_1(x)= (x+2)(x+1)(x-1)\]
-\textbf{\emph{2. Comprueba gráficamente que las raíces encontradas, lo son. }}
-\textbf{Solución:}
-Para comprobar gráficamente, dibujamos el polinomio, y donde corte con el eje X, debe de
-coincidir con el valor de las raíces:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{plot}\NormalTok{(p1)}
-\DecValTok{106}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] 106
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h=}\DecValTok{0}\NormalTok{,}\DataTypeTok{lty=}\DecValTok{2}\NormalTok{,}\DataTypeTok{col=}\StringTok{"red"}\NormalTok{) }\CommentTok{#Marcar el eje X}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{z_1_files/figure-latex/unnamed-chunk-6-1.pdf}
-Vemos como el polinomio corta al eje en los puntos \(x=-2, x=-1\) y \(x=1\). Por tanto, queda
-comprobado.
-\textbf{\emph{3. Los valores \(x=3\), \(x=-1\) y \(x=12\), ¿son raíces del polinomio \(p(x)=3x^4-2x^3+12x100\)? }}
-
-\textbf{Solución:}
-Para saber si un valor es raíz de un polinomio, sustituimos dicho valor en el polinomio, y si el
-resultado es igual 0, es raíz:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{p=}\KeywordTok{polynomial}\NormalTok{(}\DataTypeTok{coef=}\KeywordTok{c}\NormalTok{(}\OperatorTok{-}\DecValTok{100}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{0}\NormalTok{,}\OperatorTok{-}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{))}
-\KeywordTok{predict}\NormalTok{(p, }\KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\OperatorTok{-}\DecValTok{1}\NormalTok{,}\DecValTok{12}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1]   125  -107 58796
-\end{verbatim}
-
-Ningún valor es 0, por tanto no son raíces del polinomio.
-\#\#\# Ejercicio - Estadística y probabilidad
-\textbf{\emph{La profesora de lengua castellana ha contabilizado las faltas de sus alumnos en un examen,
-y ha obtenido los siguientes resultados:}}
-
-3, 4, 5, 1, 0, 2, 4, 3, 6, 3, 4, 5, 2, 6, 4, 3, 5, 4, 5, 2, 1, 0, 1, 1, 5, 6, 4
-\textbf{\emph{1. Represéntalos con el gráfico adecuado}} .
-\textbf{Solución:}
-Como se trata de una variable cuantitativa discreta, podemos representarla con un diagrama
-de barras:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{barplot}\NormalTok{(}\KeywordTok{table}\NormalTok{(faltas_ortografia),}\DataTypeTok{main=}\StringTok{"Diagrama de barras"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{z_1_files/figure-latex/unnamed-chunk-9-1.pdf}
-\textbf{\emph{2. ¿Qué porcentaje de alumnos ha hecho 4 faltas de ortografía? }}
-\textbf{Solución:}
-Para saberlo, se necesita la tabla de frecuencias relativas y multiplicarla por 100 para obtener
-el porcentaje:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{prop.table}\NormalTok{(}\KeywordTok{table}\NormalTok{(faltas_ortografia))}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## faltas_ortografia
-##          0          1          2          3          4          5          6 
-## 0.07407407 0.14814815 0.11111111 0.14814815 0.22222222 0.18518519 0.11111111
-\end{verbatim}
-
-Si miramos la columna que indica que el número de faltas es 4, deducimos que el porcentaje es
-del 22,2\%.
-\textbf{\emph{3. ¿Cuántos alumnos han hecho 5 faltas o más?¿Cuál es el número de faltas más
-frecuente?}}
-\textbf{Solución:}
-Para saberlo, se necesita la tabla de frecuencias absolutas:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{table}\NormalTok{(faltas_ortografia)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## faltas_ortografia
-## 0 1 2 3 4 5 6 
-## 2 4 3 4 6 5 3
-\end{verbatim}
-
-107
-Por lo tanto, 5 faltas o más son los alumnos que han hecho 5 faltas y 6 faltas. En este caso, hay 5
-alumnos que han hecho 5 faltas, y 3 alumnos que han hecho 6 faltas, por tanto 8 alumnos
-han hecho 5 faltas de ortografía o más.
-Para saber el número de faltas más frecuente, tan solo tenemos que buscar la frecuencia
-absoluta más grande,es decir, la que se corresponde con 4 faltas.
-\textbf{\emph{4. Calcula las medidas de centralización y dispersión, escribiendo sus fórmulas.}}
-\textbf{Solución:}
-\textbf{\emph{Medidas de centralización}}
-
--\textbf{Varianza y desviación típica}, cuyas fórmulas son:
-
-\[ Var= \sigma^2= \frac{\sum (x_i)^2 f_i}{N} - {\bar{x}}^2\]
-\[ \sigma= \sqrt{Var}=\sqrt{\frac{\sum (x_i)^2 f_i}{N} - {\bar{x}}^2} \]
-
-Para calcularlas,
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{varianza=}\KeywordTok{var}\NormalTok{(faltas_ortografia)}
-\NormalTok{desv.tipica=}\KeywordTok{sd}\NormalTok{(faltas_ortografia)}
-\end{Highlighting}
-\end{Shaded}
-
-Y obtenemos, que la varianza, \(\sigma^2\) = 3.3703704, y que la desviación típica, \(\sigma\) =
-1.8358568 .
-\#\# Álgebra - Interpretación geométrica de un sistema de ecuaciones
-\#\#\# Sistemas de dos ecuaciones con dos incógnitas
-Una vez explicada la forma matricial de un sistema, es importante recalcar la \textbf{interpretación
-geométrica de las ecuaciones} que forman nuestro sistema. Recordar, que en un sistema con
-dos ecuaciones y dos incógnitas, no son más que dos rectas, que pueden:
-+ Ser \textbf{secantes}, es decir, cortarse en un punto. En este caso el sistema es Compatible
-Determinado (S.C.D)
-+ Ser \textbf{coincidentes}. En este caso el sistema es Compatible Indeterminado (S.C.I), pues
-existen infinitas soluciones.
-+ Ser \textbf{paralelas}, es decir, no cortarse en ningún punto. En este caso el sistema es
-Incompatible (S.I).
-\textbf{\emph{Ejemplo}}. Sea el sistema:
-
-Entonces se peude deducir que las ecuaciones sededucen con las siguentes opciones or lo tanto se deduce que las ecuciones son de a acuerdo a las espetativas de los numeros dados por las demas opciones consistentes de los demas opciones considerese que cada de las opciones de la acción de la cosas abducidas esten consideradas de aucerdo a las considereaciones consistentes por lo tanto se deduce que las acciones son menos apreciables es decir que las respuestas son muy adecuadas de orden y estructura además es menester observar que los actos mostrados son muy acorde a las ventajas incluidas en el presente párrafo esto es que se debe considerar que las acciones son muy buenas, es decir que las acciones son muy apreciables de acuerdo a las observaciones realizadas de donde se deduce que las acciones pertinentesson apreciables de aucerdo a las opciones consideradas en las emas porquerias de actos despectivos es decir que las acciones de incógnitas son muy apreciables ecuaciones geometría acción entonces configuración es después parís ágil acotó azúcar ámbar dólar dócil domínguez pérez pódium poliéster púber mármol fácil ágil álbum dócil néctar néstor ónix aeróbic las racies de la ecuacion \(p(x)=x^2+3x-1=0\) son \(x_1=2,\) \(x_2=3\) y \(x_3=5\) por lotanto se deduce que las demas ocpicones considerese que las demas raices son de modo consistente en todo caso son muy apreciables de acuerdo a las desventajas es decir que las acciones son uy apreciables esto es considérese esto de acuerdo al una opcion consistente esto es un desqueilirio entonces es no menos consistente por lo tnato se puede entonces soportar una desacuerdo equívoco
-
-es decir que los dmas opciones se restrigen etnre otros a los antecedentes compositivos por lo tanto es meenster enetender que los resultados buscdso son \(\int_1^2=\rho\) cuando los que esperaba consigue el resutlado buscado por ende es comptencia de los participantes \(\rho\) es la base del vectro en las sitema coordenados \(\epsilon_1\) por lo tanto es menster esperar que las indicaciones son mejores que los que se esperaba.
 \BeginKnitrBlock{proof}
-\iffalse{} {Proof. } \fi{}En efecto \(0\in M\), \(0+1\in M\)
+\iffalse{} {Proof. } \fi{}
+1. Ya que \(d\left[B_1;F_1\right]+d\left[B_1;F_2\right]=2a=d\left[B_2;F_1\right]+d\left[B_2;F_2\right]\) es decir \(2d\left[B_1;F_i\right]=2a=2d\left[B_2;F_i\right]\) entonces \(d\left[B_1;F_i\right]=a=d\left[B_2;F_i\right]\) \(i=1,2\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Por la definición \eqref{eq:binom} de la elipse se tiene
+  \begin{equation}
+  d\left[V_1;F_2\right]+d\left[V_1;F_1\right]=2a
+  \label{eq:er}
+  \end{equation}
+  además la diferencia
+  \begin{equation}
+  d\left[V_1;F_2\right]-d\left[V_1;F_1\right]=2c
+  \label{eq:err}
+  \end{equation}
+  restando las ecuaciones \eqref{eq:er} y \eqref{eq:err} se tiene
+  \begin{equation}
+  d\left[V_1;F_1\right]=a-c
+  \label{eq:errr}
+  \end{equation}
+  entonces haciendo uso de \eqref{eq:errr} en \(d\left[V_1;C\right]=d\left[V_1;F_1\right]+d\left[F_1;C\right]=(a-c)+c=a\); de manera similar para el vértice \(V_2\).
+\item
+  En efecto \[\frac{d\left[B;F_i\right]}{d\left[B;\mathcal{L}_i\right]}=e\Longleftrightarrow \frac{a}{d\left[B;\mathcal{L}_i\right]}=e\] además \(d\left[B_i;\mathcal{L}_i\right]=d\left[C;\mathcal{L}_i\right]\) por lo tanto \(\frac{a}{d\left[C;\mathcal{L}_i\right]}=e\).
+\item
+  Pues \[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e\] implica \(\frac{a-c}{\frac{a}{e}-a}=e\) es decir \(c=ae\).
+\end{enumerate}
+
+Por lo tanto
 \EndKnitrBlock{proof}
 
-Entonces por lotanto se puede esponder a los resultados favorbles entoncespor loa tnato se presponde a una reponsabilidad correspondientes entonces por lo tanto
+\(a>b\) y \(a^2=b^2+c^2\); pues \(a=d\left[B_1;F_2\right]=d\left[(0,b^2+c^2)';(c,0)'\right]^2=\sqrt{b}\); \(0<e<1\) debido a que \(0<e=\frac{a}{e}<1\) y \(a>c>0\).
 
-\BeginKnitrBlock{theorem}[Principio de inducción matemática]
-\protect\hypertarget{thm:w1}{}{\label{thm:w1} \iffalse (Principio de inducción matemática) \fi{} }Todo conjunto indcutivo de numeros reales contiene los numeros 1, 2, 3, \(\ldots\)
-\EndKnitrBlock{theorem}
+\(P=(x,y)=C+x'\vec{u}+y'\vec{u}^\perp\); \(x'=[(x,y)-C]\vec{u}\); \(y'=[(x,y)-C]\vec{u}^\perp\)
 
-Figures and tables with captions will be placed in and environments, respectively.
+\(F_1=C+c\vec{u}\) y \(F_2=C-c\vec{u}\) entonces
 
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+\begin{align*}
+\left|P-F_1\right|+\left|P-F_2\right|&=\left|C+x'\vec{u}+y'\vec{u}^\perp-C+c\vec{u}\right|\\
+&\quad+\left|C+x'\vec{u}+y'\vec{u}^\perp-C-c\vec{u}\right|\\
+&=\sqrt{(x'+c)^2+y'^2}+\sqrt{(x'-c)^2+y'^2}=2a\end{align*}
 
-\hypertarget{limite-de-una-funciuxf3n}{%
-\chapter{Limite de una función}\label{limite-de-una-funciuxf3n}}
+por lo tanto resolviendo \(\sqrt{(x'+c)^2+y'^2}+\sqrt{(x'-c)^2+y'^2}=2a\) resulta \((a^2-c^2)x'^2+ay'^2=a^2(a^2-c^2)\implies b^2x'^2+a^2y'^2=a^2b^2\)
 
-\hypertarget{definiciuxf3n-de-limite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}{%
-\section{\texorpdfstring{Definición de limite para funciones \(\mathbb{R}\to \mathbb{R}\) (es decir, funciones que aplican reales en reales)}{Definición de limite para funciones \textbackslash{}mathbb\{R\}\textbackslash{}to \textbackslash{}mathbb\{R\} (es decir, funciones que aplican reales en reales)}}\label{definiciuxf3n-de-limite-para-funciones-mathbbrto-mathbbr-es-decir-funciones-que-aplican-reales-en-reales}}
+De este modo \(P\in\mathcal{E}\) si \(P\) satisface la ecuación vectorial \[P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp;\: \text{donde } \frac{x'^2}{a^2}+\frac{y'^2}{b^2}=1; \:\left|\vec{u}\right|=1\]
 
-\hypertarget{teorema-sobre-limite-de-funciones}{%
-\section{Teorema sobre limite de funciones}\label{teorema-sobre-limite-de-funciones}}
+Cuando el eje es paralelo al eje \(x\); \(\vec{u}=i=(1,0)\) entonces \((x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h+x',k+y')\implies x'=x-h\) y \(y'=y-k\) en \(\frac{x'^2}{a^2}+\frac{y'^2}{b^2}=1\) resulta \(\frac{(y-k)^2}{a^2}+\frac{(y-k)^2}{b^2}=1\) (\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\) si \(V\) está en el origen); entonces \(F_1=C+c\vec{u}=(h+c,k)\); \(\mathcal{L}_1: x=h+\frac{a}{e}\) y \(\mathcal{L}_2: x=h-\frac{a}{e}\).
 
-\hypertarget{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}{%
-\section{Teorema lím ite de la raíz de una función}\label{teorema-luxedm-ite-de-la-rauxedz-de-una-funciuxf3n}}
+Cuando el eje es paralelo al eje \(y\); \(\vec{u}=j=(0,1)\) entonces \((x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h-y',k+x')\implies x'=y-k\) y \(y'=h-x\) en \(\frac{x'^2}{a^2}+\frac{y'^2}{b^2}=1\) resulta \(\frac{(y-k)^2}{a^2}+\frac{(y-k)^2}{b^2}=1\) (\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\) si \(V\) está en el origen); entonces \(F_1=C+c\vec{u}=(h+c,k)\); \(\mathcal{L}_1: x=k+\frac{a}{e}\) y \(\mathcal{L}_2: x=k-\frac{a}{e}\).
 
-\hypertarget{teorema-del-luxedmite-para-funciones-com-puestas}{%
-\section{Teorema del límite para funciones com puestas}\label{teorema-del-luxedmite-para-funciones-com-puestas}}
+\BeginKnitrBlock{corollary}
+\protect\hypertarget{cor:unnamed-chunk-10}{}{\label{cor:unnamed-chunk-10} }The characteristic function of the sum of two independent random variables \(X_1\) and \(X_2\) is the product of characteristic functions of \(X_1\) and \(X_2\), i.e.,
+\[\varphi _{X_1+X_2}(t)=\varphi _{X_1}(t) \varphi _{X_2}(t)\]
+\EndKnitrBlock{corollary}
 
-\hypertarget{teorema-del-sandwich}{%
-\section{Teorema del sandwich}\label{teorema-del-sandwich}}
+\BeginKnitrBlock{exercise}[Characteristic Function of the Sample Mean]
+\protect\hypertarget{exr:unnamed-chunk-11}{}{\label{exr:unnamed-chunk-11} \iffalse (Characteristic Function of the Sample Mean) \fi{} }Let \(\bar{X}=\sum_{i=1}^n \frac{1}{n} X_i\) be the sample mean of \(n\) independent and identically distributed random variables, each with characteristic function \(\varphi_{X}.\) Compute the characteristic function of \(\bar{X}\).
+\EndKnitrBlock{exercise}
 
-\hypertarget{limites-laterales}{%
-\section{Limites laterales}\label{limites-laterales}}
+\BeginKnitrBlock{solution}
+\iffalse{} {Solution. } \fi{}Applying Theorem, we have
+\[\varphi _{\bar{X}}(t)=\prod_{i=1}^n \varphi _{X_i}\left(\frac{t}{n}\right)=\left[\varphi _{X}\left(\frac{t}{n}\right)\right]^n.\]
+\EndKnitrBlock{solution}
 
-\hypertarget{limites-que-contienen-in-finito}{%
-\section{Limites que contienen in finito}\label{limites-que-contienen-in-finito}}
+\hypertarget{hiperbola}{%
+\chapter{Hiperbola}\label{hiperbola}}
 
-\hypertarget{luxedmites-de-la-forma-lim-fxgxc}{%
-\section{\texorpdfstring{Límites de la forma \(\lim f(x)^{g(x)}=C\)}{Límites de la forma \textbackslash{}lim f(x)\^{}\{g(x)\}=C}}\label{luxedmites-de-la-forma-lim-fxgxc}}
+Los puntos \textbackslash{}(P\textbackslash{}) de un hipérbola verifican la siguiente ecuación
+\[\left|\left|P-F_1\right|+\left|P-F_1\right|\right|=2a\]
+\(C=(h,k)\) es el centro de la hipérbola; \(V_1\) y \(V_2\) son los vértices; \(F_1\) y \(F_2\) son los focos; \(\overline{V_1V_2}\) es el eje transversal; \(\overline{B_1B_2}\) es el eje conjugado; \(x'\) es el eje focal
+\[d\left[C;F_1\right]=d\left[C;F_2\right]=c\]
+\(F_1=(-c,0)\); \(F_1=(c,0)\) en el sistema coordenado \(x'y'\); \(\mathcal{C}\) circunferencia con centro en \(C\), radio \(c\) que pasa por los focos.
 
-\hypertarget{applications}{%
-\chapter{Applications}\label{applications}}
+\[d\left[V_1;C\right]=d\left[V_2;C\right]=a\]
 
-Some \emph{significant} applications are demonstrated in this chapter.
+\begin{figure}
 
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
+{\centering \includegraphics{hiperbola} 
 
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
+}
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+\caption{Elipse vectorial}\label{fig:hiperbola}
+\end{figure}
 
-We describe our methods in this chapter\index{chapter}.
+\[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e=\frac{d\left[P;F_2\right]}{d\left[P;\mathcal{L}_2\right]}\]
+
+\(c=ae\); \(d\left[C;\mathcal{L}_1\right]=d\left[C;\mathcal{L}_2\right]=\frac{a}{e}\) y \(e>1\); en efecto \[\frac{d\left[R;F_1\right]}{d\left[R;\mathcal{L}_1\right]}=\frac{\frac{b^2}{a}}{c-d\left[C;\mathcal{L}_1\right]}=\frac{c^2-a^2}{a(c-d\left[C;\mathcal{L}_1\right])}\]
+
+\[\frac{d\left[V_2;F_1\right]}{d\left[V_2;\mathcal{L}_1\right]}=\frac{c-a}{a-d\left[C;\mathcal{L}_2\right]}.\]
+
+De la primera \[d\left[C;\mathcal{L}_2\right]=a-\frac{c-a}{e}\implies c-d\left[C;\mathcal{L}_2\right]=a-\frac{(c-a)(e+1)}{e}.\]
+
+De la segunda ecuación \[c^2-a^2=ae\frac{(c-a)(e+1)}{e}\implies c+a=a(e+1)\implies c=ae\] luego \(d\left[C;\mathcal{L}_2\right]=a-\frac{(c-a)(ae+a)}{e}=\frac{a}{e}\) y el caso \(d\left[C;\mathcal{L}_1\right]\) es similar. Finalmente \(e=\frac{c}{a}>1\) pues \(0<a<c.\)
+
+\(P=(x,y)=C+x'\vec{u}+y'\vec{u}^\perp\) \(x'=[(x,y)-C]\vec{u}\) y \(y'=[(x,y)-C]\vec{u}^\perp\)
+
+\(F_1=C+c\vec{u}\) y \(F_2=C-c\vec{u}\) tambien \(V_1=C+a\vec{u}\) y \(V_2=C-a\vec{u}\) entonces \[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e\iff d\left[P;F_1\right]^2=e^2d\left[P;\mathcal{L}_1\right]^2\] haciendo uso de \(c=ae\) y \(c^2=a^2+b^2\) se tiene lo siguiente
+
+\[(x'-c)^2+y'^2=e^2\left(x'-\left(\frac{a}{e}\right)\right)^2\]
+
+\[(c^2-a^2) x'^2+a^2y'^2=a^2(c^2-a^2)\]
+
+\[b^2x'^2-a^2y'^2=a^2b^2\]
+
+De este modo \(P\in\mathcal{H}\) si \(P\) satisface la ecuación vectorial \[P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp;\: \text{donde } \frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1; \:\left|\vec{u}\right|=1.\]
+
+Cuando el eje es paralelo al eje \(x\); \(\vec{u}=i=(1,0)\) entonces \((x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h+x',k+y')\implies x'=x-h\) y \(y'=y-k\) en \(\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1\); resulta \(\frac{(y-k)^2}{a^2}-\frac{(y-k)^2}{b^2}=1\); (\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\); si \(V\) está en el origen); entonces \(F_1=C+c\vec{u}=(h-\frac{a}{e},k)\) y \(F_2=C+c\vec{u}=(h-\frac{a}{e},k)\); \(\mathcal{L}_1: x=h-\frac{a}{e}\) y \(\mathcal{L}_2: x=h+\frac{a}{e}\) y las asíntotas de \(y'=\pm\frac{a}{b}x'\) se convierte en \((y-k)=\pm\frac{a}{b}(x-h)\).
+
+Cuando el eje es paralelo al eje \(y\); \(\vec{u}=j=(0,1)\) entonces \((x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h-y',k+x')\implies x'=y-k\) y \(y'=h-x\) en \(\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1\); resulta \(\frac{(y-k)^2}{a^2}-\frac{(y-k)^2}{b^2}=1\); (\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\); si \(V\) está en el origen); entonces \(F_1=C+c\vec{u}=(h+c,k)\); \(\mathcal{L}_1: x=k+\frac{a}{e}\) y \(\mathcal{L}_2: x=k-\frac{a}{e}\) y las asíntotas de \(y'=\pm\frac{b}{a}x'\) se convierte en \((y-k)=\pm\frac{b}{a}(x-h)\).
 
 \hypertarget{appendix-apendice}{%
 \appendix \addcontentsline{toc}{chapter}{\appendixname}}
