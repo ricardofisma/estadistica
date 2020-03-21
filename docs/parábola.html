@@ -74,9 +74,7 @@
 <li class="chapter" data-level="4" data-path="circunferencia.html"><a href="circunferencia.html"><i class="fa fa-check"></i><b>4</b> Circunferencia</a></li>
 <li class="chapter" data-level="5" data-path="parábola.html"><a href="parábola.html"><i class="fa fa-check"></i><b>5</b> Parábola</a></li>
 <li class="chapter" data-level="6" data-path="elipse.html"><a href="elipse.html"><i class="fa fa-check"></i><b>6</b> Elipse</a></li>
-<li class="chapter" data-level="7" data-path="hiperbola.html"><a href="hiperbola.html"><i class="fa fa-check"></i><b>7</b> Hiperbola</a><ul>
-<li class="chapter" data-level="7.1" data-path="hiperbola.html"><a href="hiperbola.html#ejercicios"><i class="fa fa-check"></i><b>7.1</b> Ejercicios</a></li>
-</ul></li>
+<li class="chapter" data-level="7" data-path="hiperbola.html"><a href="hiperbola.html"><i class="fa fa-check"></i><b>7</b> Hiperbola</a></li>
 <li class="appendix"><span><b>Apendice</b></span></li>
 <li class="chapter" data-level="A" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html"><i class="fa fa-check"></i><b>A</b> Ecuaciones de primer grado</a><ul>
 <li class="chapter" data-level="A.1" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html#raices-de-una-ecuacion-de-segundo-grado"><i class="fa fa-check"></i><b>A.1</b> Raices de una ecuacion de segundo grado</a></li>
@@ -112,16 +110,16 @@
 d\left[P;F\right]=d\left[P;\mathcal{L}\right]=\left|p\right|\tag{5.1}
 \end{equation}\]</span></p>
 <p>generan una curva llamada <em>parábola</em>, la excentricidad es el cociente de estas dos distancias que es igual a <span class="math inline">\(1\)</span> pues ambas son iguales a <span class="math inline">\(\left|p\right|\)</span>.</p>
-<p><span class="math inline">\(\mathcal{L}\)</span> es la <em>recta directriz</em> cuya ecuación es <span class="math inline">\(x&#39;=-p\)</span> en el sistema <span class="math inline">\(x&#39;y&#39;\)</span>; <span class="math inline">\(F\)</span> es el <em>foco</em>, <span class="math inline">\(V=(h,k)\)</span> el <em>vertice</em>; <span class="math inline">\(p\)</span> es el parámetro de la parábola; y <span class="math inline">\(RR&#39;\)</span> el <em>lado recto</em> de la parábola.</p>
+<p><span class="math inline">\(\mathcal{L}\)</span> es la <em>recta directriz</em> cuya ecuación es <span class="math inline">\(x&#39;=-p\)</span> en el sistema <span class="math inline">\(X&#39;Y&#39;\)</span>; <span class="math inline">\(F\)</span> es el <em>foco</em>, <span class="math inline">\(V=(h,k)\)</span> el <em>vertice</em>; <span class="math inline">\(p\)</span> es el parámetro de la parábola; y <span class="math inline">\(RR&#39;\)</span> el <em>lado recto</em> de la parábola.</p>
 <div class="figure" style="text-align: center"><span id="fig:hiperbola1"></span>
 <img src="parabola.svg" alt="Prábola"  />
 <p class="caption">
 Figura 5.1: Prábola
 </p>
 </div>
-<p>Los puntos <span class="math inline">\(P\)</span> en el sistema <span class="math inline">\(x&#39;y&#39;\)</span> satisfacen
+<p>Los puntos <span class="math inline">\(P\)</span> en el sistema <span class="math inline">\(X&#39;Y&#39;\)</span> satisfacen
 <span class="math inline">\(P=(x,y)=V+x&#39;\vec{u}+y&#39;\vec{u}^\perp\)</span> de donde al despejar <span class="math inline">\(x&#39;\)</span> e <span class="math inline">\(y&#39;\)</span> resultan <span class="math inline">\(x&#39;=[(x,y)-V]\vec{u}\)</span> e <span class="math inline">\(y&#39;=[(x,y)-V]\vec{u}^\perp\)</span>
-la recta directriz en el sitema <span class="math inline">\(x&#39;y&#39;\)</span> es
+la recta directriz en el sitema <span class="math inline">\(X&#39;Y&#39;\)</span> es
 <span class="math inline">\(\mathcal{L}=\left\{Q/Q=(V-p\vec{u})+t\vec{u}^\perp,\:t\in \mathbb{R}\right\}\)</span>; donde el vértice es <span class="math inline">\(F=V+p\vec{u}\)</span> luego se tiene las ecuaciónes</p>
 <p><span class="math display" id="eq:1w">\[\begin{equation}
 d[P;\mathcal{L}]=\left|\text{Cp}_{\vec{u}}\vec{PQ}\right|=\left|(Q-P)\cdot\vec{u}\right|=\left|x&#39;+p\right|\tag{5.2}
@@ -165,7 +163,7 @@ similarmente la ecuación de la recta tangente a <span class="math inline">\((x-
 
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-3" class="exercise"><strong>Ejercicio 5.1  </strong></span>Al realizarse una transformacion de coordenadas, el eje de una parabola <span class="math inline">\(\mathcal{P}\)</span> resulta orientada segun el vector <span class="math inline">\((3,4)\)</span>. En <span class="math inline">\(x&#39;y&#39;\)</span> un punto <span class="math inline">\(Q&#39;=(20,-20)&#39;\in\mathcal{P}\)</span> en els sistema <span class="math inline">\(xy\)</span> el foco de <span class="math inline">\(\mathcal{P}\)</span> <span class="math inline">\(E=(11,5)\)</span>. Determinar en el sistema <span class="math inline">\(xy\)</span> un punto <span class="math inline">\(R\)</span> de la parabola <span class="math inline">\(\mathcal{P}\)</span> tal que el trinagulo <span class="math inline">\(QVR\)</span> sea rectangulo en <span class="math inline">\(V\)</span> vertice de la parábola.
+<span id="exr:unnamed-chunk-3" class="exercise"><strong>Ejercicio 5.1  </strong></span>Al realizarse una transformacion de coordenadas, el eje de una parabola <span class="math inline">\(\mathcal{P}\)</span> resulta orientada segun el vector <span class="math inline">\((3,4)\)</span>. En <span class="math inline">\(X&#39;Y&#39;\)</span> un punto <span class="math inline">\(Q&#39;=(20,-20)&#39;\in\mathcal{P}\)</span> en els sistema <span class="math inline">\(xy\)</span> el foco de <span class="math inline">\(\mathcal{P}\)</span> <span class="math inline">\(E=(11,5)\)</span>. Determinar en el sistema <span class="math inline">\(xy\)</span> un punto <span class="math inline">\(R\)</span> de la parabola <span class="math inline">\(\mathcal{P}\)</span> tal que el trinagulo <span class="math inline">\(QVR\)</span> sea rectangulo en <span class="math inline">\(V\)</span> vertice de la parábola.
 </div>
 
 
@@ -188,7 +186,7 @@ Ya que <span class="math inline">\(\left|\vec{C_0P_0}\right|=5=\left|\vec{P_0R}\
 <div class="solution">
 <p> <span class="solution"><em>Solución. </em></span> Ya que <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son simétricas entonces <span class="math inline">\(P_0=\frac{A+B}{2}=(28,37) \in \mathcal{L}_F\)</span> donde <span class="math inline">\(\mathcal{L}_F\)</span> es el eje focal paralelo al vector <span class="math inline">\(\vec{AB}^\perp=(B-A)^\perp=(-64,48)\parallel(-4,3)=\vec{v}_L\)</span> es decir <span class="math inline">\(\vec{v}_F\)</span> y <span class="math inline">\(P_0\)</span> nos genera la ecuación del eje focal <span class="math inline">\(\mathcal{L}_F:4x+3y=1\)</span>. De otro lado dado el punto <span class="math inline">\(Q=(20,x)\in\mathcal{L}_F\)</span> que al reemplazarlo en la recta del eje focal nos genera <span class="math inline">\(x=-27\)</span> de donde <span class="math inline">\(Q=(20,-27)\)</span> ademas el vértice de la parabola es <span class="math inline">\(V=\frac{Q+P_0}{2}=(4,5)\)</span> por propiedad.</p>
 <p>Con el objetivo de hallar el valor de <span class="math inline">\(\rho\)</span> en la ecuación <span class="math inline">\(y&#39;^2=4\rho x&#39;\)</span> se halla las coordenadas de <span class="math inline">\(B\)</span> en el nuevo sistema de coordenadas centrada en <span class="math inline">\(V\)</span> con vector director <span class="math inline">\(\vec{u}=\frac{(3,4)}{5}\)</span>, haciendo uso de la relación <span class="math display">\[(x,y)=V+x&#39;\vec{u}+y&#39;\vec{u}^\perp\]</span> se obtiene <span class="math inline">\(x&#39;=\left[B-V\right]\vec{u}=40\)</span> y <span class="math inline">\(y&#39;=\left[B-V\right]\vec{u}^\perp=40\)</span> por tanto reemplazando <span class="math inline">\(B=(-4,61)=(40,40)&#39;\)</span> en <span class="math inline">\(y&#39;^2=4\rho x&#39;\)</span> se tiene que <span class="math inline">\(\rho=10\)</span></p>
-Los vectores directores de las rectas tangentes en el sistema <span class="math inline">\(x&#39;y&#39;\)</span> son <span class="math inline">\((2,1)\)</span> y <span class="math inline">\((2,-1)\)</span> respectivamente por tanto sus ecuaciones son <span class="math inline">\(\mathcal{L}_A: 2y&#39;=x&#39;+40\)</span> y <span class="math inline">\(\mathcal{L}_B=-2y&#39;=x&#39;+40\)</span> estas ecuaciones en el sistema original con <span class="math inline">\(x&#39;=\left[(x,y)-(4,5)\right]\frac{(3,4)}{5}\)</span> y <span class="math inline">\(y&#39;=\left[(x,y)-(4,5)\right]\frac{(-4,3)}{5}\)</span> reemplazadas resultan <span class="math inline">\(\mathcal{L}_A:2y-11x-166=0\)</span> y <span class="math inline">\(\mathcal{L}_B:5x-10y-170=0\)</span>
+Los vectores directores de las rectas tangentes en el sistema <span class="math inline">\(X&#39;Y&#39;\)</span> son <span class="math inline">\((2,1)\)</span> y <span class="math inline">\((2,-1)\)</span> respectivamente por tanto sus ecuaciones son <span class="math inline">\(\mathcal{L}_A: 2y&#39;=x&#39;+40\)</span> y <span class="math inline">\(\mathcal{L}_B=-2y&#39;=x&#39;+40\)</span> estas ecuaciones en el sistema original con <span class="math inline">\(x&#39;=\left[(x,y)-(4,5)\right]\frac{(3,4)}{5}\)</span> y <span class="math inline">\(y&#39;=\left[(x,y)-(4,5)\right]\frac{(-4,3)}{5}\)</span> reemplazadas resultan <span class="math inline">\(\mathcal{L}_A:2y-11x-166=0\)</span> y <span class="math inline">\(\mathcal{L}_B:5x-10y-170=0\)</span>
 </div>
 
 <ol style="list-style-type: decimal">

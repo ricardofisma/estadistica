@@ -7,16 +7,16 @@ d\left[P;F\right]=d\left[P;\mathcal{L}\right]=\left|p\right|(\#eq:www)
 
 generan una curva llamada _parábola_, la excentricidad es el cociente de estas dos distancias que es igual a $1$ pues ambas son iguales a $\left|p\right|$.
 
-$\mathcal{L}$ es  la  _recta directriz_ cuya ecuación es $x'=-p$ en el sistema $x'y'$;  $F$ es el _foco_, $V=(h,k)$ el _vertice_; $p$ es el parámetro de la parábola; y $RR'$ el _lado recto_ de la parábola.
+$\mathcal{L}$ es  la  _recta directriz_ cuya ecuación es $x'=-p$ en el sistema $X'Y'$;  $F$ es el _foco_, $V=(h,k)$ el _vertice_; $p$ es el parámetro de la parábola; y $RR'$ el _lado recto_ de la parábola.
 
 
 
 ```{r hiperbola1, echo=FALSE, fig.cap="Prábola", fig.align="center"}
 knitr::include_graphics("parabola.svg")
 ```
-Los puntos $P$ en el sistema $x'y'$ satisfacen 
+Los puntos $P$ en el sistema $X'Y'$ satisfacen 
 $P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp$ de donde al despejar $x'$ e $y'$ resultan $x'=[(x,y)-V]\vec{u}$ e $y'=[(x,y)-V]\vec{u}^\perp$
-la recta directriz en el sitema $x'y'$ es 
+la recta directriz en el sitema $X'Y'$ es 
 $\mathcal{L}=\left\{Q/Q=(V-p\vec{u})+t\vec{u}^\perp,\:t\in \mathbb{R}\right\}$; donde el vértice es $F=V+p\vec{u}$ luego se tiene las ecuaciónes
 
 \begin{equation}
@@ -68,7 +68,7 @@ En efecto sea ...
 
 
 ```{exercise}
-Al realizarse una transformacion de coordenadas, el eje de una parabola $\mathcal{P}$ resulta orientada segun el vector $(3,4)$. En $x'y'$ un punto $Q'=(20,-20)'\in\mathcal{P}$ en els sistema $xy$ el foco de $\mathcal{P}$ $E=(11,5)$. Determinar en el sistema $xy$ un punto $R$ de la parabola $\mathcal{P}$ tal que el trinagulo $QVR$ sea rectangulo en $V$ vertice de la parábola.  
+Al realizarse una transformacion de coordenadas, el eje de una parabola $\mathcal{P}$ resulta orientada segun el vector $(3,4)$. En $X'Y'$ un punto $Q'=(20,-20)'\in\mathcal{P}$ en els sistema $xy$ el foco de $\mathcal{P}$ $E=(11,5)$. Determinar en el sistema $xy$ un punto $R$ de la parabola $\mathcal{P}$ tal que el trinagulo $QVR$ sea rectangulo en $V$ vertice de la parábola.  
 ```
 
 
@@ -93,7 +93,7 @@ Ya que $A$ y $B$ son simétricas entonces $P_0=\frac{A+B}{2}=(28,37) \in \mathca
 
 Con el objetivo de hallar el valor de $\rho$ en la ecuación $y'^2=4\rho x'$ se halla las coordenadas de $B$ en el nuevo sistema de coordenadas centrada en $V$ con vector director $\vec{u}=\frac{(3,4)}{5}$, haciendo uso de la relación $$(x,y)=V+x'\vec{u}+y'\vec{u}^\perp$$ se obtiene $x'=\left[B-V\right]\vec{u}=40$ y $y'=\left[B-V\right]\vec{u}^\perp=40$ por tanto reemplazando $B=(-4,61)=(40,40)'$ en $y'^2=4\rho x'$ se tiene que $\rho=10$
 
-Los vectores directores de las rectas tangentes en el sistema $x'y'$ son $(2,1)$ y $(2,-1)$ respectivamente por tanto   sus ecuaciones son $\mathcal{L}_A: 2y'=x'+40$ y $\mathcal{L}_B=-2y'=x'+40$ estas ecuaciones en el sistema original con $x'=\left[(x,y)-(4,5)\right]\frac{(3,4)}{5}$ y  $y'=\left[(x,y)-(4,5)\right]\frac{(-4,3)}{5}$ reemplazadas resultan $\mathcal{L}_A:2y-11x-166=0$ y $\mathcal{L}_B:5x-10y-170=0$ 
+Los vectores directores de las rectas tangentes en el sistema $X'Y'$ son $(2,1)$ y $(2,-1)$ respectivamente por tanto   sus ecuaciones son $\mathcal{L}_A: 2y'=x'+40$ y $\mathcal{L}_B=-2y'=x'+40$ estas ecuaciones en el sistema original con $x'=\left[(x,y)-(4,5)\right]\frac{(3,4)}{5}$ y  $y'=\left[(x,y)-(4,5)\right]\frac{(-4,3)}{5}$ reemplazadas resultan $\mathcal{L}_A:2y-11x-166=0$ y $\mathcal{L}_B:5x-10y-170=0$ 
 ```
 1. ww
 
