@@ -1,5 +1,5 @@
 --- 
-title: "Geometria-vectorial"
+title: "Estadística"
 author: "Ricardo Michel MALLQUI BAÑOS"
 institute: "Universidad Nacional San Cristóbal De Huamanga"
 date: "`r Sys.Date()`"
@@ -40,4 +40,9 @@ description: ""
 
 # Resumen {-}
 
+Este libro sobre la estadistica descriptiva. cuyo objetivo es demostrar resultados basicos muy útiles en el desarrollo de investigaciones.
+
+
 # Introducción{-}
+
+Debido a la poca información estructurada de estadistica descriptiva se propone escribir este libro con un enfoque demostrativo.

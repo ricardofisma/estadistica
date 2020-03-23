@@ -1,5 +1,5 @@
 output_dir: "docs"
-book_filename: "z_1"
+book_filename: "E_1"
 delete_merged_file: true
 language:
   ui:
