@@ -1,5 +1,8 @@
 \mainmatter 
 
 # Vectores 
+
+
+
 # Rectas {#intro}
 

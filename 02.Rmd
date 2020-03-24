@@ -1,3 +1,2 @@
 # Lugar geométrico
-
-Here is a review of existing methods.
+ee
