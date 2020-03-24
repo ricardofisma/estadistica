@@ -1,4 +1,7 @@
 # eee
+<script type="text/x-mathjax-config">MathJax.Hub.Config({extensions:["tex2jax.js"],jax:["input/TeX","output/HTML-CSS"], tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}});</script>
+<script type="text/javascript" src="../MathJax.js"></script>
+
 
 Example text outside R code here; we know the value of
 pi is In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website http://pandoc.org.
@@ -7,15 +10,17 @@ pi is In this section, we give a very brief introduction to Pandoc’s Markdown.
   I would take him kindly and forgivingly by the hand and lead him
   to a quiet place and kill him."
 
-In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website http://pandoc.org.
+In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website http://pandoc.org. $\sum_1^2$
 
-> "I thoroughly disapprove of duels. If a man should challenge me,
+> I thoroughly disapprove of duels. If a man should challenge me,
   I would take him kindly and forgivingly by the hand and lead him
-  to a quiet place and kill him."
+  to a quiet place and kill him.
 >
-> --- Mark Twain
+> -- Mark Twain
 
-$$\Theta = \begin{pmatrix}\alpha & \beta\\
+$$\begin{pmatrix}\alpha & \beta\\
+\gamma & \delta
+\end{pmatrix}-\frac{2}{3} \begin{pmatrix}\alpha_1 & \beta_2\\
 \gamma & \delta
 \end{pmatrix}$$
 

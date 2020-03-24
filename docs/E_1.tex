@@ -107,8 +107,24 @@
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
-\date{2020-03-23}
+\date{2020-03-24}
 
+\usepackage{amsthm}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{proposition}{Proposición}[chapter]
+\newtheorem{conjecture}{Conjectura}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Ejemplo}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Ejercicio}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Observación}
+\newtheorem*{solution}{Solución}
+\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
 \maketitle
 
@@ -156,11 +172,19 @@
 
 Este libro sobre la estadistica descriptiva. cuyo objetivo es demostrar resultados basicos muy útiles en el desarrollo de investigaciones.
 
+\[\sum_1^2\]
+
 \hypertarget{introducciuxf3n}{%
 \chapter*{Introducción}\label{introducciuxf3n}}
 
 
+\[\sum_1^2\]
+
+\[\vec{u}=(1,1)-\rho\int_2^3\]
+
 Debido a la poca información estructurada de estadistica descriptiva se propone escribir este libro con un enfoque demostrativo.
+
+\[x^2+y^2\]
 
 \mainmatter
 
@@ -173,7 +197,12 @@ Debido a la poca información estructurada de estadistica descriptiva se propone
 \hypertarget{lugar-geomuxe9trico}{%
 \chapter{Lugar geométrico}\label{lugar-geomuxe9trico}}
 
-ee
+\[\frac{u}{\vec{u}}\]
+
+\hypertarget{sed}{%
+\section{sed}\label{sed}}
+
+\[\frac{u}{\vec{u}}\]
 
 \hypertarget{traductor}{%
 \chapter{traductor}\label{traductor}}
@@ -183,6 +212,55 @@ ee
 
 \hypertarget{estadistica}{%
 \chapter{estadistica}\label{estadistica}}
+
+\BeginKnitrBlock{theorem}
+\protect\hypertarget{thm:unnamed-chunk-1}{}{\label{thm:unnamed-chunk-1} }En la elipse se verifican las siguientes igualdades
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(d\left[B_1;F_i\right]=d\left[B_2;F_i\right]=a\)
+\item
+  \(d\left[V_1;C\right]=d\left[V_2;C\right]=a\)
+\item
+  \(d\left[C;\mathcal{L}_1\right]=d\left[C;\mathcal{L}_2\right]=\frac{c}{e}\)
+\item
+  \(c=d\left[P;F_1\right]=d\left[P;F_2\right]\) entonces \(c=ae\)
+\end{enumerate}
+\EndKnitrBlock{theorem}
+
+\BeginKnitrBlock{proof}
+\iffalse{} {Demostracion. } \fi{}
+1. Ya que \(d\left[B_1;F_1\right]+d\left[B_1;F_2\right]=2a=d\left[B_2;F_1\right]+d\left[B_2;F_2\right]\) es decir \(2d\left[B_1;F_i\right]=2a=2d\left[B_2;F_i\right]\) entonces \(d\left[B_1;F_i\right]=a=d\left[B_2;F_i\right]\) \(i=1,2\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Por la definición \eqref{eq:binom} de la elipse se tiene
+  \begin{equation}
+  d\left[V_1;F_2\right]+d\left[V_1;F_1\right]=2a
+  \label{eq:er}
+  \end{equation}
+  además la diferencia
+  \begin{equation}
+  d\left[V_1;F_2\right]-d\left[V_1;F_1\right]=2c
+  \label{eq:err}
+  \end{equation}
+  restando las ecuaciones \eqref{eq:er} y \eqref{eq:err} se tiene
+  \begin{equation}
+  d\left[V_1;F_1\right]=a-c
+  \label{eq:errr}
+  \end{equation}
+  entonces haciendo uso de \eqref{eq:errr} en \(d\left[V_1;C\right]=d\left[V_1;F_1\right]+d\left[F_1;C\right]=(a-c)+c=a\); de manera similar para el vértice \(V_2\).
+\item
+  En efecto \[\frac{d\left[B;F_i\right]}{d\left[B;\mathcal{L}_i\right]}=e\Longleftrightarrow \frac{a}{d\left[B;\mathcal{L}_i\right]}=e\] además \(d\left[B_i;\mathcal{L}_i\right]=d\left[C;\mathcal{L}_i\right]\) por lo tanto \(\frac{a}{d\left[C;\mathcal{L}_i\right]}=e\).
+\item
+  Pues \[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e\] implica \(\frac{a-c}{\frac{a}{e}-a}=e\) es decir \(c=ae\).
+\end{enumerate}
+
+Por lo tanto
+\EndKnitrBlock{proof}
 
 \hypertarget{eee}{%
 \chapter{eee}\label{eee}}
@@ -196,17 +274,19 @@ I would take him kindly and forgivingly by the hand and lead him
 to a quiet place and kill him.''
 \end{quote}
 
-In this section, we give a very brief introduction to Pandoc's Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc's Markdown can be found on the Pandoc website \url{http://pandoc.org}.
+In this section, we give a very brief introduction to Pandoc's Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc's Markdown can be found on the Pandoc website \url{http://pandoc.org}. \(\sum_1^2\)
 
 \begin{quote}
-``I thoroughly disapprove of duels. If a man should challenge me,
+I thoroughly disapprove of duels. If a man should challenge me,
 I would take him kindly and forgivingly by the hand and lead him
-to a quiet place and kill him.''
+to a quiet place and kill him.
 
-\VA{--- Mark Twain}{}
+-- Mark Twain
 \end{quote}
 
-\[\Theta = \begin{pmatrix}\alpha & \beta\\
+\[\begin{pmatrix}\alpha & \beta\\
+\gamma & \delta
+\end{pmatrix}-\frac{2}{3} \begin{pmatrix}\alpha_1 & \beta_2\\
 \gamma & \delta
 \end{pmatrix}\]
 
@@ -231,7 +311,8 @@ x_{21} & x_{22} & x_{23}
 \hypertarget{ecuaciones-de-primer-grado}{%
 \chapter{Ecuaciones de primer grado}\label{ecuaciones-de-primer-grado}}
 
-\citep{xie2015}
+\[\int_1^3=\lim_{n\to \infty}\sum_{i=0}^{n}f^i(x)\]
+citado por \citep{xie2015}
 
 \hypertarget{raices-de-una-ecuacion-de-segundo-grado}{%
 \section{Raices de una ecuacion de segundo grado}\label{raices-de-una-ecuacion-de-segundo-grado}}
