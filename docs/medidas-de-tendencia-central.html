@@ -145,24 +145,90 @@
 <table>
 <thead>
 <tr class="header">
-<th>n</th>
-<th><span class="math inline">\(f\)</span></th>
-<th><span class="math inline">\(F_i\)</span></th>
-<th><span class="math inline">\(F_i*\)</span></th>
-<th><span class="math inline">\(h_i\)</span></th>
-<th><span class="math inline">\(H_i\)</span></th>
-<th><span class="math inline">\(H_i*\)</span></th>
+<th align="center">Clase</th>
+<th align="center"><span class="math inline">\(f_i\)</span></th>
+<th align="center"><span class="math inline">\(F_i\)</span></th>
+<th align="center"><span class="math inline">\(F_1^*\)</span></th>
+<th align="center"><span class="math inline">\(h_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i^*\)</span></th>
+<th align="center"><span class="math inline">\(h_i\%\)</span></th>
+<th align="center"><span class="math inline">\(H_i\%\)</span></th>
+<th align="center"><span class="math inline">\(H_i^*\%\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td><span class="math inline">\(y_1\)</span></td>
-<td><span class="math inline">\(\sum_{i=1}^1y_i\)</span></td>
-<td>e</td>
-<td>ee</td>
-<td>e</td>
-<td>ee</td>
+<td align="center">A</td>
+<td align="center"><span class="math inline">\(f_1\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=1}^1f_i\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=1}^rf_i\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_1}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_1}{n}\)</span></td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">7</td>
+</tr>
+<tr class="even">
+<td align="center">B</td>
+<td align="center"><span class="math inline">\(f_2\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=1}^2f_i\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=2}^rf_i\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_2}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_2}{n}\)</span></td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
+</tr>
+<tr class="odd">
+<td align="center">C</td>
+<td align="center"><span class="math inline">\(f_3\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=1}^3f_i\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=3}^rf_i\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_3}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_3}{n}\)</span></td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
+</tr>
+<tr class="even">
+<td align="center">D</td>
+<td align="center"><span class="math inline">\(f_4\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=1}^4f_i\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=4}^rf_i\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_4}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_4}{n}\)</span></td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Y</td>
+<td align="center"><span class="math inline">\(f_r\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=1}^rf_i\)</span></td>
+<td align="center"><span class="math inline">\(\sum_{i=r}^r f_i=f_r\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_r}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_r}{n}\)</span></td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
 </tr>
 </tbody>
 </table>
@@ -173,27 +239,41 @@
 <table>
 <thead>
 <tr class="header">
-<th>Intervalo</th>
-<th>Clase</th>
-<th><span class="math inline">\(f_i\)</span></th>
-<th><span class="math inline">\(F_i\)</span></th>
-<th><span class="math inline">\(h_i\)</span></th>
-<th><span class="math inline">\(H_i\)</span></th>
-<th><span class="math inline">\(H_i*\)</span></th>
+<th align="center">Intervalo de clase</th>
+<th align="center">Marca de clase</th>
+<th align="center"><span class="math inline">\(f_i\)</span></th>
+<th align="center"><span class="math inline">\(F_i\)</span></th>
+<th align="center"><span class="math inline">\(h_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i^*\)</span></th>
+<th align="center"><span class="math inline">\(h_i\%\)</span></th>
+<th align="center"><span class="math inline">\(H_i\%\)</span></th>
+<th align="center"><span class="math inline">\(H_i^*\%\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(&lt;x_1-x_2&gt;\)</span></td>
-<td><span class="math inline">\(y_1\)</span></td>
-<td><span class="math inline">\(f_1\)</span></td>
-<td><span class="math inline">\(F_1\)</span></td>
-<td><span class="math inline">\(h_1\)</span></td>
-<td>ee</td>
-<td>e</td>
+<td align="center"><span class="math inline">\(&lt;x_1-x_2&gt;\)</span></td>
+<td align="center"><span class="math inline">\(y_1\)</span></td>
+<td align="center"><span class="math inline">\(f_1\)</span></td>
+<td align="center"><span class="math inline">\(F_1\)</span></td>
+<td align="center"><span class="math inline">\(h_1\)</span></td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
 </tr>
 </tbody>
 </table>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">Column 1 Column 2</td>
+</tr>
+</tbody>
+</table>
+<p>I want the contents of this cell to fit into one line Word1 Word2</p>
 </div>
 </div>
 <div id="la-mediana" class="section level2">
