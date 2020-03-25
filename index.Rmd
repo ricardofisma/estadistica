@@ -55,7 +55,7 @@ Este libro sobre la estadistica descriptiva. cuyo objetivo es demostrar resultad
 
 $$\sum_1^2$$
 
-# Introducción{-}
+# Introducción {-}
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
