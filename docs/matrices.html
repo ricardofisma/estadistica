@@ -141,22 +141,22 @@ a_{21}&amp;a_{22}&amp;\ldots&amp;a_{2n}\\
 a_{11}&amp;a_{11}&amp;\ldots&amp;a_{nm}
 \end{pmatrix}_{n\times n}\]</span>
 de <strong>orden</strong> <span class="math inline">\(n\times m\)</span> tiene <strong>entradas</strong> <span class="math inline">\(a_{ij}\)</span> donde el primer subindice indica la fila y el segundo la columna; es usual representar por simplicidad una matriz por <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span>. Si en el orden <span class="math inline">\(n=m\)</span> entonces la matriz recibe el nombre de <strong>matriz cuadrada</strong> la suma de los elementos de la diagonal de una matriz cuadrada <span class="math inline">\(\sum_{i=1}^na_{ii}\)</span> se llama <strong>traza</strong>. Si todas las <span class="math inline">\(a_{ij}\)</span> son cero entonces la matriz <span class="math inline">\(A=0\)</span> recibe el nombre matriz <strong>nula</strong>.</p>
-<p>Dos matrices son iguales si tienen el <strong>mismo orden</strong> y cada una de las entradas repsectivas son iguales es decir <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{n\times m}\)</span> son iguales si <span class="math inline">\(a_{ij}=b_{ij}\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p>
+<p>Dos matrices son iguales si tienen el <strong>mismo orden</strong> y cada una de las entradas respectivas son iguales es decir <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{n\times m}\)</span> son iguales si <span class="math inline">\(a_{ij}=b_{ij}\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p>
 <div id="algebra-de-matrices" class="section level2">
 <h2><span class="header-section-number">B.1</span> Algebra de matrices</h2>
-<p>Sean las matrices <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{p\times q}\)</span> entonces la suma y producto de matrices se define</p>
+<p>Sean las matrices <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{p\times q}\)</span> entonces la suma y producto de matrices se definen</p>
 <ol style="list-style-type: decimal">
 <li><p>Sea <span class="math inline">\(k\)</span> un escalar entonces se verifica que <span class="math inline">\(kA=[ka_{ij}]\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span> es decir el escalar <span class="math inline">\(k\)</span> multiplica a cada una de las entradas de la matriz.</p></li>
 <li><p>La suma o diferencia es posible si <span class="math inline">\(n=p\)</span> y <span class="math inline">\(m=q\)</span> es decir los ordenes de <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son iguales, entonces la suma o diferencia resulta <span class="math inline">\(A\pm B=[a_{ij}+b_{ij}]_{n\times m}\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p></li>
-<li><p>El producto es posible si <span class="math inline">\(n=p\)</span> es decir el número columnas de la primera matriz es igual al número de filas de la segunda matriz, entonces
+<li><p>El producto es posible si <span class="math inline">\(m=p\)</span> es decir el número columnas de la primera matriz es igual al número de filas de la segunda matriz, el orden de la matriz resultante es <span class="math inline">\(n\times q\)</span> además
 <span class="math display">\[\begin{align*}
-A\cdot B&amp;=\left[\sum_{k=1}^pa_{ik}b_{kj}\right]_{n\times m}\\
+A\cdot B&amp;=\left[\sum_{k=1}^pa_{ik}b_{kj}\right]_{n\times q}\\
 &amp;=\begin{pmatrix}
-\sum_{k=1}^pa_{1k}b_{k1}&amp;\sum_{k=1}^pa_{1k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{1k}b_{km}\\
-\sum_{k=1}^pa_{2k}b_{k1}&amp;\sum_{k=1}^pa_{2k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{2k}b_{km}\\
+\sum_{k=1}^pa_{1k}b_{k1}&amp;\sum_{k=1}^pa_{1k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{1k}b_{kq}\\
+\sum_{k=1}^pa_{2k}b_{k1}&amp;\sum_{k=1}^pa_{2k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{2k}b_{kq}\\
 \vdots &amp; \vdots &amp; \ddots &amp;\vdots \\
-\sum_{k=1}^pa_{nk}b_{k1}&amp;\sum_{k=1}^pa_{nk}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{nk}b_{km}\\
-\end{pmatrix}_{n\times m}
+\sum_{k=1}^pa_{nk}b_{k1}&amp;\sum_{k=1}^pa_{nk}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{nk}b_{kq}\\
+\end{pmatrix}_{n\times q}
 \end{align*}\]</span></p></li>
 </ol>
 <p>donde <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p>
