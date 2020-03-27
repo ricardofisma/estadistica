@@ -107,7 +107,7 @@
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
-\date{2020-03-24}
+\date{2020-03-26}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -188,24 +188,136 @@ Debido a la poca información estructurada de estadistica descriptiva se propone
 
 \mainmatter
 
-\hypertarget{vectores}{%
-\chapter{Vectores}\label{vectores}}
+\hypertarget{variables}{%
+\chapter{Variables}\label{variables}}
 
-\hypertarget{intro}{%
-\chapter{Rectas}\label{intro}}
+\hypertarget{variables-cualitativas}{%
+\section{Variables cualitativas}\label{variables-cualitativas}}
+
+Denotan cualidades de objetos personas o animales tales como caracteristicas inherentes que no son medibles por números, tenemos dos casos de esta variable.
+
+\hypertarget{nominales}{%
+\subsection{Nominales}\label{nominales}}
+
+Son caracteristicas que simplemente nominan y estan propensos a ser jerarquizados u ordenados tales como: El estado civil (soltero, casado, divorciado, viudo), Religion (católic, evangelico, judio, etc).
+
+\hypertarget{ordinales}{%
+\subsection{Ordinales}\label{ordinales}}
+
+Son caracteristicas que que si están propensos a ser jerarquizados tales como: Nivel de instrucción (primaria, secundaria, superior).
+
+\hypertarget{variables-cuantitativas}{%
+\section{Variables cuantitativas}\label{variables-cuantitativas}}
+
+Son aqueelllas variables que están propensos a ser medidas mediante números ya sean números enteros o reales.
+
+\hypertarget{discretas}{%
+\subsection{Discretas}\label{discretas}}
+
+Aquellas que solo son medidos mediante numeros enteros por ejemplo: Número de hijos, número de habitaciones.
+
+\hypertarget{continuas}{%
+\subsection{Continuas}\label{continuas}}
+
+Aquellas que solo son medidos mediante numeros reales es decir este incluye a los numeros racionales e irracionales. Estatura, volumen, peso.
+
+\hypertarget{tabulaciuxf3n}{%
+\chapter{Tabulación}\label{tabulaciuxf3n}}
+
+La tabulación es un proceso en el cual los datos son ordenados en grupos llamados \emph{clases} para un análisis más eficaz de estos, los datos podrían estar clasificados mediante una variable cualitativa o cuantitativa en el caso de las variables cualitativas se considera la siguiente tabla
+
+\begin{longtable}[]{@{}cccccccccc@{}}
+\toprule
+\(Y_i\) & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(h_i\%\) & \(H_i\%\) & \(H_i^*\%\)\tabularnewline
+\midrule
+\endhead
+\(Y_1\) & \(f_1\) & \(F_1\) & \(F_1^*\) & \(\frac{f_1}{n}\) & \(\frac{F_1}{n}\) & \(\frac{F_1^*}{n}\) & \(h_1\) & \(H_1\) & \(H_1^*\)\tabularnewline
+\(Y_2\) & \(f_2\) & \(F_2\) & \(F_2^*\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & \(\frac{F_2^*}{n}\) & \(h_2\) & \(H_2\) & \(H_1^*\)\tabularnewline
+\(Y_3\) & \(f_3\) & \(F_3\) & \(F_3^*\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & \(\frac{F_3^*}{n}\) & \(h_3\) & \(H_3\) & \(H_1^*\)\tabularnewline
+\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\)\tabularnewline
+\(Y_r\) & \(f_r\) & \(F_r\) & \(F_r^*\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & \(\frac{F_r^*}{n}\) & \(h_r\) & \(H_r\) & \(H_1^*\)\tabularnewline
+\bottomrule
+\end{longtable}
+
+En el caso de variables cuantitativas ademas si los datos son muy variados, que para se clasificados adecuadamente, necesitan generarse particiones de longitudes semejantes entonces se utiliza el siguiente proceso; el \textbf{número de las particiones} \(r\) se consideran de acuerdo a \textbf{tres criterios}
+
+\begin{itemize}
+\tightlist
+\item
+  Criterio del investigador \(r\) no puede ser más de 20 ni menos de 5
+\item
+  \(r=\sqrt{n}\) donde \(n\) es el número de datos
+\item
+  La regla de Starges que consiste en considerar la fórmula \(r=1.55+\ln n\)
+  Una vez establecido el número de particiones se procede a generar los límites laterales de cada una de las particiones, sea \(L\) la longitud de todo el conjunto es decir \(L=x_{\text{max}}-x_{\text{min}}\) entonces la longitud de las particiones serán \(\frac{L}{r}\)
+\end{itemize}
+
+\begin{longtable}[]{@{}ccccccccc@{}}
+\toprule
+Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(\ldots\)\tabularnewline
+\midrule
+\endhead
+\([y_1-y_2>\) & \(y_1\) & \(f_1\) & \(F_1\) & \(F_1^*\) & \(\frac{f_1}{n}\) & \(\frac{F_1}{n}\) & \(\frac{F_1^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_1-y_2>\) & \(y_2\) & \(f_2\) & \(F_2\) & \(F_2^*\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & \(\frac{F_2^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_{r}-y_r>\) & \(y_3\) & \(f_3\) & \(F_3\) & \(F_3^*\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & \(\frac{F_3^*}{n}\) & \(\ldots\)\tabularnewline
+\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\)\tabularnewline
+\(<y_{r-1}-y_r]\) & \(y_r\) & \(f_r\) & \(F_r\) & \(F_r^*\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & \(\frac{F_r^*}{n}\) & \(...\)\tabularnewline
+\bottomrule
+\end{longtable}
+
+Tenga en cuenta que \(n\) es el numero de datos, es decir \(n=f_1+f_2+\ldots+f_r=\sum_{i=1}^r\) donde \(f_i\) es número de datos en la partición \(X_i\), una de las \(r\) particiones del conjunto total de datos.
+
+\begin{itemize}
+\item
+  Las \textbf{frecuencias absolutas}\index{frecuencias absolutas} \(f_i\) indican el número de datos con la característica \(X_i\).
+\item
+  Las \textbf{frecuencias absolutas acumuladas menor que}\index{frecuencias absolutas acumuladas menor que} \(F_i\) obedecen a la fórmula
+  \[F_m=f_1+f_2+\ldots+f_m=\sum_{i=1}^mf_i\]
+\item
+  Las \textbf{frecuencias absolutas acumuladas mayor que} \(F_i^*\) obedecen a la fórmula
+  \[F_m^*=f_m+f_{m+1}+\ldots+f_r=\sum_{i=m}^rf_i=n-\sum_{i=1}^{m-1}f_i=n-\left(f_1+f_{2}+\ldots+f_{m-1}\right)\]
+\item
+  Las \textbf{frecuencias absolutas relativas}\index{frecuencias absolutas relativas} obedecen a la fórmula
+  \[h_m=\frac{f_m}{n}\]
+\item
+  Las \textbf{frecuencias absolutas relativas menor que}\index{frecuencias absolutas relativas  menor que} obedecen a la fórmula
+  \[H_m=\frac{f_m}{n}\]
+\item
+  Las \textbf{frecuencias absolutas relativas mayor que} obedecen a la fórmula
+  \[H_m^*=\frac{F_m}{n}\]
+\item
+  Las \textbf{frecuencias absolutas relativas porcentuales} obedecen a la fórmula
+  \(h_m\%=100\cdot h_i\)
+\item
+  Las \textbf{frecuencias absolutas relativas menor que porcentuales} obedecen a la fórmula
+  \(H_m\%=100\cdot H_i\)
+\item
+  Las \textbf{frecuencias absolutas relativas mayor que porcentuales} obedecen a la fórmula
+  \(H_m^*\%=100\cdot H_i^*\)
+\end{itemize}
+
+\BeginKnitrBlock{exercise}
+\protect\hypertarget{exr:unnamed-chunk-1}{}{\label{exr:unnamed-chunk-1} }Sean los datos
+\EndKnitrBlock{exercise}
+
+\BeginKnitrBlock{solution}
+\iffalse{} {Solución. } \fi{}Entonces
+\EndKnitrBlock{solution}
 
 \hypertarget{medidas-de-tendencia-central}{%
 \chapter{Medidas de tendencia central}\label{medidas-de-tendencia-central}}
 
-\[\frac{u}{\vec{u}}\]
+Son aquellas medidas que buscan un dato representtivo central de un conjunto de datos tales como la media, la moda y la mediana.
 
-\hypertarget{la-media}{%
-\section{La media}\label{la-media}}
+\hypertarget{la-media-overlinex}{%
+\section{\texorpdfstring{La media (\(\overline{x}\))}{La media (\textbackslash{}overline\{x\})}}\label{la-media-overlinex}}
 
-A veces llamda \emph{promedio aritmético}, es la medida de tendencia central que pondera los datos, sean los \(n\) datos \(x_1, x_2,\ldots, x_n\) entonces la media o promedio aritmetico se define como \[\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i\]
+A veces llamada \emph{promedio aritmético}, es la medida de tendencia central que pondera los datos.
 
-\hypertarget{propiedades-de-la-media}{%
-\subsection{Propiedades de la media}\label{propiedades-de-la-media}}
+\hypertarget{media-de-datos-no-agrupados}{%
+\subsection{Media de datos no agrupados}\label{media-de-datos-no-agrupados}}
+
+Los datos no están agrupados cuando no están ordenados sobre una tabla de distribución de frecuencias. Sean los \(n\) datos \(x_1, x_2,\ldots, x_n\) entonces la media o promedio aritmético se define como \[\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i\]
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -216,12 +328,35 @@ A veces llamda \emph{promedio aritmético}, es la medida de tendencia central qu
   \(\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i\)
 \end{enumerate}
 
+\hypertarget{media-de-datos-agrupados}{%
+\subsection{Media de datos agrupados}\label{media-de-datos-agrupados}}
+
+Considérese la siguiente tabla de distribucion de frecuencias entonces el promedio es \[\overline{x}=\frac{y_1f_1+y_2f_2+\cdots+y_nf_n}{n}=\frac{1}{n}\sum_{i=1}^ny_if_i\]
+
+\begin{longtable}[]{@{}ccccccccc@{}}
+\toprule
+Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(\ldots\)\tabularnewline
+\midrule
+\endhead
+\(<y_1-y_2>\) & \(y_1\) & \(f_1\) & \(F_1\) & \(F_1^*\) & \(\frac{f_1}{n}\) & \(\frac{F_1}{n}\) & \(\frac{F_1^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_2-y_3>\) & \(y_2\) & \(f_2\) & \(F_2\) & \(F_2^*\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & \(\frac{F_2^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_3-y_4>\) & \(y_3\) & \(f_3\) & \(F_3\) & \(F_3^*\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & \(\frac{F_3^*}{n}\) & \(\ldots\)\tabularnewline
+\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\)\tabularnewline
+\(<y_{r-1}-y_r]\) & \(y_r\) & \(f_r\) & \(F_r\) & \(F_r^*\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & \(\frac{F_r^*}{n}\) & \(...\)\tabularnewline
+\bottomrule
+\end{longtable}
+
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-1}{}{\label{exr:unnamed-chunk-1} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto anterior mas un dato adicional \(x_n+1\) es \[\overline{x}'=\]
+\protect\hypertarget{exr:unnamed-chunk-3}{}{\label{exr:unnamed-chunk-3} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto inicial más un dato adicional \(x_{n+1}\) es \[\overline{x}'=\frac{n\overline{x}+x_{n+1}}{n+1}\] en general si se adicionan \(r\) datos \(y_1, y_2, \ldots y_r\) entonces el nuevo promedio será \[\overline{x}'=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
-\iffalse{} {Solución. } \fi{}en efecto sea el promedio \(\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i\) entonces
+\iffalse{} {Solución. } \fi{}En efecto sea el promedio
+\begin{align*}
+\overline{x}'&=\frac{x_1+x_2+\cdots+x_{n+1}}{n+1}\\
+&=\frac{n\frac{x_1+x_2+\cdots x_n}{n}+x_{n+1}}{n+1}\\
+&=\frac{n\overline{x}+x_{n+1}}{n+1}
+\end{align*}
 \EndKnitrBlock{solution}
 
 \hypertarget{la-moda-mo}{%
@@ -234,47 +369,65 @@ En este caso es dato que más repite en un conjunto de datos dados.
 
 La moda es el dato que más se repite por ejemplo sea el conjunto de datos \(x_1,\) \(x_2,\) \(x_2,\) \(x_2,\) \(x_3\) entonces la moda \(\text{Mo}=x_2\)
 
-\begin{longtable}[]{@{}cccccccccc@{}}
-\toprule
-Clase & \(f_i\) & \(F_i\) & \(F_1^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(h_i\%\) & \(H_i\%\) & \(H_i^*\%\)\tabularnewline
-\midrule
-\endhead
-A & \(f_1\) & \(\sum_{i=1}^1f_i\) & \(\sum_{i=1}^rf_i\) & \(f_1/n\) & \(F_1/n\) & 3 & 4 & 5 & 7\tabularnewline
-B & \(f_2\) & \(\sum_{i=1}^2f_i\) & \(\sum_{i=2}^rf_i\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & 3 & 4 & 5 & 6\tabularnewline
-C & \(f_3\) & \(\sum_{i=1}^3f_i\) & \(\sum_{i=3}^rf_i\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & 3 & 4 & 5 & 6\tabularnewline
-D & \(f_4\) & \(\sum_{i=1}^4f_i\) & \(\sum_{i=4}^rf_i\) & \(\frac{f_4}{n}\) & \(\frac{F_4}{n}\) & 3 & 4 & 5 & 6\tabularnewline
-\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) &\tabularnewline
-Y & \(f_r\) & \(\sum_{i=1}^rf_i\) & \(\sum_{i=r}^r f_i=f_r\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & 3 & 4 & 5 & 6\tabularnewline
-\bottomrule
-\end{longtable}
-
 \hypertarget{moda-de-datos-tabulados}{%
 \subsection{Moda de datos tabulados}\label{moda-de-datos-tabulados}}
 
 La moda es el dato que más se repite por ejemplo sea el conjunto de datos \(x_1,\) \(x_2,\) \(x_2,\) \(x_2,\) \(x_3\) entonces la moda \(\text{Mo}=Li+\frac{Li-Ls}{Li+Ls}r\)
 
-\begin{longtable}[]{@{}cccccccccc@{}}
+\begin{longtable}[]{@{}ccccccccc@{}}
 \toprule
-Intervalo de clase & Marca de clase & \(f_i\) & \(F_i\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(h_i\%\) & \(H_i\%\) & \(H_i^*\%\)\tabularnewline
+Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(\ldots\)\tabularnewline
 \midrule
 \endhead
-\(<x_1-x_2>\) & \(y_1\) & \(f_1\) & \(F_1\) & \(h_1\) & 1 & 2 & 3 & 4 & 5\tabularnewline
+\([y_1-y_2>\) & \(y_1\) & \(f_1\) & \(F_1\) & \(F_1^*\) & \(\frac{f_1}{n}\) & \(\frac{F_1}{n}\) & \(\frac{F_1^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_1-y_2>\) & \(y_2\) & \(f_2\) & \(F_2\) & \(F_2^*\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & \(\frac{F_2^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_{r}-y_r>\) & \(y_3\) & \(f_3\) & \(F_3\) & \(F_3^*\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & \(\frac{F_3^*}{n}\) & \(\ldots\)\tabularnewline
+\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\)\tabularnewline
+\(<y_{r-1}-y_r]\) & \(y_r\) & \(f_r\) & \(F_r\) & \(F_r^*\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & \(\frac{F_r^*}{n}\) & \(...\)\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{longtable}[]{@{}l@{}}
+\hypertarget{la-mediana-me}{%
+\section{la mediana (Me)}\label{la-mediana-me}}
+
+\hypertarget{mediana-de-datos-no-tabulados}{%
+\subsection{Mediana de datos no tabulados}\label{mediana-de-datos-no-tabulados}}
+
+Obtener la mediana consiste en ordenar los datos de menor a mayor y considerar dos casos: El prmero si el numero de datos s impar entonces el dato \(x_{\frac{n+1}{2}}\) del conjunto ordenado será la mediana es decir \(\text{Me}=x_{\frac{n+1}{2}}\) de otro lado si el número de datos es par entonces la mediana es la semisuma de los dos datos intermedios es decir \(\text{Me}=\frac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}\)
+
+\BeginKnitrBlock{exercise}
+\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
+\EndKnitrBlock{exercise}
+
+\BeginKnitrBlock{solution}
+\iffalse{} {Solución. } \fi{}Al ordenarlos se obtiene el siguiente arreglo 0, 1, 2, 5, 5, 6, 6, 7, 8, 10, 14 y considerando que \(x_1=0\), \(x_2=1\), \(\ldots\), \(x_{11}=14\) en este caso el número de datos es impar entonces el dato \(x_{\frac{11+1}{2}}=x_{6}=6\) el la mediana. De otro lado el segundo conjunto de datos al ser ordenados 5, 5, 6, 19, 20, 25 ademas considerando que \(x_1=5\), \(x_2=5\), \(\ldots\), \(x_6=25\) conducen a obtener la mediana \(\text{Me}=\frac{x_{\frac{6}{2}}+x_{\frac{6}{2}+1}}{2}=\frac{6+19}{2}=12.5\).
+\EndKnitrBlock{solution}
+
+\hypertarget{mediana-de-datos-tabulados}{%
+\subsection{Mediana de datos tabulados}\label{mediana-de-datos-tabulados}}
+
+\begin{longtable}[]{@{}ccccccccc@{}}
 \toprule
+Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(\ldots\)\tabularnewline
+\midrule
 \endhead
-Column 1 Column 2\tabularnewline
+\([y_1-y_2>\) & \(y_1\) & \(f_1\) & \(F_1\) & \(F_1^*\) & \(\frac{f_1}{n}\) & \(\frac{F_1}{n}\) & \(\frac{F_1^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_1-y_2>\) & \(y_2\) & \(f_2\) & \(F_2\) & \(F_2^*\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & \(\frac{F_2^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_{r}-y_r>\) & \(y_3\) & \(f_3\) & \(F_3\) & \(F_3^*\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & \(\frac{F_3^*}{n}\) & \(\ldots\)\tabularnewline
+\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\)\tabularnewline
+\(<y_{r-1}-y_r]\) & \(y_r\) & \(f_r\) & \(F_r\) & \(F_r^*\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & \(\frac{F_r^*}{n}\) & \(...\)\tabularnewline
 \bottomrule
 \end{longtable}
 
-I want the contents of this cell to fit into one line Word1 Word2
+Los pasos son:
 
-\hypertarget{la-mediana}{%
-\section{la mediana}\label{la-mediana}}
-
-\[\frac{u}{\vec{u}}\]
+\begin{itemize}
+\item
+  Se halla \(\frac{n}{2}\) luego
+\item
+  \(x_n\)
+\item
+\end{itemize}
 
 \hypertarget{traductor}{%
 \chapter{traductor}\label{traductor}}
@@ -286,7 +439,7 @@ I want the contents of this cell to fit into one line Word1 Word2
 \chapter{estadistica}\label{estadistica}}
 
 \BeginKnitrBlock{theorem}
-\protect\hypertarget{thm:unnamed-chunk-3}{}{\label{thm:unnamed-chunk-3} }En la elipse se verifican las siguientes igualdades
+\protect\hypertarget{thm:unnamed-chunk-7}{}{\label{thm:unnamed-chunk-7} }En la elipse se verifican las siguientes igualdades
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -380,29 +533,57 @@ x_{21} & x_{22} & x_{23}
 \appendix \addcontentsline{toc}{chapter}{\appendixname}}
 
 
-\hypertarget{ecuaciones-de-primer-grado}{%
-\chapter{Ecuaciones de primer grado}\label{ecuaciones-de-primer-grado}}
+\hypertarget{sumatorias}{%
+\chapter{Sumatorias}\label{sumatorias}}
 
-\[\int_1^3=\lim_{n\to \infty}\sum_{i=0}^{n}f^i(x)\]
-citado por \citep{xie2015}
+Una suma de números representados por \(x_1, x_2, \ldots, x_n\) se simboliza en forma compacta mediante el simbolo \(\sum\) (sigma) es decir la suma de los números anteriores se puede escribir del siguiente modo \[x_1+x_2+\dots+x_n=\sum_{i=1}^nx_i.\]
+Algunas propiedades son
 
-\hypertarget{raices-de-una-ecuacion-de-segundo-grado}{%
-\section{Raices de una ecuacion de segundo grado}\label{raices-de-una-ecuacion-de-segundo-grado}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(k\sum_{i=1}^nx_i=\sum_{i=1}^nkx_i\)
+\item
+  \(\sum_{i=1}^n\left(x_i+y_i\right)=\sum_{i=1}^nx_i+\sum_{i=1}^ny_i\)
+\item
+  \(\sum_{i=1}^nx_i\)
+  \[\int_1^3=\lim_{n\to \infty}\sum_{i=0}^{n}f^i(x)\]
+  citado por \citep{xie2015}
+\end{enumerate}
 
-\hypertarget{propiedades-de-una-ecuacion-de-segundo-grado}{%
-\section{Propiedades de una ecuacion de segundo grado}\label{propiedades-de-una-ecuacion-de-segundo-grado}}
+\hypertarget{ee}{%
+\section{ee}\label{ee}}
 
-\hypertarget{ecacuaciones-lineales-de-primer-grado}{%
-\chapter{Ecacuaciones lineales de primer grado}\label{ecacuaciones-lineales-de-primer-grado}}
+\hypertarget{eeeee}{%
+\section{eeeee}\label{eeeee}}
 
-\hypertarget{soluciones-de-ecuacuiones-lineales-de-primer-grado}{%
-\section{Soluciones de ecuacuiones lineales de primer grado}\label{soluciones-de-ecuacuiones-lineales-de-primer-grado}}
+\hypertarget{eeeeeeee}{%
+\chapter{eeeeeeee}\label{eeeeeeee}}
 
-\hypertarget{soluciones}{%
-\section{Soluciones \ldots{}}\label{soluciones}}
+\hypertarget{ww}{%
+\section{ww}\label{ww}}
+
+\hypertarget{www}{%
+\section{www}\label{www}}
 
 \hypertarget{forma-matricial-de-una-ecuaciuxf3n-lineal}{%
 \section{Forma matricial de una ecuación lineal}\label{forma-matricial-de-una-ecuaciuxf3n-lineal}}
+
+Sean las matrices
+\[\begin{pmatrix}
+a_{11}&a_{12}&\ldots&a_{1n}\\
+a_{21}&a_{22}&\ldots&a_{2n}\\
+\ldots& \ldots&\ldots&\ldots\\
+a_{11}&a_{11}&\ldots&a_{nn}
+\end{pmatrix}_{n\times n}\]
+
+\[\begin{pmatrix}
+a_{11}&a_{12}&\ldots&a_{1n}\\
+a_{21}&a_{22}&\ldots&a_{2n}\\
+\ldots& \ldots&\ldots&\ldots\\
+a_{11}&a_{11}&\ldots&a_{nn}
+\end{pmatrix}_{n\times n}\]
 
 \bibliography{book.bib,packages.bib}
 

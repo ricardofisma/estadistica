@@ -1,8 +1,104 @@
 \mainmatter 
 
-# Vectores 
+# Variables
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="../MathJax.js"></script>
+
+## Variables cualitativas
+
+Denotan cualidades de objetos personas o animales tales como caracteristicas inherentes que no son medibles por números, tenemos dos casos de esta variable.
+
+### Nominales
+Son caracteristicas que simplemente nominan y estan propensos a ser jerarquizados u ordenados tales como: El estado civil (soltero, casado, divorciado, viudo), Religion (católic, evangelico, judio, etc). 
+
+### Ordinales
+
+Son caracteristicas que que si están propensos a ser jerarquizados tales como: Nivel de instrucción (primaria, secundaria, superior). 
+
+## Variables cuantitativas
+Son aqueelllas variables que están propensos a ser medidas mediante números ya sean números enteros o reales.
+
+### Discretas 
+Aquellas que solo son medidos mediante numeros enteros por ejemplo: Número de hijos, número de habitaciones. 
+
+### Continuas
+Aquellas que solo son medidos mediante numeros reales es decir este incluye a los numeros racionales e irracionales. Estatura, volumen, peso.
+
+
+# Tabulación
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="../MathJax.js"></script>
+
+La tabulación es un proceso en el cual los datos son ordenados en grupos llamados *clases* para un análisis más eficaz de estos, los datos podrían estar clasificados mediante una variable cualitativa o cuantitativa en el caso de las variables cualitativas se considera la siguiente tabla  
+
+| $Y_i$| $f_i$ | $F_i$ | $F_i^*$ | $h_i$ | $H_i$ | $H_i^*$ | $h_i\%$ | $H_i\%$ | $H_i^*\%$ 
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $Y_1$ | $f_1$ | $F_1$ | $F_1^*$ | $\frac{f_1}{n}$ | $\frac{F_1}{n}$ | $\frac{F_1^*}{n}$|$h_1$|$H_1$|$H_1^*$|
+| $Y_2$ | $f_2$ | $F_2$ | $F_2^*$ | $\frac{f_2}{n}$ | $\frac{F_2}{n}$ | $\frac{F_2^*}{n}$|$h_2$|$H_2$|$H_1^*$|
+| $Y_3$ | $f_3$ | $F_3$ | $F_3^*$ | $\frac{f_3}{n}$ | $\frac{F_3}{n}$ | $\frac{F_3^*}{n}$|$h_3$|$H_3$|$H_1^*$|
+| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |       $\vdots$ | $\vdots$ | $\vdots$|$\vdots$|$\vdots$|$\vdots$|$\vdots$|
+| $Y_r$ | $f_r$ | $F_r$ |$F_r^*$ | $\frac{f_r}{n}$ | $\frac{F_r}{n}$ | $\frac{F_r^*}{n}$|$h_r$|$H_r$|$H_1^*$|
+
+En el caso de variables cuantitativas ademas si los datos son muy variados,  que para se clasificados adecuadamente, necesitan generarse particiones de longitudes semejantes entonces se utiliza el siguiente proceso; el **número de las particiones** $r$ se consideran de acuerdo a **tres criterios** 
+
+* Criterio del investigador $r$ no puede ser más de 20 ni menos de 5
+* $r=\sqrt{n}$ donde $n$ es el número de datos
+* La regla de Starges que consiste en considerar la fórmula $r=1.55+\ln n$ 
+Una vez establecido el número  de particiones se procede a generar los límites laterales de cada una de las particiones, sea $L$ la longitud de todo el conjunto es decir $L=x_{\text{max}}-x_{\text{min}}$ entonces la longitud de las particiones serán $\frac{L}{r}$
+
+| Clase| Clase | $f_i$ | $F_i$ | $F_i^*$ | $h_i$ | $H_i$ | $H_i^*$ | $\ldots$ | $H_i\%$ | $H_i^*\%$ 
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $[y_1-y_2>$ |$y_1$| $f_1$ | $F_1$ | $F_1^*$ | $\frac{f_1}{n}$ | $\frac{F_1}{n}$ | $\frac{F_1^*}{n}$|$\ldots$|$H_1$|$H_1^*$|
+| $<y_1-y_2>$ |$y_2$| $f_2$ | $F_2$ | $F_2^*$ | $\frac{f_2}{n}$ | $\frac{F_2}{n}$ | $\frac{F_2^*}{n}$|$\ldots$|$H_2$|$H_1^*$|
+| $<y_{r}-y_r>$ |$y_3$| $f_3$ | $F_3$ | $F_3^*$ | $\frac{f_3}{n}$ | $\frac{F_3}{n}$ | $\frac{F_3^*}{n}$|$\ldots$|$H_3$|$H_1^*$|
+| $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |       $\vdots$ | $\vdots$ | $\vdots$|$\vdots$|$\vdots$|$\vdots$|$\vdots$|
+| $<y_{r-1}-y_r]$ |$y_r$| $f_r$ | $F_r$ |$F_r^*$ | $\frac{f_r}{n}$ | $\frac{F_r}{n}$ | $\frac{F_r^*}{n}$|$...$|$H_r$|$H_1^*$|
+
+Tenga en cuenta que  $n$ es el numero de datos, es decir $n=f_1+f_2+\ldots+f_r=\sum_{i=1}^r$ donde $f_i$ es número de datos en la partición $X_i$, una de las $r$ particiones del conjunto total de datos.
+
+
+* Las **frecuencias absolutas**\index{frecuencias absolutas} $f_i$ indican el número de datos con la característica $X_i$.
+* Las **frecuencias absolutas acumuladas menor que**\index{frecuencias absolutas acumuladas menor que} $F_i$ obedecen a la fórmula 
+$$F_m=f_1+f_2+\ldots+f_m=\sum_{i=1}^mf_i$$
+* Las **frecuencias absolutas acumuladas mayor que** $F_i^*$ obedecen a la fórmula 
+$$F_m^*=f_m+f_{m+1}+\ldots+f_r=\sum_{i=m}^rf_i=n-\sum_{i=1}^{m-1}f_i=n-\left(f_1+f_{2}+\ldots+f_{m-1}\right)$$
+* Las **frecuencias absolutas relativas**\index{frecuencias absolutas relativas}  obedecen a la fórmula 
+$$h_m=\frac{f_m}{n}$$
+* Las **frecuencias absolutas relativas  menor que**\index{frecuencias absolutas relativas  menor que} obedecen a la fórmula 
+$$H_m=\frac{f_m}{n}$$
+* Las **frecuencias absolutas relativas  mayor que** obedecen a la fórmula 
+$$H_m^*=\frac{F_m}{n}$$
 
 
 
-# Rectas {#intro}
+* Las **frecuencias absolutas relativas porcentuales** obedecen a la fórmula 
+$h_m\%=100\cdot h_i$
+* Las **frecuencias absolutas relativas  menor que porcentuales** obedecen a la fórmula 
+$H_m\%=100\cdot H_i$
+* Las **frecuencias absolutas relativas  mayor que porcentuales** obedecen a la fórmula 
+$H_m^*\%=100\cdot H_i^*$
+
+```{exercise}
+Sean los datos 
+```
+
+```{solution}
+Entonces
+  
+```
+
+
+
 

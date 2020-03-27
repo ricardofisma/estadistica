@@ -1,5 +1,5 @@
 # (APPENDIX) Apendice {-}
-# Ecuaciones de primer grado
+# Sumatorias
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -9,15 +9,48 @@
 </script>
 <script type="text/javascript" src="../MathJax.js"></script>
 
+Una suma de números representados por $x_1, x_2, \ldots, x_n$ se simboliza en forma compacta mediante el simbolo $\sum$ (sigma) es decir la suma de los números anteriores se puede escribir del siguiente modo $$x_1+x_2+\dots+x_n=\sum_{i=1}^nx_i.$$
+Algunas propiedades son 
+
+1. $k\sum_{i=1}^nx_i=\sum_{i=1}^nkx_i$
+2. $\sum_{i=1}^n\left(x_i+y_i\right)=\sum_{i=1}^nx_i+\sum_{i=1}^ny_i$
+3. $\sum_{i=1}^nx_i$
 $$\int_1^3=\lim_{n\to \infty}\sum_{i=0}^{n}f^i(x)$$
 citado por [@xie2015]
 
-## Raices de una ecuacion de segundo grado
+## ee
 
-## Propiedades de una ecuacion de segundo grado
+## eeeee
 
-# Ecacuaciones lineales de primer grado
+# eeeeeeee
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="../MathJax.js"></script>
 
-## Soluciones de ecuacuiones lineales de primer grado
-## Soluciones ...
+## ww
+
+## www
+
 ## Forma matricial de una ecuación lineal
+
+Sean las matrices 
+$$\begin{pmatrix}
+a_{11}&a_{12}&\ldots&a_{1n}\\
+a_{21}&a_{22}&\ldots&a_{2n}\\
+\ldots& \ldots&\ldots&\ldots\\
+a_{11}&a_{11}&\ldots&a_{nn}
+\end{pmatrix}_{n\times n}$$
+
+
+$$\begin{pmatrix}
+a_{11}&a_{12}&\ldots&a_{1n}\\
+a_{21}&a_{22}&\ldots&a_{2n}\\
+\ldots& \ldots&\ldots&\ldots\\
+a_{11}&a_{11}&\ldots&a_{nn}
+\end{pmatrix}_{n\times n}$$
+
