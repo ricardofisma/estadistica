@@ -1,13 +1,5 @@
 # (APPENDIX) Apendice {-}
 # Sumatorias
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-  });
-</script>
-<script type="text/javascript" src="../MathJax.js"></script>
 
 Una suma de números representados por $x_1, x_2, \ldots, x_n$ se simboliza en forma compacta mediante el simbolo $\sum$ (sigma) es decir la suma de los números anteriores se puede escribir del siguiente modo $$x_1+x_2+\dots+x_n=\sum_{i=1}^nx_i.$$
 Algunas propiedades son 

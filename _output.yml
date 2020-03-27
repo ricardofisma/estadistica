@@ -1,6 +1,6 @@
 bookdown::gitbook:
   includes:
-    in_header: mathjax.html
+    in_header: 
   css: style.css
   config:
     fontsettings:
