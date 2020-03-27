@@ -6,8 +6,15 @@ Son aquellas medidas que buscan un dato representtivo central de un conjunto de 
 A veces llamada _promedio aritmético_, es la medida de tendencia central que pondera los datos.
 
 ### Media de datos no agrupados
-Los datos no están agrupados cuando no están ordenados sobre una tabla de distribución de frecuencias. Sean los $n$ datos $x_1, x_2,\ldots, x_n$ entonces la media o promedio aritmético se define como $$\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i$$
-
+Los datos no están agrupados cuando no están ordenados sobre una tabla de distribución de frecuencias. Sean los $n$ datos $x_1, x_2,\ldots, x_n$ entonces la media o promedio aritmético se define como 
+\begin{equation}
+\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i
+(\#eq:w1)
+\end{equation}
+\begin{equation}
+\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e=\frac{d\left[P;F_2\right]}{d\left[P;\mathcal{L}_2\right]}
+(\#eq:ww)
+\end{equation}
 
 1. $\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i$
 2. $\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i$ 
