@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 7 eee | Estadística</title>
-  <meta name="description" content="Capítulo 7 eee | Estadística" />
+  <title>B Matrices | Estadística</title>
+  <meta name="description" content="B Matrices | Estadística" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 7 eee | Estadística" />
+  <meta property="og:title" content="B Matrices | Estadística" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 7 eee | Estadística" />
+  <meta name="twitter:title" content="B Matrices | Estadística" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="estadistica.html"/>
-<link rel="next" href="sumatorias.html"/>
+<link rel="prev" href="sumatorias.html"/>
+<link rel="next" href="referencias.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -131,52 +131,56 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="eee" class="section level1">
-<h1><span class="header-section-number">Capítulo 7</span> eee</h1>
-<p>Example text outside R code here; we know the value of
-pi is In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website <a href="http://pandoc.org" class="uri">http://pandoc.org</a>.</p>
-<blockquote>
-<p>“I thoroughly disapprove of duels. If a man should challenge me,
-I would take him kindly and forgivingly by the hand and lead him
-to a quiet place and kill him.”</p>
-</blockquote>
-<p>In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website <a href="http://pandoc.org" class="uri">http://pandoc.org</a>. <span class="math inline">\(\sum_1^2\)</span></p>
-<blockquote>
-<p>I thoroughly disapprove of duels. If a man should challenge me,
-I would take him kindly and forgivingly by the hand and lead him
-to a quiet place and kill him.</p>
-<p>– Mark Twain</p>
-</blockquote>
-<p><span class="math display">\[\begin{pmatrix}\alpha &amp; \beta\\
-\gamma &amp; \delta
-\end{pmatrix}-\frac{2}{3} \begin{pmatrix}\alpha_1 &amp; \beta_2\\
-\gamma &amp; \delta
-\end{pmatrix}\]</span>
-* La suma de dos matrices <span class="math inline">\(A_{n\times m}\)</span> y <span class="math inline">\(B_{r\times s}\)</span> <span class="math display">\[A_{n\times m}\pm B_{n\times m}=[a_{ij}+b_{ij}]\]</span>
-* El producto de dos matrices <span class="math inline">\(A_{n\times m}\)</span> y <span class="math inline">\(B_{r\times s}\)</span> <span class="math display">\[A_{n\times m}\cdot B_{n\times m}=[a_{ij}+b_{ij}]\]</span>
-<span class="math display">\[X = \begin{bmatrix}1 &amp; x_{1}\\
-1 &amp; x_{2}\\
-1 &amp; x_{3}
-\end{bmatrix}\]</span></p>
-<p><span class="math display">\[\begin{vmatrix}a &amp; b\\
-c &amp; d
-\end{vmatrix}=ad-bc\]</span></p>
-<p><span class="math display">\[\begin{array}{ccc}
-x_{11} &amp; x_{12} &amp; x_{13}\\
-x_{21} &amp; x_{22} &amp; x_{23}
-\end{array}\]</span></p>
+<div id="matrices" class="section level1">
+<h1><span class="header-section-number">B</span> Matrices</h1>
+<p>Una matriz es un arreglo de números distribuidos en filas y columnas por ejemplo la siguiente matriz
+<span class="math display">\[A=\begin{pmatrix}
+a_{11}&amp;a_{12}&amp;\ldots&amp;a_{1n}\\
+a_{21}&amp;a_{22}&amp;\ldots&amp;a_{2n}\\
+\vdots &amp; \vdots &amp; \ddots &amp;\vdots \\
+a_{11}&amp;a_{11}&amp;\ldots&amp;a_{nm}
+\end{pmatrix}_{n\times n}\]</span>
+de <strong>orden</strong> <span class="math inline">\(n\times m\)</span> tiene <strong>entradas</strong> <span class="math inline">\(a_{ij}\)</span> donde el primer subindice indica la fila y el segundo la columna; es usual representar por simplicidad una matriz por <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span>. Si en el orden <span class="math inline">\(n=m\)</span> entonces la matriz recibe el nombre de <strong>matriz cuadrada</strong> la suma de los elementos de la diagonal de una matriz cuadrada <span class="math inline">\(\sum_{i=1}^na_{ii}\)</span> se llama <strong>traza</strong>. Si todas las <span class="math inline">\(a_{ij}\)</span> son cero entonces la matriz <span class="math inline">\(A=0\)</span> recibe el nombre matriz <strong>nula</strong>.</p>
+<p>Dos matrices son iguales si tienen el <strong>mismo orden</strong> y cada una de las entradas repsectivas son iguales es decir <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{n\times m}\)</span> son iguales si <span class="math inline">\(a_{ij}=b_{ij}\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p>
+<div id="algebra-de-matrices" class="section level2">
+<h2><span class="header-section-number">B.1</span> Algebra de matrices</h2>
+<p>Sean las matrices <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{p\times q}\)</span> entonces la suma y producto de matrices se define</p>
+<ol style="list-style-type: decimal">
+<li><p>Sea <span class="math inline">\(k\)</span> un escalar entonces se verifica que <span class="math inline">\(kA=[ka_{ij}]\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span> es decir el escalar <span class="math inline">\(k\)</span> multiplica a cada una de las entradas de la matriz.</p></li>
+<li><p>La suma o diferencia es posible si <span class="math inline">\(n=p\)</span> y <span class="math inline">\(m=q\)</span> es decir los ordenes de <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son iguales, entonces la suma o diferencia resulta <span class="math inline">\(A\pm B=[a_{ij}+b_{ij}]_{n\times m}\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p></li>
+<li><p>El producto es posible si <span class="math inline">\(n=p\)</span> es decir el número columnas de la primera matriz es igual al número de filas de la segunda matriz, entonces
+<span class="math display">\[\begin{align*}
+A\cdot B&amp;=\left[\sum_{k=1}^pa_{ik}b_{kj}\right]_{n\times m}\\
+&amp;=\begin{pmatrix}
+\sum_{k=1}^pa_{1k}b_{k1}&amp;\sum_{k=1}^pa_{1k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{1k}b_{km}\\
+\sum_{k=1}^pa_{2k}b_{k1}&amp;\sum_{k=1}^pa_{2k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{2k}b_{km}\\
+\vdots &amp; \vdots &amp; \ddots &amp;\vdots \\
+\sum_{k=1}^pa_{nk}b_{k1}&amp;\sum_{k=1}^pa_{nk}b_{k2}&amp;\ldots&amp;\sum_{k=1}^pa_{nk}b_{km}\\
+\end{pmatrix}_{n\times m}
+\end{align*}\]</span></p></li>
+</ol>
+<p>donde <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p>
 
+<div class="example">
+<span id="exm:unnamed-chunk-9" class="example"><strong>Ejemplo B.1  </strong></span>Sean <span class="math inline">\(\begin{pmatrix} 3&amp;-1&amp;2\\ 2&amp;-1&amp;2\\ 1&amp;-1&amp;0\\ 5&amp;0&amp;0\\ \end{pmatrix}_{4\times 3}\)</span> y <span class="math inline">\(\begin{pmatrix} 0&amp;-1&amp;2&amp;2&amp;0\\ 1&amp;-1&amp;-2&amp;1&amp;1\\ 3&amp;-1&amp;-3&amp;5&amp;2\\ \end{pmatrix}_{3\times 5}\)</span> entonces <span class="math inline">\(A\cdot B=\begin{pmatrix} 5&amp;-4&amp;2&amp;10&amp;3\\ 5&amp;-3&amp;-2&amp;1&amp;2\\ 3&amp;-1&amp;-3&amp;5&amp;3\\ 3&amp;-1&amp;-3&amp;5&amp;2\\ \end{pmatrix}_{4\times 5}\)</span>
 </div>
 
+<p>En caso de ser posible la multiplicación entre <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> y <span class="math inline">\(C\)</span> entonces se verfican las siguientes propiedades</p>
+<ul>
+<li><span class="math inline">\(A(B+C)=AB+AC\)</span></li>
+<li><span class="math inline">\((A+B)C\)</span></li>
+<li><span class="math inline">\(A(BC)=(AB)C\)</span></li>
+</ul>
 
-
+</div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="estadistica.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sumatorias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sumatorias.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

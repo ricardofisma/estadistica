@@ -63,6 +63,7 @@
 %\usepackage{showframe}
 %\usepackage[a4paper]{geometry}
 %\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
+\renewcommand{\arraystretch}{1.1}
 
 \usepackage{times}
 \renewcommand{\rmdefault}{ptm}
@@ -107,7 +108,7 @@
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
-\date{2020-03-26}
+\date{2020-03-27}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -567,32 +568,61 @@ Algunas propiedades son
 \hypertarget{eeeee}{%
 \section{eeeee}\label{eeeee}}
 
-\hypertarget{eeeeeeee}{%
-\chapter{eeeeeeee}\label{eeeeeeee}}
+\hypertarget{matrices}{%
+\chapter{Matrices}\label{matrices}}
 
-\hypertarget{ww}{%
-\section{ww}\label{ww}}
-
-\hypertarget{www}{%
-\section{www}\label{www}}
-
-\hypertarget{forma-matricial-de-una-ecuaciuxf3n-lineal}{%
-\section{Forma matricial de una ecuación lineal}\label{forma-matricial-de-una-ecuaciuxf3n-lineal}}
-
-Sean las matrices
-\[\begin{pmatrix}
+Una matriz es un arreglo de números distribuidos en filas y columnas por ejemplo la siguiente matriz
+\[A=\begin{pmatrix}
 a_{11}&a_{12}&\ldots&a_{1n}\\
 a_{21}&a_{22}&\ldots&a_{2n}\\
-\ldots& \ldots&\ldots&\ldots\\
-a_{11}&a_{11}&\ldots&a_{nn}
+\vdots & \vdots & \ddots &\vdots \\
+a_{11}&a_{11}&\ldots&a_{nm}
 \end{pmatrix}_{n\times n}\]
+de \textbf{orden} \(n\times m\) tiene \textbf{entradas} \(a_{ij}\) donde el primer subindice indica la fila y el segundo la columna; es usual representar por simplicidad una matriz por \(A=[a_{ij}]_{n\times m}\). Si en el orden \(n=m\) entonces la matriz recibe el nombre de \textbf{matriz cuadrada} la suma de los elementos de la diagonal de una matriz cuadrada \(\sum_{i=1}^na_{ii}\) se llama \textbf{traza}\index{traza}. Si todas las \(a_{ij}\) son cero entonces la matriz \(A=0\) recibe el nombre matriz \textbf{nula}.
 
-\[\begin{pmatrix}
-a_{11}&a_{12}&\ldots&a_{1n}\\
-a_{21}&a_{22}&\ldots&a_{2n}\\
-\ldots& \ldots&\ldots&\ldots\\
-a_{11}&a_{11}&\ldots&a_{nn}
-\end{pmatrix}_{n\times n}\]
+Dos matrices son iguales si tienen el \textbf{mismo orden} y cada una de las entradas repsectivas son iguales es decir \(A=[a_{ij}]_{n\times m}\) y \(B=[b_{ij}]_{n\times m}\) son iguales si \(a_{ij}=b_{ij}\), \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\)
+
+\hypertarget{algebra-de-matrices}{%
+\section{Algebra de matrices}\label{algebra-de-matrices}}
+
+Sean las matrices \(A=[a_{ij}]_{n\times m}\) y \(B=[b_{ij}]_{p\times q}\) entonces la suma y producto de matrices se define
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sea \(k\) un escalar entonces se verifica que \(kA=[ka_{ij}]\), \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\) es decir el escalar \(k\) multiplica a cada una de las entradas de la matriz.
+\item
+  La suma o diferencia es posible si \(n=p\) y \(m=q\) es decir los ordenes de \(A\) y \(B\) son iguales, entonces la suma o diferencia resulta \(A\pm B=[a_{ij}+b_{ij}]_{n\times m}\), \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\)
+\item
+  El producto es posible si \(n=p\) es decir el número columnas de la primera matriz es igual al número de filas de la segunda matriz, entonces
+  \begin{align*}
+  A\cdot B&=\left[\sum_{k=1}^pa_{ik}b_{kj}\right]_{n\times m}\\
+  &=\begin{pmatrix}
+  \sum_{k=1}^pa_{1k}b_{k1}&\sum_{k=1}^pa_{1k}b_{k2}&\ldots&\sum_{k=1}^pa_{1k}b_{km}\\
+  \sum_{k=1}^pa_{2k}b_{k1}&\sum_{k=1}^pa_{2k}b_{k2}&\ldots&\sum_{k=1}^pa_{2k}b_{km}\\
+  \vdots & \vdots & \ddots &\vdots \\
+  \sum_{k=1}^pa_{nk}b_{k1}&\sum_{k=1}^pa_{nk}b_{k2}&\ldots&\sum_{k=1}^pa_{nk}b_{km}\\
+  \end{pmatrix}_{n\times m}
+  \end{align*}
+\end{enumerate}
+
+donde \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\)
+
+\BeginKnitrBlock{example}
+\protect\hypertarget{exm:unnamed-chunk-9}{}{\label{exm:unnamed-chunk-9} }Sean \(\begin{pmatrix} 3&-1&2\\ 2&-1&2\\ 1&-1&0\\ 5&0&0\\ \end{pmatrix}_{4\times 3}\) y \(\begin{pmatrix} 0&-1&2&2&0\\ 1&-1&-2&1&1\\ 3&-1&-3&5&2\\ \end{pmatrix}_{3\times 5}\) entonces \(A\cdot B=\begin{pmatrix} 5&-4&2&10&3\\ 5&-3&-2&1&2\\ 3&-1&-3&5&3\\ 3&-1&-3&5&2\\ \end{pmatrix}_{4\times 5}\)
+\EndKnitrBlock{example}
+
+En caso de ser posible la multiplicación entre \(A\), \(B\) y \(C\) entonces se verfican las siguientes propiedades
+
+\begin{itemize}
+\tightlist
+\item
+  \(A(B+C)=AB+AC\)
+\item
+  \((A+B)C\)
+\item
+  \(A(BC)=(AB)C\)
+\end{itemize}
 
 \bibliography{book.bib,packages.bib}
 
