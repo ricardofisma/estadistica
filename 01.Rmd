@@ -24,7 +24,11 @@ Aquellas que solo son medidos mediante numeros reales es decir este incluye a lo
 
 
 # Tabulación
-
+\[ \begin{pmatrix}
+1&1&1&1\\
+1&1&1&1\\
+1&1&1&1
+\end{pmatrix}\]
 La tabulación es un proceso en el cual los datos son ordenados en grupos llamados *clases* para un análisis más eficaz de estos, los datos podrían estar clasificados mediante una variable cualitativa o cuantitativa en el caso de las variables cualitativas $Y_i$, se considera la siguiente Tabla \@ref(tab:ww)
 
 Table: (\#tab:ww) Caption
