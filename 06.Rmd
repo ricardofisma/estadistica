@@ -1,5 +1,9 @@
 # eee
-
+\[ \begin{pmatrix}
+1&1&1&1\\
+1&1&1&1\\
+1&1&1&1
+\end{pmatrix}\]
 can be found on the Pandoc website http://pandoc.org.
 \[\sum\]
 > I thoroughly disapprove of duels. If a man should challenge me,

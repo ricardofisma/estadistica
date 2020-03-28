@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.22)  28 MAR 2020 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.22)  28 MAR 2020 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2126,69 +2126,69 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [16
 
 ]
-Underfull \vbox (badness 10000) detected at line 543
+Underfull \vbox (badness 10000) detected at line 548
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 543
+Overfull \hbox (336.25pt too wide) detected at line 548
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 543
+Underfull \vbox (badness 10000) detected at line 548
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 543
+Overfull \hbox (336.25pt too wide) detected at line 548
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 543
+Underfull \vbox (badness 10000) detected at line 548
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 543
+Overfull \hbox (336.25pt too wide) detected at line 548
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 543
+Underfull \vbox (badness 10000) detected at line 548
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 543
+Overfull \hbox (336.25pt too wide) detected at line 548
 []
  []
 
 Ap\'{e}ndice A.
 
-Underfull \hbox (badness 10000) detected at line 552
+Underfull \hbox (badness 10000) detected at line 557
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 552
+Underfull \hbox (badness 10000) detected at line 557
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 554
+Underfull \hbox (badness 10000) detected at line 559
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 554
+Underfull \hbox (badness 10000) detected at line 559
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 556
+Underfull \hbox (badness 10000) detected at line 561
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 556
+Underfull \hbox (badness 10000) detected at line 561
 [][][]
  []
 
@@ -2241,69 +2241,69 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [18
 
 ]
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 573
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 568
+Overfull \hbox (336.25pt too wide) detected at line 573
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 573
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 568
+Overfull \hbox (336.25pt too wide) detected at line 573
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 573
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 568
+Overfull \hbox (336.25pt too wide) detected at line 573
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 573
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 568
+Overfull \hbox (336.25pt too wide) detected at line 573
 []
  []
 
 Ap\'{e}ndice B.
 
-Underfull \hbox (badness 10000) detected at line 589
+Underfull \hbox (badness 10000) detected at line 594
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 589
+Underfull \hbox (badness 10000) detected at line 594
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 591
+Underfull \hbox (badness 10000) detected at line 596
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 591
+Underfull \hbox (badness 10000) detected at line 596
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 593
+Underfull \hbox (badness 10000) detected at line 598
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 593
+Underfull \hbox (badness 10000) detected at line 598
 [][][]
  []
 
@@ -2425,20 +2425,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 627.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 627.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 632.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 632.
 (./E_1.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 627.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 627.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 632.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 632.
 Package rerunfilecheck Info: File `E_1.out' has not changed.
 (rerunfilecheck)             Checksum: 7E6C6F28AF358B697E73FE87AA86B64F;4511.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 627.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 632.
  ) 
 Here is how much of TeX's memory you used:
  14757 strings out of 492982
@@ -2460,7 +2460,7 @@ share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on E_1.pdf (35 pages, 350897 bytes).
+Output written on E_1.pdf (35 pages, 350957 bytes).
 PDF statistics:
  501 PDF objects out of 1000 (max. 8388607)
  443 compressed objects within 5 object streams
