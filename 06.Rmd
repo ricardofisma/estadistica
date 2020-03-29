@@ -1,41 +1,11 @@
-# eee
-\[ \begin{pmatrix}
-1&1&1&1\\
-1&1&1&1\\
-1&1&1&1
-\end{pmatrix}\]
-can be found on the Pandoc website http://pandoc.org.
-\[\sum\]
-> I thoroughly disapprove of duels. If a man should challenge me,
-  I would take him kindly and forgivingly by the hand and lead him
-  to a quiet place and kill him.
+# (PART) Probabilidades {-}
 
-In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website http://pandoc.org. $\sum_1^2$
+# Frecuencia relativa clásica
 
-> I thoroughly disapprove of duels. If a man should challenge me,
-  I would take him kindly and forgivingly by the hand and lead him
-  to a quiet place and kill him.
->
-> -- Mark Twain
+# Calculando
 
-$$\begin{pmatrix}\alpha & \beta\\
-\gamma & \delta
-\end{pmatrix}-\frac{2}{3} \begin{pmatrix}\alpha_1 & \beta_2\\
-\gamma & \delta
-\end{pmatrix}$$
-* La suma de dos matrices $A_{n\times m}$ y $B_{r\times s}$ $$A_{n\times m}\pm B_{n\times m}=[a_{ij}+b_{ij}]$$
-* El producto de dos matrices $A_{n\times m}$ y $B_{r\times s}$ $$A_{n\times m}\cdot B_{n\times m}=[a_{ij}+b_{ij}]$$
-$$X = \begin{bmatrix}1 & x_{1}\\
-1 & x_{2}\\
-1 & x_{3}
-\end{bmatrix}$$
+# Variable aleatoria
 
-$$\begin{vmatrix}a & b\\
-c & d
-\end{vmatrix}=ad-bc$$
+# Variable acumulativa
 
-$$\begin{array}{ccc}
-x_{11} & x_{12} & x_{13}\\
-x_{21} & x_{22} & x_{23}
-\end{array}$$
-
+# ww

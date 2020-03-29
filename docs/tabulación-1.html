@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 7 Tabulación | Elementos de la estadística</title>
+  <meta name="description" content="Capítulo 7 Tabulación | Elementos de la estadística" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 7 Tabulación | Elementos de la estadística" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 7 Tabulación | Elementos de la estadística" />
+  
+  
+  
+
+<meta name="author" content="Ricardo Michel MALLQUI BAÑOS" />
+
+
+<meta name="date" content="2020-03-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="organización-de-datos-en-tablas-de-frecuencias.html"/>
+<link rel="next" href="gráficos-estadísticos.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="../MathJax.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="part"><span><b>I Estadística descriptiva</b></span></li>
+<li class="chapter" data-level="1" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a></li>
+<li class="chapter" data-level="2" data-path="variables.html"><a href="variables.html"><i class="fa fa-check"></i><b>2</b> Variables</a><ul>
+<li class="chapter" data-level="2.0.1" data-path="variables.html"><a href="variables.html#nominales"><i class="fa fa-check"></i><b>2.0.1</b> Nominales</a></li>
+<li class="chapter" data-level="2.0.2" data-path="variables.html"><a href="variables.html#ordinales"><i class="fa fa-check"></i><b>2.0.2</b> Ordinales</a></li>
+<li class="chapter" data-level="2.1" data-path="variables.html"><a href="variables.html#variables-cuantitativas"><i class="fa fa-check"></i><b>2.1</b> Variables cuantitativas</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="variables.html"><a href="variables.html#discretas"><i class="fa fa-check"></i><b>2.1.1</b> Discretas</a></li>
+<li class="chapter" data-level="2.1.2" data-path="variables.html"><a href="variables.html#continuas"><i class="fa fa-check"></i><b>2.1.2</b> Continuas</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tabulación.html"><a href="tabulación.html"><i class="fa fa-check"></i><b>3</b> Tabulación</a></li>
+<li class="chapter" data-level="4" data-path="característica-de-los-datos.html"><a href="característica-de-los-datos.html"><i class="fa fa-check"></i><b>4</b> Característica de los datos</a></li>
+<li class="chapter" data-level="5" data-path="población-muestra-y-estadística.html"><a href="población-muestra-y-estadística.html"><i class="fa fa-check"></i><b>5</b> Población, muestra y estadística</a></li>
+<li class="chapter" data-level="6" data-path="organización-de-datos-en-tablas-de-frecuencias.html"><a href="organización-de-datos-en-tablas-de-frecuencias.html"><i class="fa fa-check"></i><b>6</b> Organización de datos en tablas de frecuencias</a></li>
+<li class="chapter" data-level="7" data-path="tabulación-1.html"><a href="tabulación-1.html"><i class="fa fa-check"></i><b>7</b> Tabulación</a></li>
+<li class="chapter" data-level="8" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html"><i class="fa fa-check"></i><b>8</b> Gráficos estadísticos</a></li>
+<li class="chapter" data-level="9" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html"><i class="fa fa-check"></i><b>9</b> Medidas de tendencia central</a><ul>
+<li class="chapter" data-level="9.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-media-overlinex"><i class="fa fa-check"></i><b>9.1</b> La media (<span class="math inline">\(\overline{x}\)</span>)</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-de-datos-no-agrupados"><i class="fa fa-check"></i><b>9.1.1</b> Media de datos no agrupados</a></li>
+<li class="chapter" data-level="9.1.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-de-datos-agrupados"><i class="fa fa-check"></i><b>9.1.2</b> Media de datos agrupados</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-moda-mo"><i class="fa fa-check"></i><b>9.2</b> La moda (Mo)</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#moda-de-datos-no-tabulados"><i class="fa fa-check"></i><b>9.2.1</b> Moda de datos no tabulados</a></li>
+<li class="chapter" data-level="9.2.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#moda-de-datos-tabulados"><i class="fa fa-check"></i><b>9.2.2</b> Moda de datos tabulados</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-mediana-me"><i class="fa fa-check"></i><b>9.3</b> la mediana (Me)</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#mediana-de-datos-no-tabulados"><i class="fa fa-check"></i><b>9.3.1</b> Mediana de datos no tabulados</a></li>
+<li class="chapter" data-level="9.3.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#mediana-de-datos-tabulados"><i class="fa fa-check"></i><b>9.3.2</b> Mediana de datos tabulados</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="medidas-de-dispersión.html"><a href="medidas-de-dispersión.html"><i class="fa fa-check"></i><b>10</b> Medidas de dispersión</a></li>
+<li class="chapter" data-level="11" data-path="medidas-de-asimetría.html"><a href="medidas-de-asimetría.html"><i class="fa fa-check"></i><b>11</b> Medidas de asimetría</a></li>
+<li class="part"><span><b>II Probabilidades</b></span></li>
+<li class="chapter" data-level="12" data-path="estadística-descriptiva-medidas-de-tendencia-central.html"><a href="estadística-descriptiva-medidas-de-tendencia-central.html"><i class="fa fa-check"></i><b>12</b> Estadística descriptiva: Medidas de tendencia central</a></li>
+<li class="chapter" data-level="13" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html"><i class="fa fa-check"></i><b>13</b> Medidas de tendencia central</a><ul>
+<li class="chapter" data-level="13.1" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#la-media-overlinex-1"><i class="fa fa-check"></i><b>13.1</b> La media (<span class="math inline">\(\overline{x}\)</span>)</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#media-de-datos-no-agrupados-1"><i class="fa fa-check"></i><b>13.1.1</b> Media de datos no agrupados</a></li>
+<li class="chapter" data-level="13.1.2" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#media-de-datos-agrupados-1"><i class="fa fa-check"></i><b>13.1.2</b> Media de datos agrupados</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#la-moda-mo-1"><i class="fa fa-check"></i><b>13.2</b> La moda (Mo)</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#moda-de-datos-no-tabulados-1"><i class="fa fa-check"></i><b>13.2.1</b> Moda de datos no tabulados</a></li>
+<li class="chapter" data-level="13.2.2" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#moda-de-datos-tabulados-1"><i class="fa fa-check"></i><b>13.2.2</b> Moda de datos tabulados</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#la-mediana-me-1"><i class="fa fa-check"></i><b>13.3</b> la mediana (Me)</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#mediana-de-datos-no-tabulados-1"><i class="fa fa-check"></i><b>13.3.1</b> Mediana de datos no tabulados</a></li>
+<li class="chapter" data-level="13.3.2" data-path="medidas-de-tendencia-central-1.html"><a href="medidas-de-tendencia-central-1.html#mediana-de-datos-tabulados-1"><i class="fa fa-check"></i><b>13.3.2</b> Mediana de datos tabulados</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="estadística-descriptiva-medidas-de-dispersión.html"><a href="estadística-descriptiva-medidas-de-dispersión.html"><i class="fa fa-check"></i><b>14</b> Estadística descriptiva: Medidas de dispersión</a></li>
+<li class="chapter" data-level="15" data-path="estadística-descriptiva-medidas-de-asimetría.html"><a href="estadística-descriptiva-medidas-de-asimetría.html"><i class="fa fa-check"></i><b>15</b> Estadística descriptiva: Medidas de asimetría</a></li>
+<li class="appendix"><span><b>Apendice</b></span></li>
+<li class="chapter" data-level="A" data-path="sumatorias.html"><a href="sumatorias.html"><i class="fa fa-check"></i><b>A</b> Sumatorias</a><ul>
+<li class="chapter" data-level="A.1" data-path="sumatorias.html"><a href="sumatorias.html#ee"><i class="fa fa-check"></i><b>A.1</b> ee</a></li>
+<li class="chapter" data-level="A.2" data-path="sumatorias.html"><a href="sumatorias.html#eeeee"><i class="fa fa-check"></i><b>A.2</b> eeeee</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="matrices.html"><a href="matrices.html"><i class="fa fa-check"></i><b>B</b> Matrices</a><ul>
+<li class="chapter" data-level="B.1" data-path="matrices.html"><a href="matrices.html#algebra-de-matrices"><i class="fa fa-check"></i><b>B.1</b> Algebra de matrices</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Elementos de la estadística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tabulación-1" class="section level1">
+<h1><span class="header-section-number">Capítulo 7</span> Tabulación</h1>
+<p><span class="math display">\[ \begin{pmatrix}
+1&amp;1&amp;1&amp;1\\
+1&amp;1&amp;1&amp;1\\
+1&amp;1&amp;1&amp;1
+\end{pmatrix}\]</span>
+La tabulación es un proceso en el cual los datos son ordenados en grupos llamados <em>clases</em> para un análisis más eficaz de estos, los datos podrían estar clasificados mediante una variable cualitativa o cuantitativa en el caso de las variables cualitativas <span class="math inline">\(Y_i\)</span>, se considera la siguiente Tabla <a href="tabulación.html#tab:ww">3.1</a></p>
+<table>
+<caption><span id="tab:ww">Tabla 3.1: </span> Caption</caption>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(Y_i\)</span></th>
+<th align="center"><span class="math inline">\(f_i\)</span></th>
+<th align="center"><span class="math inline">\(F_i\)</span></th>
+<th align="center"><span class="math inline">\(F_i^*\)</span></th>
+<th align="center"><span class="math inline">\(h_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i^*\)</span></th>
+<th align="center"><span class="math inline">\(h_i\%\)</span></th>
+<th align="center"><span class="math inline">\(H_i\%\)</span></th>
+<th align="center"><span class="math inline">\(H_i^*\%\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(Y_1\)</span></td>
+<td align="center"><span class="math inline">\(f_1\)</span></td>
+<td align="center"><span class="math inline">\(F_1\)</span></td>
+<td align="center"><span class="math inline">\(F_1^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_1}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_1}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_1^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(h_1\)</span></td>
+<td align="center"><span class="math inline">\(H_1\)</span></td>
+<td align="center"><span class="math inline">\(H_1^*\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(Y_2\)</span></td>
+<td align="center"><span class="math inline">\(f_2\)</span></td>
+<td align="center"><span class="math inline">\(F_2\)</span></td>
+<td align="center"><span class="math inline">\(F_2^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_2}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_2}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_2^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(h_2\)</span></td>
+<td align="center"><span class="math inline">\(H_2\)</span></td>
+<td align="center"><span class="math inline">\(H_1^*\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(Y_3\)</span></td>
+<td align="center"><span class="math inline">\(f_3\)</span></td>
+<td align="center"><span class="math inline">\(F_3\)</span></td>
+<td align="center"><span class="math inline">\(F_3^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_3}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_3}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_3^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(h_3\)</span></td>
+<td align="center"><span class="math inline">\(H_3\)</span></td>
+<td align="center"><span class="math inline">\(H_1^*\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(Y_r\)</span></td>
+<td align="center"><span class="math inline">\(f_r\)</span></td>
+<td align="center"><span class="math inline">\(F_r\)</span></td>
+<td align="center"><span class="math inline">\(F_r^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_r}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_r}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_r^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(h_r\)</span></td>
+<td align="center"><span class="math inline">\(H_r\)</span></td>
+<td align="center"><span class="math inline">\(H_1^*\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>En el caso de variables cuantitativas ademas si los datos son muy variados, que para se clasificados adecuadamente, necesitan generarse particiones de longitudes semejantes entonces se utiliza el siguiente proceso; el <strong>número de las particiones</strong> <span class="math inline">\(r\)</span> se consideran de acuerdo a <strong>tres criterios</strong></p>
+<ul>
+<li><p>Criterio del investigador <span class="math inline">\(r\)</span> no puede ser más de 20 ni menos de 5</p></li>
+<li><p><span class="math inline">\(r=\sqrt{n}\)</span> donde <span class="math inline">\(n\)</span> es el número de datos</p></li>
+<li><p>La regla de Starges que consiste en considerar la fórmula <span class="math inline">\(r=3.322\cdot\log_{10} n\)</span>
+Una vez establecido el número de particiones se procede a generar los límites laterales de cada una de las particiones, sea <span class="math inline">\(L\)</span> la longitud de todo el conjunto es decir <span class="math inline">\(L=x_{\text{max}}-x_{\text{min}}\)</span> entonces la longitud de las particiones o amplitud interválica se obtiene con <span class="math inline">\(l=\frac{L}{r}\)</span></p></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Clase</th>
+<th align="center">Clase</th>
+<th align="center"><span class="math inline">\(f_i\)</span></th>
+<th align="center"><span class="math inline">\(F_i\)</span></th>
+<th align="center"><span class="math inline">\(F_i^*\)</span></th>
+<th align="center"><span class="math inline">\(h_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i\)</span></th>
+<th align="center"><span class="math inline">\(H_i^*\)</span></th>
+<th align="center"><span class="math inline">\(\ldots\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\([y_1-y_2&gt;\)</span></td>
+<td align="center"><span class="math inline">\(y_1\)</span></td>
+<td align="center"><span class="math inline">\(f_1\)</span></td>
+<td align="center"><span class="math inline">\(F_1\)</span></td>
+<td align="center"><span class="math inline">\(F_1^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_1}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_1}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_1^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\ldots\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(&lt;y_1-y_2&gt;\)</span></td>
+<td align="center"><span class="math inline">\(y_2\)</span></td>
+<td align="center"><span class="math inline">\(f_2\)</span></td>
+<td align="center"><span class="math inline">\(F_2\)</span></td>
+<td align="center"><span class="math inline">\(F_2^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_2}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_2}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_2^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\ldots\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(&lt;y_{r}-y_r&gt;\)</span></td>
+<td align="center"><span class="math inline">\(y_3\)</span></td>
+<td align="center"><span class="math inline">\(f_3\)</span></td>
+<td align="center"><span class="math inline">\(F_3\)</span></td>
+<td align="center"><span class="math inline">\(F_3^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_3}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_3}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_3^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\ldots\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+<td align="center"><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(&lt;y_{r-1}-y_r]\)</span></td>
+<td align="center"><span class="math inline">\(y_r\)</span></td>
+<td align="center"><span class="math inline">\(f_r\)</span></td>
+<td align="center"><span class="math inline">\(F_r\)</span></td>
+<td align="center"><span class="math inline">\(F_r^*\)</span></td>
+<td align="center"><span class="math inline">\(\frac{f_r}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_r}{n}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{F_r^*}{n}\)</span></td>
+<td align="center"><span class="math inline">\(...\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Tenga en cuenta que <span class="math inline">\(n\)</span> es el número de datos, es decir <span class="math inline">\(n=f_1+f_2+\ldots+f_r=\sum_{i=1}^r\)</span> donde <span class="math inline">\(f_i\)</span> es número de datos en la partición <span class="math inline">\(X_i\)</span>, una de las <span class="math inline">\(r\)</span> particiones del conjunto total de datos.</p>
+<ul>
+<li>Las <strong>frecuencias absolutas</strong> <span class="math inline">\(f_i\)</span> indican el número de datos con la característica <span class="math inline">\(X_i\)</span>.</li>
+<li>Las <strong>frecuencias absolutas acumuladas menor que</strong> <span class="math inline">\(F_i\)</span> obedecen a la fórmula
+<span class="math display">\[F_m=f_1+f_2+\ldots+f_m=\sum_{i=1}^mf_i\]</span></li>
+<li>Las <strong>frecuencias absolutas acumuladas mayor que</strong> <span class="math inline">\(F_i^*\)</span> obedecen a la fórmula
+<span class="math display">\[F_m^*=f_m+f_{m+1}+\ldots+f_r=\sum_{i=m}^rf_i=n-\sum_{i=1}^{m-1}f_i=n-\left(f_1+f_{2}+\ldots+f_{m-1}\right)\]</span></li>
+<li>Las <strong>frecuencias absolutas relativas</strong> obedecen a la fórmula
+<span class="math display">\[h_m=\frac{f_m}{n}\]</span></li>
+<li>Las <strong>frecuencias absolutas relativas menor que</strong> obedecen a la fórmula
+<span class="math display">\[H_m=\frac{f_m}{n}\]</span></li>
+<li><p>Las <strong>frecuencias absolutas relativas mayor que</strong> obedecen a la fórmula
+<span class="math display">\[H_m^*=\frac{F_m}{n}\]</span></p></li>
+<li>Las <strong>frecuencias absolutas relativas porcentuales</strong> obedecen a la fórmula
+<span class="math inline">\(h_i\%=100\cdot h_i\)</span></li>
+<li>Las <strong>frecuencias absolutas relativas menor que porcentuales</strong> obedecen a la fórmula
+<span class="math inline">\(H_i\%=100\cdot H_i\)</span></li>
+<li><p>Las <strong>frecuencias absolutas relativas mayor que porcentuales</strong> obedecen a la fórmula
+<span class="math inline">\(H_i^*\%=100\cdot H_i^*\)</span></p></li>
+</ul>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-3" class="exercise"><strong>Ejercicio 7.1  </strong></span>Sean los datos
+</div>
+
+
+<div class="solution">
+ <span class="solution"><em>Solución. </em></span> Entonces
+</div>
+
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="organización-de-datos-en-tablas-de-frecuencias.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gráficos-estadísticos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["E_1.pdf", "E_1.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

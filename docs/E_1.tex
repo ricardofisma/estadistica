@@ -32,7 +32,7 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \hypersetup{
-            pdftitle={Estadística},
+            pdftitle={Elementos de la estadística},
             pdfauthor={Ricardo Michel MALLQUI BAÑOS},
             colorlinks=true,
             linkcolor=Maroon,
@@ -41,6 +41,46 @@
             urlcolor=Blue,
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Fix footnotes in tables (requires footnote package)
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
@@ -60,6 +100,9 @@
 \usepackage{amsmath}
 \usepackage{makeidx}
 \makeindex
+
+\makeatletter\@addtoreset{chapter}{part}\makeatother%
+
 %\usepackage{showframe}
 %\usepackage[a4paper]{geometry}
 %\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
@@ -104,7 +147,9 @@
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{Estadística}
+\title{Elementos de la estadística}
+\providecommand{\subtitle}[1]{}
+\subtitle{estadística descriptiva y probabilidades}
 \author{Ricardo Michel MALLQUI BAÑOS}
 \providecommand{\institute}[1]{}
 \institute{Universidad Nacional San Cristóbal De Huamanga}
@@ -189,11 +234,17 @@ Debido a la poca información estructurada de estadistica descriptiva se propone
 
 \mainmatter
 
+\hypertarget{part-estaduxedstica-descriptiva}{%
+\part{Estadística descriptiva}\label{part-estaduxedstica-descriptiva}}
+
+\hypertarget{prerrequisitos}{%
+\chapter{Prerrequisitos}\label{prerrequisitos}}
+
 \hypertarget{variables}{%
 \chapter{Variables}\label{variables}}
 
-\hypertarget{variables-cualitativas}{%
-\section{Variables cualitativas}\label{variables-cualitativas}}
+Es una característica de personas cosas u objetos que sonpropensos a ser medidas
+\#\# Variables cualitativas
 
 Denotan cualidades de objetos personas o animales tales como caracteristicas inherentes que no son medibles por números, tenemos dos casos de esta variable.
 
@@ -314,6 +365,199 @@ Tenga en cuenta que \(n\) es el número de datos, es decir \(n=f_1+f_2+\ldots+f_
 \iffalse{} {Solución. } \fi{}Entonces
 \EndKnitrBlock{solution}
 
+\hypertarget{caracteruxedstica-de-los-datos}{%
+\chapter{Característica de los datos}\label{caracteruxedstica-de-los-datos}}
+
+\hypertarget{poblaciuxf3n-muestra-y-estaduxedstica}{%
+\chapter{Población, muestra y estadística}\label{poblaciuxf3n-muestra-y-estaduxedstica}}
+
+\hypertarget{organizaciuxf3n-de-datos-en-tablas-de-frecuencias}{%
+\chapter{Organización de datos en tablas de frecuencias}\label{organizaciuxf3n-de-datos-en-tablas-de-frecuencias}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(extrafont) }
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\CommentTok{# link www.fontsquirrel.com/fonts/latin-modern-roman}
+
+\CommentTok{# execute once to add fonts:}
+\KeywordTok{font_import}\NormalTok{(}\DataTypeTok{pattern =} \StringTok{"lmroman*"}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Importing fonts may take a few minutes, depending on the number of fonts and the speed of the system.
+## Continue? [y/n]
+\end{verbatim}
+
+\begin{verbatim}
+## Exiting.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{loadfonts}\NormalTok{()}
+\NormalTok{data <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{x=}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{, }\DataTypeTok{y=}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{)}
+\NormalTok{p <-}\StringTok{ }\NormalTok{data }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(x, y)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{text         =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size=}\DecValTok{10}\NormalTok{, }\DataTypeTok{family=}\StringTok{"Times New Roman"}\NormalTok{)) }\OperatorTok{+}\StringTok{ }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"for the boys"}\NormalTok{)}
+\NormalTok{p }\OperatorTok{+}\StringTok{ }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.subtitle =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{), }
+    \DataTypeTok{plot.caption =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{vjust =} \DecValTok{1}\NormalTok{)) }\OperatorTok{+}\KeywordTok{labs}\NormalTok{(}\DataTypeTok{subtitle =} \StringTok{"lil subtitle i guess"}\NormalTok{, }
+    \DataTypeTok{caption =} \StringTok{"Source: idk, 2018"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{E_1_files/figure-latex/nice-fig-1} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:nice-fig1}
+\end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{data}\NormalTok{(mtcars)}
+\NormalTok{mtcars }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x=}\NormalTok{mpg, }\DataTypeTok{y=}\NormalTok{disp)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_col}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{col=}\NormalTok{cyl)) }\OperatorTok{+}\StringTok{ }
+\StringTok{   }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{text         =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size=}\DecValTok{10}\NormalTok{, }\DataTypeTok{family=}\StringTok{"Times New Roman"}\NormalTok{)) }\OperatorTok{+}\StringTok{ }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Organización de datos en tablas de frecuencias"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{E_1_files/figure-latex/nice-fig-2} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:nice-fig2}
+\end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{set.seed}\NormalTok{(}\DecValTok{1234}\NormalTok{)  }\CommentTok{# This makes R run the same random draw}
+\NormalTok{df <-}\StringTok{ }\KeywordTok{data_frame}\NormalTok{(}\DataTypeTok{x =} \KeywordTok{rnorm}\NormalTok{(}\DecValTok{100}\NormalTok{),}
+                 \DataTypeTok{y =} \KeywordTok{rnorm}\NormalTok{(}\DecValTok{100}\NormalTok{))}
+
+\CommentTok{# Create plot}
+\NormalTok{p <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(df, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x, }\DataTypeTok{y =}\NormalTok{ y)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{annotate}\NormalTok{(}\StringTok{"text"}\NormalTok{, }\DataTypeTok{x =} \DecValTok{0}\NormalTok{, }\DataTypeTok{y =} \DecValTok{0}\NormalTok{, }\DataTypeTok{label =} \StringTok{"This is some text"}\NormalTok{,}
+           \DataTypeTok{family =} \StringTok{"Serif"}\NormalTok{, }\DataTypeTok{color =} \StringTok{"darkred"}\NormalTok{, }\DataTypeTok{size =} \DecValTok{8}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"This is a title"}\NormalTok{,}
+       \DataTypeTok{subtitle =} \StringTok{"This is a figure"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme_light}\NormalTok{(}\DataTypeTok{base_family =} \StringTok{"Times New Roman"}\NormalTok{)}
+\NormalTok{p}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{E_1_files/figure-latex/nice-fig-3} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:nice-fig3}
+\end{figure}
+
+\hypertarget{matriz-y-rango}{%
+\chapter{Matriz y rango}\label{matriz-y-rango}}
+
+\hypertarget{distribuciuxf3-n-de-frecuencias}{%
+\chapter{Distribució n de frecuencias}\label{distribuciuxf3-n-de-frecuencias}}
+
+\[ \begin{pmatrix}
+1&1&1&1\\
+1&1&1&1\\
+1&1&1&1
+\end{pmatrix}\]
+La tabulación es un proceso en el cual los datos son ordenados en grupos llamados \emph{clases} para un análisis más eficaz de estos, los datos podrían estar clasificados mediante una variable cualitativa o cuantitativa en el caso de las variables cualitativas \(Y_i\), se considera la siguiente Tabla \ref{tab:ww}
+
+\begin{longtable}[]{@{}cccccccccc@{}}
+\caption{\label{tab:ww} Caption}\tabularnewline
+\toprule
+\(Y_i\) & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(h_i\%\) & \(H_i\%\) & \(H_i^*\%\)\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\(Y_i\) & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(h_i\%\) & \(H_i\%\) & \(H_i^*\%\)\tabularnewline
+\midrule
+\endhead
+\(Y_1\) & \(f_1\) & \(F_1\) & \(F_1^*\) & \(\frac{f_1}{n}\) & \(\frac{F_1}{n}\) & \(\frac{F_1^*}{n}\) & \(h_1\) & \(H_1\) & \(H_1^*\)\tabularnewline
+\(Y_2\) & \(f_2\) & \(F_2\) & \(F_2^*\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & \(\frac{F_2^*}{n}\) & \(h_2\) & \(H_2\) & \(H_1^*\)\tabularnewline
+\(Y_3\) & \(f_3\) & \(F_3\) & \(F_3^*\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & \(\frac{F_3^*}{n}\) & \(h_3\) & \(H_3\) & \(H_1^*\)\tabularnewline
+\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\)\tabularnewline
+\(Y_r\) & \(f_r\) & \(F_r\) & \(F_r^*\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & \(\frac{F_r^*}{n}\) & \(h_r\) & \(H_r\) & \(H_1^*\)\tabularnewline
+\bottomrule
+\end{longtable}
+
+En el caso de variables cuantitativas ademas si los datos son muy variados, que para se clasificados adecuadamente, necesitan generarse particiones de longitudes semejantes entonces se utiliza el siguiente proceso; el \textbf{número de las particiones} \(r\) se consideran de acuerdo a \textbf{tres criterios}
+
+\begin{itemize}
+\item
+  Criterio del investigador \(r\) no puede ser más de 20 ni menos de 5
+\item
+  \(r=\sqrt{n}\) donde \(n\) es el número de datos
+\item
+  La regla de Starges que consiste en considerar la fórmula \(r=3.322\cdot\log_{10} n\)
+  Una vez establecido el número de particiones se procede a generar los límites laterales de cada una de las particiones, sea \(L\) la longitud de todo el conjunto es decir \(L=x_{\text{max}}-x_{\text{min}}\) entonces la longitud de las particiones o amplitud interválica se obtiene con \(l=\frac{L}{r}\)
+\end{itemize}
+
+\begin{longtable}[]{@{}ccccccccc@{}}
+\toprule
+Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & \(\ldots\)\tabularnewline
+\midrule
+\endhead
+\([y_1-y_2>\) & \(y_1\) & \(f_1\) & \(F_1\) & \(F_1^*\) & \(\frac{f_1}{n}\) & \(\frac{F_1}{n}\) & \(\frac{F_1^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_1-y_2>\) & \(y_2\) & \(f_2\) & \(F_2\) & \(F_2^*\) & \(\frac{f_2}{n}\) & \(\frac{F_2}{n}\) & \(\frac{F_2^*}{n}\) & \(\ldots\)\tabularnewline
+\(<y_{r}-y_r>\) & \(y_3\) & \(f_3\) & \(F_3\) & \(F_3^*\) & \(\frac{f_3}{n}\) & \(\frac{F_3}{n}\) & \(\frac{F_3^*}{n}\) & \(\ldots\)\tabularnewline
+\(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\vdots\)\tabularnewline
+\(<y_{r-1}-y_r]\) & \(y_r\) & \(f_r\) & \(F_r\) & \(F_r^*\) & \(\frac{f_r}{n}\) & \(\frac{F_r}{n}\) & \(\frac{F_r^*}{n}\) & \(...\)\tabularnewline
+\bottomrule
+\end{longtable}
+
+Tenga en cuenta que \(n\) es el número de datos, es decir \(n=f_1+f_2+\ldots+f_r=\sum_{i=1}^r\) donde \(f_i\) es número de datos en la partición \(X_i\), una de las \(r\) particiones del conjunto total de datos.
+
+\begin{itemize}
+\item
+  Las \textbf{frecuencias absolutas}\index{frecuencias absolutas} \(f_i\) indican el número de datos con la característica \(X_i\).
+\item
+  Las \textbf{frecuencias absolutas acumuladas menor que}\index{frecuencias absolutas acumuladas menor que} \(F_i\) obedecen a la fórmula
+  \[F_m=f_1+f_2+\ldots+f_m=\sum_{i=1}^mf_i\]
+\item
+  Las \textbf{frecuencias absolutas acumuladas mayor que} \(F_i^*\) obedecen a la fórmula
+  \[F_m^*=f_m+f_{m+1}+\ldots+f_r=\sum_{i=m}^rf_i=n-\sum_{i=1}^{m-1}f_i=n-\left(f_1+f_{2}+\ldots+f_{m-1}\right)\]
+\item
+  Las \textbf{frecuencias absolutas relativas}\index{frecuencias absolutas relativas} obedecen a la fórmula
+  \[h_m=\frac{f_m}{n}\]
+\item
+  Las \textbf{frecuencias absolutas relativas menor que}\index{frecuencias absolutas relativas  menor que} obedecen a la fórmula
+  \[H_m=\frac{f_m}{n}\]
+\item
+  Las \textbf{frecuencias absolutas relativas mayor que} obedecen a la fórmula
+  \[H_m^*=\frac{F_m}{n}\]
+\item
+  Las \textbf{frecuencias absolutas relativas porcentuales} obedecen a la fórmula
+  \(h_i\%=100\cdot h_i\)
+\item
+  Las \textbf{frecuencias absolutas relativas menor que porcentuales} obedecen a la fórmula
+  \(H_i\%=100\cdot H_i\)
+\item
+  Las \textbf{frecuencias absolutas relativas mayor que porcentuales} obedecen a la fórmula
+  \(H_i^*\%=100\cdot H_i^*\)
+\end{itemize}
+
+\BeginKnitrBlock{exercise}
+\protect\hypertarget{exr:unnamed-chunk-3}{}{\label{exr:unnamed-chunk-3} }Sean los datos
+\EndKnitrBlock{exercise}
+
+\BeginKnitrBlock{solution}
+\iffalse{} {Solución. } \fi{}Entonces
+\EndKnitrBlock{solution}
+
+\hypertarget{gruxe1ficos-estaduxedsticos}{%
+\chapter{Gráficos estadísticos}\label{gruxe1ficos-estaduxedsticos}}
+
 \hypertarget{medidas-de-tendencia-central}{%
 \chapter{Medidas de tendencia central}\label{medidas-de-tendencia-central}}
 
@@ -365,7 +609,7 @@ Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & 
 \end{longtable}
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-3}{}{\label{exr:unnamed-chunk-3} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto inicial más un dato adicional \(x_{n+1}\) es \[\overline{x}'=\frac{n\overline{x}+x_{n+1}}{n+1}\] en general si se adicionan \(r\) datos \(y_1, y_2, \ldots y_r\) entonces el nuevo promedio será \[\overline{x}'=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]
+\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }Si el promedio de \(n\) datos es \(\overline{x}\) entonces el promedio del conjunto inicial más un dato adicional \(x_{n+1}\) es \[\overline{x}'=\frac{n\overline{x}+x_{n+1}}{n+1}\] en general si se adicionan \(r\) datos \(y_1, y_2, \ldots y_r\) entonces el nuevo promedio será \[\overline{x}'=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -414,7 +658,7 @@ Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & 
 Obtener la mediana consiste en ordenar los datos de menor a mayor y considerar dos casos: El prmero si el numero de datos s impar entonces el dato \(x_{\frac{n+1}{2}}\) del conjunto ordenado será la mediana es decir \(\text{Me}=x_{\frac{n+1}{2}}\) de otro lado si el número de datos es par entonces la mediana es la semisuma de los dos datos intermedios es decir \(\text{Me}=\frac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}\)
 
 \BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
+\protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} }Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{solution}
@@ -440,84 +684,23 @@ Clase & Clase & \(f_i\) & \(F_i\) & \(F_i^*\) & \(h_i\) & \(H_i\) & \(H_i^*\) & 
 Los pasos son:
 
 \begin{itemize}
+\tightlist
 \item
   Se halla \(\frac{n}{2}\) luego
 \item
   \(x_n\)
 \item
+  \[ \begin{pmatrix}
+  1&1&1&1\\
+  1&1&1&1\\
+  1&1&1&1
+  \end{pmatrix}\]
+  can be found on the Pandoc website \url{http://pandoc.org}.
+  \[\sum\]
+  \textgreater{} I thoroughly disapprove of duels. If a man should challenge me,
+  I would take him kindly and forgivingly by the hand and lead him
+  to a quiet place and kill him.
 \end{itemize}
-
-\hypertarget{traductor}{%
-\chapter{traductor}\label{traductor}}
-
-\hypertarget{traducto2}{%
-\chapter{traducto2}\label{traducto2}}
-
-\hypertarget{estadistica}{%
-\chapter{estadistica}\label{estadistica}}
-
-\BeginKnitrBlock{theorem}
-\protect\hypertarget{thm:unnamed-chunk-7}{}{\label{thm:unnamed-chunk-7} }En la elipse se verifican las siguientes igualdades
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \(d\left[B_1;F_i\right]=d\left[B_2;F_i\right]=a\)
-\item
-  \(d\left[V_1;C\right]=d\left[V_2;C\right]=a\)
-\item
-  \(d\left[C;\mathcal{L}_1\right]=d\left[C;\mathcal{L}_2\right]=\frac{c}{e}\)
-\item
-  \(c=d\left[P;F_1\right]=d\left[P;F_2\right]\) entonces \(c=ae\)
-\end{enumerate}
-\EndKnitrBlock{theorem}
-
-\BeginKnitrBlock{proof}
-\iffalse{} {Demostracion. } \fi{}
-1. Ya que \(d\left[B_1;F_1\right]+d\left[B_1;F_2\right]=2a=d\left[B_2;F_1\right]+d\left[B_2;F_2\right]\) es decir \(2d\left[B_1;F_i\right]=2a=2d\left[B_2;F_i\right]\) entonces \(d\left[B_1;F_i\right]=a=d\left[B_2;F_i\right]\) \(i=1,2\).
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  Por la definición \eqref{eq:binom} de la elipse se tiene
-  \begin{equation}
-  d\left[V_1;F_2\right]+d\left[V_1;F_1\right]=2a
-  \label{eq:er}
-  \end{equation}
-  además la diferencia
-  \begin{equation}
-  d\left[V_1;F_2\right]-d\left[V_1;F_1\right]=2c
-  \label{eq:err}
-  \end{equation}
-  restando las ecuaciones \eqref{eq:er} y \eqref{eq:err} se tiene
-  \begin{equation}
-  d\left[V_1;F_1\right]=a-c
-  \label{eq:errr}
-  \end{equation}
-  entonces haciendo uso de \eqref{eq:errr} en \(d\left[V_1;C\right]=d\left[V_1;F_1\right]+d\left[F_1;C\right]=(a-c)+c=a\); de manera similar para el vértice \(V_2\).
-\item
-  En efecto \[\frac{d\left[B;F_i\right]}{d\left[B;\mathcal{L}_i\right]}=e\Longleftrightarrow \frac{a}{d\left[B;\mathcal{L}_i\right]}=e\] además \(d\left[B_i;\mathcal{L}_i\right]=d\left[C;\mathcal{L}_i\right]\) por lo tanto \(\frac{a}{d\left[C;\mathcal{L}_i\right]}=e\).
-\item
-  Pues \[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e\] implica \(\frac{a-c}{\frac{a}{e}-a}=e\) es decir \(c=ae\).
-\end{enumerate}
-
-Por lo tanto
-\EndKnitrBlock{proof}
-
-\hypertarget{eee}{%
-\chapter{eee}\label{eee}}
-
-\[ \begin{pmatrix}
-1&1&1&1\\
-1&1&1&1\\
-1&1&1&1
-\end{pmatrix}\]
-can be found on the Pandoc website \url{http://pandoc.org}.
-\[\sum\]
-\textgreater{} I thoroughly disapprove of duels. If a man should challenge me,
-I would take him kindly and forgivingly by the hand and lead him
-to a quiet place and kill him.
 
 In this section, we give a very brief introduction to Pandoc's Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc's Markdown can be found on the Pandoc website \url{http://pandoc.org}. \(\sum_1^2\)
 
@@ -549,6 +732,30 @@ c & d
 x_{11} & x_{12} & x_{13}\\
 x_{21} & x_{22} & x_{23}
 \end{array}\]
+
+\hypertarget{medidas-de-dispersiuxf3n}{%
+\chapter{Medidas de dispersión}\label{medidas-de-dispersiuxf3n}}
+
+\hypertarget{medidas-de-asimetruxeda}{%
+\chapter{Medidas de asimetría}\label{medidas-de-asimetruxeda}}
+
+\hypertarget{part-probabilidades}{%
+\part{Probabilidades}\label{part-probabilidades}}
+
+\hypertarget{frecuencia-relativa-cluxe1sica}{%
+\chapter{Frecuencia relativa clásica}\label{frecuencia-relativa-cluxe1sica}}
+
+\hypertarget{calculando}{%
+\chapter{Calculando}\label{calculando}}
+
+\hypertarget{variable-aleatoria}{%
+\chapter{Variable aleatoria}\label{variable-aleatoria}}
+
+\hypertarget{variable-acumulativa}{%
+\chapter{Variable acumulativa}\label{variable-acumulativa}}
+
+\hypertarget{ww}{%
+\chapter{ww}\label{ww}}
 
 \hypertarget{appendix-apendice}{%
 \appendix \addcontentsline{toc}{chapter}{\appendixname}}

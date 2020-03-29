@@ -1,7 +1,10 @@
 \mainmatter 
+# (PART) Estadística descriptiva {-}
+
+# Prerrequisitos
 
 # Variables
-
+Es una característica de personas cosas u objetos que sonpropensos a ser medidas 
 ## Variables cualitativas
 
 Denotan cualidades de objetos personas o animales tales como caracteristicas inherentes que no son medibles por números, tenemos dos casos de esta variable.

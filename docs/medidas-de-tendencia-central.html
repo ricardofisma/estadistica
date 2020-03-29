@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 3 Medidas de tendencia central | Estadística</title>
-  <meta name="description" content="Capítulo 3 Medidas de tendencia central | Estadística" />
+  <title>Capítulo 10 Medidas de tendencia central | Elementos de la estadística</title>
+  <meta name="description" content="Capítulo 10 Medidas de tendencia central | Elementos de la estadística" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 3 Medidas de tendencia central | Estadística" />
+  <meta property="og:title" content="Capítulo 10 Medidas de tendencia central | Elementos de la estadística" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 3 Medidas de tendencia central | Estadística" />
+  <meta name="twitter:title" content="Capítulo 10 Medidas de tendencia central | Elementos de la estadística" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="tabulación.html"/>
-<link rel="next" href="traductor.html"/>
+<link rel="prev" href="gráficos-estadísticos.html"/>
+<link rel="next" href="medidas-de-dispersión.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -60,6 +60,68 @@
 <script type="text/javascript" src="../MathJax.js"></script>
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -76,35 +138,45 @@
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a></li>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a></li>
-<li class="chapter" data-level="1" data-path="variables.html"><a href="variables.html"><i class="fa fa-check"></i><b>1</b> Variables</a><ul>
-<li class="chapter" data-level="1.1" data-path="variables.html"><a href="variables.html#variables-cualitativas"><i class="fa fa-check"></i><b>1.1</b> Variables cualitativas</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="variables.html"><a href="variables.html#nominales"><i class="fa fa-check"></i><b>1.1.1</b> Nominales</a></li>
-<li class="chapter" data-level="1.1.2" data-path="variables.html"><a href="variables.html#ordinales"><i class="fa fa-check"></i><b>1.1.2</b> Ordinales</a></li>
-</ul></li>
-<li class="chapter" data-level="1.2" data-path="variables.html"><a href="variables.html#variables-cuantitativas"><i class="fa fa-check"></i><b>1.2</b> Variables cuantitativas</a><ul>
-<li class="chapter" data-level="1.2.1" data-path="variables.html"><a href="variables.html#discretas"><i class="fa fa-check"></i><b>1.2.1</b> Discretas</a></li>
-<li class="chapter" data-level="1.2.2" data-path="variables.html"><a href="variables.html#continuas"><i class="fa fa-check"></i><b>1.2.2</b> Continuas</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="tabulación.html"><a href="tabulación.html"><i class="fa fa-check"></i><b>2</b> Tabulación</a></li>
-<li class="chapter" data-level="3" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html"><i class="fa fa-check"></i><b>3</b> Medidas de tendencia central</a><ul>
-<li class="chapter" data-level="3.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-media-overlinex"><i class="fa fa-check"></i><b>3.1</b> La media (<span class="math inline">\(\overline{x}\)</span>)</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-de-datos-no-agrupados"><i class="fa fa-check"></i><b>3.1.1</b> Media de datos no agrupados</a></li>
-<li class="chapter" data-level="3.1.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-de-datos-agrupados"><i class="fa fa-check"></i><b>3.1.2</b> Media de datos agrupados</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-moda-mo"><i class="fa fa-check"></i><b>3.2</b> La moda (Mo)</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#moda-de-datos-no-tabulados"><i class="fa fa-check"></i><b>3.2.1</b> Moda de datos no tabulados</a></li>
-<li class="chapter" data-level="3.2.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#moda-de-datos-tabulados"><i class="fa fa-check"></i><b>3.2.2</b> Moda de datos tabulados</a></li>
-</ul></li>
-<li class="chapter" data-level="3.3" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-mediana-me"><i class="fa fa-check"></i><b>3.3</b> la mediana (Me)</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#mediana-de-datos-no-tabulados"><i class="fa fa-check"></i><b>3.3.1</b> Mediana de datos no tabulados</a></li>
-<li class="chapter" data-level="3.3.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#mediana-de-datos-tabulados"><i class="fa fa-check"></i><b>3.3.2</b> Mediana de datos tabulados</a></li>
+<li class="part"><span><b>I Estadística descriptiva</b></span></li>
+<li class="chapter" data-level="1" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a></li>
+<li class="chapter" data-level="2" data-path="variables.html"><a href="variables.html"><i class="fa fa-check"></i><b>2</b> Variables</a><ul>
+<li class="chapter" data-level="2.0.1" data-path="variables.html"><a href="variables.html#nominales"><i class="fa fa-check"></i><b>2.0.1</b> Nominales</a></li>
+<li class="chapter" data-level="2.0.2" data-path="variables.html"><a href="variables.html#ordinales"><i class="fa fa-check"></i><b>2.0.2</b> Ordinales</a></li>
+<li class="chapter" data-level="2.1" data-path="variables.html"><a href="variables.html#variables-cuantitativas"><i class="fa fa-check"></i><b>2.1</b> Variables cuantitativas</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="variables.html"><a href="variables.html#discretas"><i class="fa fa-check"></i><b>2.1.1</b> Discretas</a></li>
+<li class="chapter" data-level="2.1.2" data-path="variables.html"><a href="variables.html#continuas"><i class="fa fa-check"></i><b>2.1.2</b> Continuas</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="traductor.html"><a href="traductor.html"><i class="fa fa-check"></i><b>4</b> traductor</a></li>
-<li class="chapter" data-level="5" data-path="traducto2.html"><a href="traducto2.html"><i class="fa fa-check"></i><b>5</b> traducto2</a></li>
-<li class="chapter" data-level="6" data-path="estadistica.html"><a href="estadistica.html"><i class="fa fa-check"></i><b>6</b> estadistica</a></li>
-<li class="chapter" data-level="7" data-path="eee.html"><a href="eee.html"><i class="fa fa-check"></i><b>7</b> eee</a></li>
+<li class="chapter" data-level="3" data-path="tabulación.html"><a href="tabulación.html"><i class="fa fa-check"></i><b>3</b> Tabulación</a></li>
+<li class="chapter" data-level="4" data-path="característica-de-los-datos.html"><a href="característica-de-los-datos.html"><i class="fa fa-check"></i><b>4</b> Característica de los datos</a></li>
+<li class="chapter" data-level="5" data-path="población-muestra-y-estadística.html"><a href="población-muestra-y-estadística.html"><i class="fa fa-check"></i><b>5</b> Población, muestra y estadística</a></li>
+<li class="chapter" data-level="6" data-path="organización-de-datos-en-tablas-de-frecuencias.html"><a href="organización-de-datos-en-tablas-de-frecuencias.html"><i class="fa fa-check"></i><b>6</b> Organización de datos en tablas de frecuencias</a></li>
+<li class="chapter" data-level="7" data-path="matriz-y-rango.html"><a href="matriz-y-rango.html"><i class="fa fa-check"></i><b>7</b> Matriz y rango</a></li>
+<li class="chapter" data-level="8" data-path="distribució-n-de-frecuencias.html"><a href="distribució-n-de-frecuencias.html"><i class="fa fa-check"></i><b>8</b> Distribució n de frecuencias</a></li>
+<li class="chapter" data-level="9" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html"><i class="fa fa-check"></i><b>9</b> Gráficos estadísticos</a></li>
+<li class="chapter" data-level="10" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html"><i class="fa fa-check"></i><b>10</b> Medidas de tendencia central</a><ul>
+<li class="chapter" data-level="10.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-media-overlinex"><i class="fa fa-check"></i><b>10.1</b> La media (<span class="math inline">\(\overline{x}\)</span>)</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-de-datos-no-agrupados"><i class="fa fa-check"></i><b>10.1.1</b> Media de datos no agrupados</a></li>
+<li class="chapter" data-level="10.1.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#media-de-datos-agrupados"><i class="fa fa-check"></i><b>10.1.2</b> Media de datos agrupados</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-moda-mo"><i class="fa fa-check"></i><b>10.2</b> La moda (Mo)</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#moda-de-datos-no-tabulados"><i class="fa fa-check"></i><b>10.2.1</b> Moda de datos no tabulados</a></li>
+<li class="chapter" data-level="10.2.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#moda-de-datos-tabulados"><i class="fa fa-check"></i><b>10.2.2</b> Moda de datos tabulados</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#la-mediana-me"><i class="fa fa-check"></i><b>10.3</b> la mediana (Me)</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#mediana-de-datos-no-tabulados"><i class="fa fa-check"></i><b>10.3.1</b> Mediana de datos no tabulados</a></li>
+<li class="chapter" data-level="10.3.2" data-path="medidas-de-tendencia-central.html"><a href="medidas-de-tendencia-central.html#mediana-de-datos-tabulados"><i class="fa fa-check"></i><b>10.3.2</b> Mediana de datos tabulados</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="medidas-de-dispersión.html"><a href="medidas-de-dispersión.html"><i class="fa fa-check"></i><b>11</b> Medidas de dispersión</a></li>
+<li class="chapter" data-level="12" data-path="medidas-de-asimetría.html"><a href="medidas-de-asimetría.html"><i class="fa fa-check"></i><b>12</b> Medidas de asimetría</a></li>
+<li class="part"><span><b>II Probabilidades</b></span></li>
+<li class="chapter" data-level="13" data-path="frecuencia-relativa-clásica.html"><a href="frecuencia-relativa-clásica.html"><i class="fa fa-check"></i><b>13</b> Frecuencia relativa clásica</a></li>
+<li class="chapter" data-level="14" data-path="calculando.html"><a href="calculando.html"><i class="fa fa-check"></i><b>14</b> Calculando</a></li>
+<li class="chapter" data-level="15" data-path="variable-aleatoria.html"><a href="variable-aleatoria.html"><i class="fa fa-check"></i><b>15</b> Variable aleatoria</a></li>
+<li class="chapter" data-level="16" data-path="variable-acumulativa.html"><a href="variable-acumulativa.html"><i class="fa fa-check"></i><b>16</b> Variable acumulativa</a></li>
+<li class="chapter" data-level="17" data-path="ww.html"><a href="ww.html"><i class="fa fa-check"></i><b>17</b> ww</a></li>
 <li class="appendix"><span><b>Apendice</b></span></li>
 <li class="chapter" data-level="A" data-path="sumatorias.html"><a href="sumatorias.html"><i class="fa fa-check"></i><b>A</b> Sumatorias</a><ul>
 <li class="chapter" data-level="A.1" data-path="sumatorias.html"><a href="sumatorias.html#ee"><i class="fa fa-check"></i><b>A.1</b> ee</a></li>
@@ -123,7 +195,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estadística</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Elementos de la estadística</a>
           </h1>
         </div>
 
@@ -132,21 +204,21 @@
 
             <section class="normal" id="section-">
 <div id="medidas-de-tendencia-central" class="section level1">
-<h1><span class="header-section-number">Capítulo 3</span> Medidas de tendencia central</h1>
+<h1><span class="header-section-number">Capítulo 10</span> Medidas de tendencia central</h1>
 <p>Son aquellas medidas que buscan un dato representtivo central de un conjunto de datos tales como la media, la moda y la mediana.</p>
 <div id="la-media-overlinex" class="section level2">
-<h2><span class="header-section-number">3.1</span> La media (<span class="math inline">\(\overline{x}\)</span>)</h2>
+<h2><span class="header-section-number">10.1</span> La media (<span class="math inline">\(\overline{x}\)</span>)</h2>
 <p>A veces llamada <em>promedio aritmético</em>, es la medida de tendencia central que pondera los datos.</p>
 <div id="media-de-datos-no-agrupados" class="section level3">
-<h3><span class="header-section-number">3.1.1</span> Media de datos no agrupados</h3>
+<h3><span class="header-section-number">10.1.1</span> Media de datos no agrupados</h3>
 <p>Los datos no están agrupados cuando no están ordenados sobre una tabla de distribución de frecuencias. Sean los <span class="math inline">\(n\)</span> datos <span class="math inline">\(x_1, x_2,\ldots, x_n\)</span> entonces la media o promedio aritmético se define como
 <span class="math display" id="eq:w1">\[\begin{equation}
 \overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i
-\tag{3.1}
+\tag{10.1}
 \end{equation}\]</span>
 <span class="math display" id="eq:ww">\[\begin{equation}
 \frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e=\frac{d\left[P;F_2\right]}{d\left[P;\mathcal{L}_2\right]}
-\tag{3.2}
+\tag{10.2}
 \end{equation}\]</span></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(\overline{x}=\frac{x_1+x_2+\cdots+x_n}{n}=\frac{1}{n}\sum_{i=1}^nx_i\)</span></li>
@@ -154,7 +226,7 @@
 </ol>
 </div>
 <div id="media-de-datos-agrupados" class="section level3">
-<h3><span class="header-section-number">3.1.2</span> Media de datos agrupados</h3>
+<h3><span class="header-section-number">10.1.2</span> Media de datos agrupados</h3>
 <p>Considérese la siguiente tabla de distribucion de frecuencias entonces el promedio es <span class="math display">\[\overline{x}=\frac{y_1f_1+y_2f_2+\cdots+y_nf_n}{n}=\frac{1}{n}\sum_{i=1}^ny_if_i\]</span></p>
 <table>
 <thead>
@@ -230,7 +302,7 @@
 </table>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-3" class="exercise"><strong>Ejercicio 3.1  </strong></span>Si el promedio de <span class="math inline">\(n\)</span> datos es <span class="math inline">\(\overline{x}\)</span> entonces el promedio del conjunto inicial más un dato adicional <span class="math inline">\(x_{n+1}\)</span> es <span class="math display">\[\overline{x}&#39;=\frac{n\overline{x}+x_{n+1}}{n+1}\]</span> en general si se adicionan <span class="math inline">\(r\)</span> datos <span class="math inline">\(y_1, y_2, \ldots y_r\)</span> entonces el nuevo promedio será <span class="math display">\[\overline{x}&#39;=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]</span>
+<span id="exr:unnamed-chunk-5" class="exercise"><strong>Ejercicio 10.1  </strong></span>Si el promedio de <span class="math inline">\(n\)</span> datos es <span class="math inline">\(\overline{x}\)</span> entonces el promedio del conjunto inicial más un dato adicional <span class="math inline">\(x_{n+1}\)</span> es <span class="math display">\[\overline{x}&#39;=\frac{n\overline{x}+x_{n+1}}{n+1}\]</span> en general si se adicionan <span class="math inline">\(r\)</span> datos <span class="math inline">\(y_1, y_2, \ldots y_r\)</span> entonces el nuevo promedio será <span class="math display">\[\overline{x}&#39;=\frac{n\overline{x}+y_{1}+y_2+\ldots+y_r}{n+r}\]</span>
 </div>
 
 
@@ -246,14 +318,14 @@
 </div>
 </div>
 <div id="la-moda-mo" class="section level2">
-<h2><span class="header-section-number">3.2</span> La moda (Mo)</h2>
+<h2><span class="header-section-number">10.2</span> La moda (Mo)</h2>
 <div id="moda-de-datos-no-tabulados" class="section level3">
-<h3><span class="header-section-number">3.2.1</span> Moda de datos no tabulados</h3>
+<h3><span class="header-section-number">10.2.1</span> Moda de datos no tabulados</h3>
 <p>En este caso es dato que más repite en un conjunto de datos dados.</p>
 <p>La moda es el dato que más se repite por ejemplo sea el conjunto de datos <span class="math inline">\(x_1,\)</span> <span class="math inline">\(x_2,\)</span> <span class="math inline">\(x_2,\)</span> <span class="math inline">\(x_2,\)</span> <span class="math inline">\(x_3\)</span> entonces la moda <span class="math inline">\(\text{Mo}=x_2\)</span></p>
 </div>
 <div id="moda-de-datos-tabulados" class="section level3">
-<h3><span class="header-section-number">3.2.2</span> Moda de datos tabulados</h3>
+<h3><span class="header-section-number">10.2.2</span> Moda de datos tabulados</h3>
 <p>La moda es el dato que más se repite por ejemplo sea el conjunto de datos <span class="math inline">\(x_1,\)</span> <span class="math inline">\(x_2,\)</span> <span class="math inline">\(x_2,\)</span> <span class="math inline">\(x_2,\)</span> <span class="math inline">\(x_3\)</span> entonces la moda <span class="math inline">\(\text{Mo}=Li+\frac{Li-Ls}{Li+Ls}r\)</span></p>
 <table>
 <thead>
@@ -330,13 +402,13 @@
 </div>
 </div>
 <div id="la-mediana-me" class="section level2">
-<h2><span class="header-section-number">3.3</span> la mediana (Me)</h2>
+<h2><span class="header-section-number">10.3</span> la mediana (Me)</h2>
 <div id="mediana-de-datos-no-tabulados" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> Mediana de datos no tabulados</h3>
+<h3><span class="header-section-number">10.3.1</span> Mediana de datos no tabulados</h3>
 <p>Obtener la mediana consiste en ordenar los datos de menor a mayor y considerar dos casos: El prmero si el numero de datos s impar entonces el dato <span class="math inline">\(x_{\frac{n+1}{2}}\)</span> del conjunto ordenado será la mediana es decir <span class="math inline">\(\text{Me}=x_{\frac{n+1}{2}}\)</span> de otro lado si el número de datos es par entonces la mediana es la semisuma de los dos datos intermedios es decir <span class="math inline">\(\text{Me}=\frac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}\)</span></p>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-5" class="exercise"><strong>Ejercicio 3.2  </strong></span>Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
+<span id="exr:unnamed-chunk-7" class="exercise"><strong>Ejercicio 10.2  </strong></span>Sean los conjuntos de datos 5, 6, 8, 2, 1, 5, 6, 7, 10, 0, 14 y 20, 25, 6, 5, 19, 5 obtener la mediana de estos conjuntos de datos.
 </div>
 
 
@@ -346,7 +418,7 @@
 
 </div>
 <div id="mediana-de-datos-tabulados" class="section level3">
-<h3><span class="header-section-number">3.3.2</span> Mediana de datos tabulados</h3>
+<h3><span class="header-section-number">10.3.2</span> Mediana de datos tabulados</h3>
 <table>
 <thead>
 <tr class="header">
@@ -423,9 +495,42 @@
 <ul>
 <li>Se halla <span class="math inline">\(\frac{n}{2}\)</span> luego</li>
 <li><span class="math inline">\(x_n\)</span></li>
-<li></li>
+<li><span class="math display">\[ \begin{pmatrix}
+1&amp;1&amp;1&amp;1\\
+1&amp;1&amp;1&amp;1\\
+1&amp;1&amp;1&amp;1
+\end{pmatrix}\]</span>
+can be found on the Pandoc website <a href="http://pandoc.org" class="uri">http://pandoc.org</a>.
+<span class="math display">\[\sum\]</span>
+&gt; I thoroughly disapprove of duels. If a man should challenge me,
+I would take him kindly and forgivingly by the hand and lead him
+to a quiet place and kill him.</li>
 </ul>
-
+<p>In this section, we give a very brief introduction to Pandoc’s Markdown. Readers who are familiar with Markdown can skip this section. The comprehensive syntax of Pandoc’s Markdown can be found on the Pandoc website <a href="http://pandoc.org" class="uri">http://pandoc.org</a>. <span class="math inline">\(\sum_1^2\)</span></p>
+<blockquote>
+<p>I thoroughly disapprove of duels. If a man should challenge me,
+I would take him kindly and forgivingly by the hand and lead him
+to a quiet place and kill him.</p>
+<p>– Mark Twain</p>
+</blockquote>
+<p><span class="math display">\[\begin{pmatrix}\alpha &amp; \beta\\
+\gamma &amp; \delta
+\end{pmatrix}-\frac{2}{3} \begin{pmatrix}\alpha_1 &amp; \beta_2\\
+\gamma &amp; \delta
+\end{pmatrix}\]</span>
+* La suma de dos matrices <span class="math inline">\(A_{n\times m}\)</span> y <span class="math inline">\(B_{r\times s}\)</span> <span class="math display">\[A_{n\times m}\pm B_{n\times m}=[a_{ij}+b_{ij}]\]</span>
+* El producto de dos matrices <span class="math inline">\(A_{n\times m}\)</span> y <span class="math inline">\(B_{r\times s}\)</span> <span class="math display">\[A_{n\times m}\cdot B_{n\times m}=[a_{ij}+b_{ij}]\]</span>
+<span class="math display">\[X = \begin{bmatrix}1 &amp; x_{1}\\
+1 &amp; x_{2}\\
+1 &amp; x_{3}
+\end{bmatrix}\]</span></p>
+<p><span class="math display">\[\begin{vmatrix}a &amp; b\\
+c &amp; d
+\end{vmatrix}=ad-bc\]</span></p>
+<p><span class="math display">\[\begin{array}{ccc}
+x_{11} &amp; x_{12} &amp; x_{13}\\
+x_{21} &amp; x_{22} &amp; x_{23}
+\end{array}\]</span></p>
 </div>
 </div>
 </div>
@@ -434,8 +539,8 @@
           </div>
         </div>
       </div>
-<a href="tabulación.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="traductor.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="gráficos-estadísticos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="medidas-de-dispersión.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
