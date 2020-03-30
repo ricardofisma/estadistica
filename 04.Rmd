@@ -18,18 +18,20 @@ Sea la Tabla \@ref(tab:w3) Figures and tables with captions will be placed in `f
 library(openxlsx)
 new <-read.xlsx(xlsxFile="levene.xlsx",sheet=11,cols=c(1:3),rows=c(1:33),colNames=TRUE)
 knitr::kable(
-  head(new, 20), caption = 'Here is a nice table!', longtable = T,
-  booktabs = TRUE
+  head(new, 33), caption = 'Here is a nice table!', longtable = T,linesep = "",booktabs = TRUE,format = "latex", escape = TRUE
 )
 ```
 
 
+
 ```{r ww3, echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
 library(openxlsx)
-new <-read.xlsx(xlsxFile="levene.xlsx",sheet=10,cols=c(1:7),rows=c(1:37),colNames=TRUE)
+new <-read.xlsx(xlsxFile="levene.xlsx",sheet=10,cols=c(1:7),rows=c(1:39),colNames=TRUE)
+
+
+options(knitr.kable.NA = "")
 knitr::kable(
-  head(new, 20), caption = 'Here is a nice table!', longtable = T,
-  booktabs = TRUE
+  head(new, 39), caption = 'Here!',longtable = T,linesep = "",booktabs = TRUE,align = "lccrr",digits = 2,escape = FALSE
 )
 ```
 
