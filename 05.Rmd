@@ -1,5 +1,7 @@
 # Gráficos estadísticos
 
+
+
 # Medidas de tendencia central
 
 Son aquellas medidas que buscan un dato representtivo central de un conjunto de datos tales como la media, la moda y la mediana.
