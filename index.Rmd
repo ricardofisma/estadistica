@@ -18,6 +18,7 @@ monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
 toc_appendix: yes
 description: ""
+always_allow_html: true
 ---
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\R}{\mathbb{R}}
