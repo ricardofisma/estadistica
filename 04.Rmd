@@ -1,4 +1,6 @@
 # Organización de datos en tablas de frecuencias
+
+<https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6>
 Sea la Tabla \@ref(tab:w3) Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
  Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
  Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
