@@ -1,37 +1,75 @@
 # Organización de datos en tablas de frecuencias
 
+
+```{r,echo=F}
+x = 42 * 2 
+print(x) 
+```
+
+
+```{python,echo=F}
+x = 'hello, python world!'
+print(x.split(' '))
+```
+
+
+The value of `x` in the Python session is `r x`.
+It is not the same `x` as the one in R.
+
+```{r ww1w, fig.cap='',  fig.width = 5, fig.asp=.75, fig.align='center', echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
+w <- c(1, 2, 3, 4, 5 , 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20, 21, 22, 23, 24, 25, 26,27)
+ww <- c(1, 1, 6, 7, 11, 11, 15, 28, 38, 43, 86, 117, 145, 234, 234, 318, 363, 395, 416, 480, 580, 635, 671, 852, 950, 1065,1152)
+f <- lm(ww ~ poly(w, 3, raw=TRUE))
+#coef(f)
+#summary(f)
+library(ggplot2)
+library(ggthemes)
+ggplot(, aes(x = w, y = ww)) + theme(text=element_text(family="serif", size=12)) +  geom_point() + geom_smooth(method = "lm", fullrange=TRUE, formula = y ~ poly(x, 3, raw=TRUE), se = TRUE)+theme_tufte(ticks = FALSE)
+
+t=27
+w=2.62274-3.49821*t+0.65513*t^2+0.03895*t^3
+
+tt=30
+wt=2.62274-3.49821*tt+0.65513*tt^2+0.03895*tt^3
+
+ttt=28
+wtt=2.62274-3.49821*ttt+0.65513*ttt^2+0.03895*ttt^3
+```
+
+\[f(x)=`r round(f$coefficients[1],3)`+`r round(f$coefficients[2],3)`x+`r round(f$coefficients[3],3)`x^2+`r round(f$coefficients[4],3)`x^3\]
+
+\[f(28)=`r round(wtt,0)`\]
+\[f(27)=`r round(w,0)`\] 
+\[f(30)=`r round(wt,0)`\] 
+
+
 <https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6>
+
+Sea la Tabla \@ref(tab:2w3) Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+ Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+ Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r 2w3, echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
+library(openxlsx)
+opts <- options(knitr.kable.NA = "")
+new <-read.xlsx(xlsxFile="levene.xlsx",sheet=11,cols=c(5:14),rows=c(1:18),colNames=T)
+knitr::kable(new, escape = FALSE,digits = 2,booktabs=T,caption='Figures and tables with captions will be placed in `figure`',linesep = "",longtable=T, align = "ccccccccc")
+```
+
 Sea la Tabla \@ref(tab:w3) Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
  Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
  Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
- 
 
-```{r w3, echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
-library(openxlsx)
-new <-read.xlsx(xlsxFile="levene.xlsx",sheet=11,cols=c(1:3),rows=c(1:33),colNames=TRUE)
-knitr::kable(
-  head(new, 33), caption = 'Here is a nice table!', longtable = T,linesep = "",booktabs = TRUE,format = "latex", escape = TRUE
-)
-```
+Sea la Tabla \@ref(tab:w3) Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+ Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+ Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
-
-
-```{r ww3, echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
-library(openxlsx)
-new <-read.xlsx(xlsxFile="levene.xlsx",sheet=10,cols=c(1:7),rows=c(1:39),colNames=TRUE)
-
-
-options(knitr.kable.NA = "")
-knitr::kable(
-  head(new, 39), caption = 'Here!',longtable = T,linesep = "",booktabs = TRUE,align = "lccrr",digits = 2,escape = FALSE
-)
-```
 
 
 ```{r,echo = F}
 library(openxlsx)
 #library(kableExtra)
-new <-read.xlsx(xlsxFile="levene.xlsx",sheet=10,cols=c(1:7),rows=c(1:39),colNames=F)
+new <-read.xlsx(xlsxFile="levene.xlsx",sheet=10,cols=c(1:7),rows=c(1:39),colNames=T)
 rownames(new)[7:9] = c('$\\beta_0$', '$\\beta_1$', '$\\beta_3$')
 colnames(new)[2:3] = c('$\\alpha$','$\\sum^{n}_{i=1}{x_i}$')
 rownames(new)[35] = '$\\sum^{n}_{i=1}{x_i}$'
@@ -40,40 +78,39 @@ knitr::kable(new, escape = FALSE,booktabs=T,caption='Figures and tables with cap
 ```
 
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively Figura \@ref(fig:www)
+<!-- Figures and tables with captions will be placed in `figure` and `table` environments, respectively Figura \@ref(fig:www) -->
 
-```{r www, fig.cap='Here is a nice figure 100!',  fig.width = 5, fig.asp=.75, fig.align='center', echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
-library(extrafont)
-library(tidyverse)
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 9, family = "serif",ylab="",xlab="")
-text(200, 200, "Sans Italic text", font = 3)
-text(80, 80, "Serif text", family = "Times New Roman")
-title(ylab="Withinwww-cluster variance", line=2.2, family="serif")
-title(xlab="Within-cluster variancewwww", line=2.2, family="serif")
-```
+<!-- ```{r www, fig.cap='Here is a nice figure 100!',  fig.width = 5, fig.asp=.75, fig.align='center', echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE} -->
+<!-- library(extrafont) -->
+<!-- library(tidyverse) -->
+<!-- par(mar = c(4, 4, .1, .1)) -->
+<!-- plot(pressure, type = 'b', pch = 9, family = "serif",ylab="",xlab="") -->
+<!-- text(200, 200, "Sans Italic text", font = 3) -->
+<!-- text(80, 80, "Serif text", family = "Times New Roman") -->
+<!-- title(ylab="Withinwww-cluster variance", line=2.2, family="serif") -->
+<!-- title(xlab="Within-cluster variancewwww", line=2.2, family="serif") -->
+<!-- ``` -->
 
 
-
-```{r wwwww, fig.cap='Here is a nice figure 100!',  fig.width = 5, fig.asp=.75, fig.align='center', echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
-library(extrafont)
-library(tidyverse)
-new <-read.xlsx(xlsxFile="levene.xlsx",sheet=11,cols=c(1:3),rows=c(2:33),colNames=FALSE)
-Temperature <- new$X2
-h <- hist(Temperature, xlab="", ylab="",
-          #yaxt='n',lab=c(6,5,7), # no ticks on y axis, all ticks on x
-          ylim=c(0,12),
-          breaks=5,
-          family = "serif",
-          main=NULL,
-          xlim=c(4,8),
-col="magenta",plot.margin = margin(0, 0, -0.5, -0.3, "cm"),
-)
-text(h$mids,h$counts,labels=h$counts, adj=c(0.5, -0.5), family = "serif")# top frecuencia.
-title(ylab="Within-cluster variance", line=2.2, family="serif")
-title(xlab="Within-cluster variance", line=2.2, family="serif")
-```
-Centering 
+<!-- ctrl shift c -->
+<!-- ```{r wwwww, fig.cap='Here is a nice figure 100!',  fig.width = 5, fig.asp=.75, fig.align='center', echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE} -->
+<!-- library(extrafont) -->
+<!-- library(tidyverse) -->
+<!-- new <-read.xlsx(xlsxFile="levene.xlsx",sheet=11,cols=c(1:3),rows=c(2:33),colNames=FALSE) -->
+<!-- Temperature <- new$X2 -->
+<!-- h <- hist(Temperature, xlab="", ylab="", -->
+<!--           #yaxt='n',lab=c(6,5,7), # no ticks on y axis, all ticks on x -->
+<!--           ylim=c(0,12), -->
+<!--           breaks=5, -->
+<!--           family = "serif", -->
+<!--           main=NULL, -->
+<!--           xlim=c(4,8), -->
+<!-- col="magenta",plot.margin = margin(0, 0, -0.5, -0.3, "cm"), -->
+<!-- ) -->
+<!-- text(h$mids,h$counts,labels=h$counts, adj=c(0.5, -0.5), family = "serif")# top frecuencia. -->
+<!-- title(ylab="Within-cluster variance", line=2.2, family="serif") -->
+<!-- title(xlab="Within-cluster variance", line=2.2, family="serif") -->
+<!-- ``` -->
 
 # Matriz y rango
 
