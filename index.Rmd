@@ -42,21 +42,11 @@ always_allow_html: true
 
 # Resumen {-}
 
+La estadística es la ciencia que manipula datos las analiza e interpreta para poder sacar concluciones razonables de ciertos fenomenos naturales. Esta ciencia puede ser dividido en dos: **estadística descirptiva** y  **estadística inferencial**. En la estadística descriptiva se procesan datos de una manera teórica y utilitaria. Estos métodos consisten en la recolección, organización, resumen, descripcion y presenatacion de la información. Si la poblacion está disponible entonces la estadística descriptiva es suficiente para describir ciertos fenomenos. No obstante generalmente no se dispone de toda la población si no de una muestra de ella, es en este caso que se requieren usar técnicas más sofisticadas para tomar decisiones y generalizaciones acerca de la poblacion, desde una pequeña muestra de información. Es cuando entra en el juego la estadística inferencial.
 
-
-Este libro sobre la estadistica descriptiva. cuyo objetivo es demostrar resultados basicos muy útiles en el desarrollo de investigaciones.
-
-$$\sum_1^2$$
-
-# Introducción {-}
+La base teórica de la estadística son las matemáticas 
 
 
 
-$$\sum_1^2$$
+Este libro se compone de dos partes, la primera parte trata sobre la **estadística descirptiva** y la segunda  **estadística inferencial**. Cada una de ellas divididas en capítulos.
 
-$$\vec{u}=(1,1)-\rho\int_2^3$$
-
-Debido a la poca información estructurada de estadistica descriptiva se propone escribir este libro con un enfoque demostrativo.
-
-
-$$x^2+y^2$$ 
