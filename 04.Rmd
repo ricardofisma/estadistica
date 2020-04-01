@@ -2,18 +2,12 @@
 
 
 ```{r,echo=F}
-x = 42 * 2 
-print(x) 
+xw = 'Es decir los elementos son demagogos y déspotas' 
 ```
+* `r xw`
 
 
-```{python,echo=F}
-x = 'hello, python world!'
-print(x.split(' '))
-```
-
-
-The value of `x` in the Python session is `r x`.
+The value of `x` in the Python session is `r xw`.
 It is not the same `x` as the one in R.
 
 ```{r ww1w, fig.cap='',  fig.width = 5, fig.asp=.75, fig.align='center', echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}

@@ -1,6 +1,9 @@
 # Gráficos estadísticos
 
 
+The value of `x` in the Python session is `r xw`.
+It is not the same `x` as the one in R.
+
 
 # Medidas de tendencia central
 
