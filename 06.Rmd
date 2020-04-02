@@ -8,4 +8,28 @@
 
 # Variable acumulativa
 
+
+# (PART)  Inferencia estadística {-}
+
+
+# Variables aleatorias
+
+## Discretas
+
+\[p(x)=e^3\]
+
+
+## Continuas
+Sea $X$ una VA continua  con rango $R_{X}$
+La funcion de densidad de probabilidad asociado a una variable aleatoria \(f(x)\)
+
+* \(f(x)\leq 0\), $x\in R_{X}$
+* \(\int_{R_{X}} f(x)dx=1\) o \(\int_{-\infty}^\infty f(x)dx=1\)
+
+# Calculando
+
+# Variable aleatoria
+
+# Variable acumulativa
+
 # ww

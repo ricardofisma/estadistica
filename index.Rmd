@@ -2,7 +2,7 @@
 title: "Elementos  de la estadística"
 subtitle: "estadística descriptiva y probabilidades"
 author: "Ricardo Michel MALLQUI BAÑOS"
-institute: "Universidad Nacional San Cristóbal De Huamanga"
+affiliation: "Universidad Nacional San Cristóbal De Huamanga"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: krantz
