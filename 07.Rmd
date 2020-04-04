@@ -9,7 +9,7 @@ Algunas propiedades son
 3. $\sum_{i=1}^nx_i$
 $$\int_1^3=\lim_{n\to \infty}\sum_{i=0}^{n}f^i(x)$$
 citado por [@xie2015]
-
+Variable estadística variable estadística   
 ## ee
 
 ## eeeee
