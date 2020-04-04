@@ -121,7 +121,7 @@ Discreta y continua
 ## Función de probabilidad de una variable aleatoria 
 
 ### Función de probabilidad de una variable aleatorias discreta
-```{definition,name="Funcion de probabilidad"}
+```{definition,name="Funcion o ley de probabilidad"}
 Sea $X$ una variable aleatoria con rango $R_X$. Una funcion definida por \[p(x)=P[X=x]= \sum^{}_{ \left\{\omega \in \Omega:X(\omega)=x\right\}}P\left[\left\{\omega\right\}\right]\]
 
 * $p(x)>0$, $x\in R_X$
@@ -151,7 +151,12 @@ recie el nombre de función de distribución de $X$.
 ### Función de distribución de una variable aleatoria continua
 
 
+```{definition, name="Función de distribución"}
+Sea Sea $X$ una variable aleatoria con función de densidad $f(x)$. La función
+\[F(x)=P[X\leq x]=\int_{-\infty}^{x}f(t)dt, \text{ $\forall x\in R_X$}\]
 
+
+```
 
 
 
