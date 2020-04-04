@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Elementos de la estadística</title>
-  <meta name="description" content="Elementos de la estadística" />
+  <title>B Matrices | Elementos de la estadística</title>
+  <meta name="description" content="B Matrices | Elementos de la estadística" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Elementos de la estadística" />
+  <meta property="og:title" content="B Matrices | Elementos de la estadística" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Elementos de la estadística" />
+  <meta name="twitter:title" content="B Matrices | Elementos de la estadística" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="prerrequisitos.html"/>
+<link rel="prev" href="sumatorias.html"/>
+<link rel="next" href="referencias.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -178,30 +178,56 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Elementos de la estadística</h1>
-<h2 class="subtitle"><em>estadística descriptiva y probabilidades</em></h2>
-<p class="author"><em>Ricardo Michel MALLQUI BAÑOS</em></p>
-<p class="date"><em>2020-04-04</em></p>
+<div id="matrices" class="section level1">
+<h1><span class="header-section-number">B</span> Matrices</h1>
+<p>Una matriz es un arreglo de números distribuidos en filas y columnas por ejemplo la siguiente matriz
+<span class="math display">\[A=\begin{pmatrix}
+a_{11}&amp;a_{12}&amp;\ldots&amp;a_{1n}\\
+a_{21}&amp;a_{22}&amp;\ldots&amp;a_{2n}\\
+\vdots &amp; \vdots &amp; \ddots &amp;\vdots \\
+a_{11}&amp;a_{11}&amp;\ldots&amp;a_{nm}
+\end{pmatrix}_{n\times n}\]</span>
+de <strong>orden</strong> <span class="math inline">\(n\times m\)</span> tiene <strong>entradas</strong> <span class="math inline">\(a_{ij}\)</span> donde el primer subindice indica la fila y el segundo la columna; es usual representar por simplicidad una matriz por <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span>. Si en el orden <span class="math inline">\(n=m\)</span> entonces la matriz recibe el nombre de <strong>matriz cuadrada</strong> la suma de los elementos de la diagonal de una matriz cuadrada <span class="math inline">\(\sum_{i=1}^na_{ii}\)</span> se llama <strong>traza</strong>. Si todas las <span class="math inline">\(a_{ij}\)</span> son cero entonces la matriz <span class="math inline">\(A=0\)</span> recibe el nombre matriz <strong>nula</strong>.</p>
+<p>Dos matrices son iguales si tienen el <strong>mismo orden</strong> y cada una de las entradas respectivas son iguales es decir <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{n\times m}\)</span> son iguales si <span class="math inline">\(a_{ij}=b_{ij}\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p>
+<div id="algebra-de-matrices" class="section level2">
+<h2><span class="header-section-number">B.1</span> Algebra de matrices</h2>
+<p>Sean las matrices <span class="math inline">\(A=[a_{ij}]_{n\times m}\)</span> y <span class="math inline">\(B=[b_{ij}]_{p\times q}\)</span> entonces la suma y producto de matrices se definen</p>
+<ol style="list-style-type: decimal">
+<li><p>Sea <span class="math inline">\(k\)</span> un escalar entonces se verifica que <span class="math inline">\(kA=[ka_{ij}]\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span> es decir el escalar <span class="math inline">\(k\)</span> multiplica a cada una de las entradas de la matriz.</p></li>
+<li><p>La suma o diferencia es posible si <span class="math inline">\(n=p\)</span> y <span class="math inline">\(m=q\)</span> es decir los ordenes de <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son iguales, entonces la suma o diferencia resulta <span class="math inline">\(A\pm B=[a_{ij}+b_{ij}]_{n\times m}\)</span>, <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p></li>
+<li><p>El producto es posible si <span class="math inline">\(m=p\)</span> es decir el número columnas de la primera matriz es igual al número de filas de la segunda matriz, el orden de la matriz resultante es <span class="math inline">\(n\times q\)</span> además
+<span class="math display">\[\begin{align*}
+A\cdot B&amp;=\left[\sum_{k=1}^pa_{ik}b_{kj}\right]_{n\times q}\\
+&amp;=\begin{pmatrix}
+\sum_{k=1}^ma_{1k}b_{k1}&amp;\sum_{k=1}^ma_{1k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^ma_{1k}b_{kq}\\
+\sum_{k=1}^ma_{2k}b_{k1}&amp;\sum_{k=1}^ma_{2k}b_{k2}&amp;\ldots&amp;\sum_{k=1}^ma_{2k}b_{kq}\\
+\vdots &amp; \vdots &amp; \ddots &amp;\vdots \\
+\sum_{k=1}^ma_{nk}b_{k1}&amp;\sum_{k=1}^ma_{nk}b_{k2}&amp;\ldots&amp;\sum_{k=1}^ma_{nk}b_{kq}\\
+\end{pmatrix}_{n\times q}
+\end{align*}\]</span></p></li>
+</ol>
+<p>donde <span class="math inline">\(i=1,2,\ldots n\)</span> y <span class="math inline">\(j=1,2,\ldots m\)</span></p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-16" class="example"><strong>Ejemplo B.1  </strong></span>Sean <span class="math inline">\(\begin{pmatrix} 3&amp;-1&amp;2\\ 2&amp;-1&amp;2\\ 1&amp;-1&amp;0\\ 5&amp;0&amp;0\\ \end{pmatrix}_{4\times 3}\)</span> y <span class="math inline">\(\begin{pmatrix} 0&amp;-1&amp;2&amp;2&amp;0\\ 1&amp;-1&amp;-2&amp;1&amp;1\\ 3&amp;-1&amp;-3&amp;5&amp;2\\ \end{pmatrix}_{3\times 5}\)</span> entonces <span class="math inline">\(A\cdot B=\begin{pmatrix} 5&amp;-4&amp;2&amp;15&amp;3\\ 5&amp;-3&amp;0&amp;13&amp;3\\ -1&amp;0&amp;4&amp;1&amp;-1\\ 0&amp;-5&amp;10&amp;10&amp;0\\ \end{pmatrix}_{4\times 5}\)</span>
 </div>
-<div id="resumen" class="section level1 unnumbered">
-<h1>Resumen</h1>
-<p>La estadística es la ciencia que manipula datos las analiza e interpreta para poder sacar concluciones razonables de ciertos fenomenos naturales. Esta ciencia puede ser dividido en dos: <strong>estadística descirptiva</strong> y <strong>estadística inferencial</strong>. En la estadística descriptiva se procesan datos de una manera teórica y utilitaria. Estos métodos consisten en la recolección, organización, resumen, descripcion y presenatacion de la información. Si la poblacion está disponible entonces la estadística descriptiva es suficiente para describir ciertos fenomenos. No obstante generalmente no se dispone de toda la población si no de una muestra de ella, es en este caso que se requieren usar técnicas más sofisticadas para tomar decisiones y generalizaciones acerca de la poblacion, desde una pequeña muestra de información. Es cuando entra en el juego la estadística inferencial.</p>
-<p>La base teórica de la estadística son las matemáticas</p>
-<p>Este libro se compone de dos partes, la primera parte trata sobre la <strong>estadística descirptiva</strong> y la segunda <strong>estadística inferencial</strong>. Cada una de ellas divididas en capítulos.</p>
 
+<p>En caso de ser posible la multiplicación entre <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> y <span class="math inline">\(C\)</span> entonces se verfican las siguientes propiedades</p>
+<ul>
+<li><span class="math inline">\(A(B+C)=AB+AC\)</span></li>
+<li><span class="math inline">\((A+B)C\)</span></li>
+<li><span class="math inline">\(A(BC)=(AB)C\)</span></li>
+</ul>
 
 </div>
-
-
-
+</div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="prerrequisitos.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sumatorias.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

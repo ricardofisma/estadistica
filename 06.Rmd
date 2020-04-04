@@ -161,8 +161,12 @@ Sea Sea $X$ una variable aleatoria con función de densidad $f(x)$. La función
 
 
 
-# Estadigrafos de la variables aleatorias
-## esperanza matematica
+# Parámetros de una variable aleatoria
+## esperanza matemática
+```{definition, name="Esperanza matemática"}
+Sea 
+```
+
 ## Medidas de tendencia central
 ## Medidas de variación
 ## Cuantiles
