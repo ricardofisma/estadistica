@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 20 Estimación | Elementos de la estadística</title>
+  <meta name="description" content="Capítulo 20 Estimación | Elementos de la estadística" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 20 Estimación | Elementos de la estadística" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 20 Estimación | Elementos de la estadística" />
+  
+  
+  
+
+<meta name="author" content="Ricardo Michel MALLQUI BAÑOS" />
+
+
+<meta name="date" content="2020-04-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="distribuciones-muestrales.html"/>
+<link rel="next" href="prueba-de-hipótesis.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="../MathJax.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a></li>
+<li class="part"><span><b>I Estadística descriptiva</b></span></li>
+<li class="chapter" data-level="1" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#variables-cualitativas"><i class="fa fa-check"></i><b>1.1</b> Variables cualitativas</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#nominales"><i class="fa fa-check"></i><b>1.1.1</b> Nominales</a></li>
+<li class="chapter" data-level="1.1.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#ordinales"><i class="fa fa-check"></i><b>1.1.2</b> Ordinales</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#variables-cuantitativas"><i class="fa fa-check"></i><b>1.2</b> Variables cuantitativas</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#discretas"><i class="fa fa-check"></i><b>1.2.1</b> Discretas</a></li>
+<li class="chapter" data-level="1.2.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#continuas"><i class="fa fa-check"></i><b>1.2.2</b> Continuas</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="característica-de-los-datos.html"><a href="característica-de-los-datos.html"><i class="fa fa-check"></i><b>2</b> Característica de los datos</a></li>
+<li class="chapter" data-level="3" data-path="población-muestra-y-estadística.html"><a href="población-muestra-y-estadística.html"><i class="fa fa-check"></i><b>3</b> Población, muestra y estadística</a></li>
+<li class="chapter" data-level="4" data-path="organización-de-datos-en-tablas-de-frecuencias.html"><a href="organización-de-datos-en-tablas-de-frecuencias.html"><i class="fa fa-check"></i><b>4</b> Organización de datos en tablas de frecuencias</a></li>
+<li class="chapter" data-level="5" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html"><i class="fa fa-check"></i><b>5</b> Gráficos estadísticos</a><ul>
+<li class="chapter" data-level="5.1" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#la-media-overlinex"><i class="fa fa-check"></i><b>5.1</b> La media (<span class="math inline">\(\overline{x}\)</span>)</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#media-de-datos-no-agrupados"><i class="fa fa-check"></i><b>5.1.1</b> Media de datos no agrupados</a></li>
+<li class="chapter" data-level="5.1.2" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#media-de-datos-agrupados"><i class="fa fa-check"></i><b>5.1.2</b> Media de datos agrupados</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#la-moda-mo"><i class="fa fa-check"></i><b>5.2</b> La moda (Mo)</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#moda-de-datos-no-tabulados"><i class="fa fa-check"></i><b>5.2.1</b> Moda de datos no tabulados</a></li>
+<li class="chapter" data-level="5.2.2" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#moda-de-datos-tabulados"><i class="fa fa-check"></i><b>5.2.2</b> Moda de datos tabulados</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#la-mediana-me"><i class="fa fa-check"></i><b>5.3</b> la mediana (Me)</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#mediana-de-datos-no-tabulados"><i class="fa fa-check"></i><b>5.3.1</b> Mediana de datos no tabulados</a></li>
+<li class="chapter" data-level="5.3.2" data-path="gráficos-estadísticos.html"><a href="gráficos-estadísticos.html#mediana-de-datos-tabulados"><i class="fa fa-check"></i><b>5.3.2</b> Mediana de datos tabulados</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Probabilidades</b></span></li>
+<li class="chapter" data-level="6" data-path="experimento-aleatorio.html"><a href="experimento-aleatorio.html"><i class="fa fa-check"></i><b>6</b> Experimento aleatorio</a></li>
+<li class="chapter" data-level="7" data-path="álgebra-de-eventos.html"><a href="álgebra-de-eventos.html"><i class="fa fa-check"></i><b>7</b> Álgebra de eventos</a></li>
+<li class="chapter" data-level="8" data-path="técnicas-de-conteo.html"><a href="técnicas-de-conteo.html"><i class="fa fa-check"></i><b>8</b> Técnicas de conteo</a></li>
+<li class="chapter" data-level="9" data-path="definición-de-probabilidad.html"><a href="definición-de-probabilidad.html"><i class="fa fa-check"></i><b>9</b> Definición de probabilidad</a></li>
+<li class="chapter" data-level="10" data-path="probabilidad-condicional.html"><a href="probabilidad-condicional.html"><i class="fa fa-check"></i><b>10</b> Probabilidad condicional</a></li>
+<li class="chapter" data-level="11" data-path="teorema-de-bayes.html"><a href="teorema-de-bayes.html"><i class="fa fa-check"></i><b>11</b> Teorema de Bayes</a></li>
+<li class="chapter" data-level="12" data-path="eventos-independientes-y-secuencias-de-experimentos.html"><a href="eventos-independientes-y-secuencias-de-experimentos.html"><i class="fa fa-check"></i><b>12</b> Eventos independientes y secuencias de experimentos</a></li>
+<li class="chapter" data-level="13" data-path="probabilidad-en-espacio.html"><a href="probabilidad-en-espacio.html"><i class="fa fa-check"></i><b>13</b> Probabilidad en espacio</a></li>
+<li class="part"><span><b>III Inferencia estadística</b></span></li>
+<li class="chapter" data-level="14" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html"><i class="fa fa-check"></i><b>14</b> Variables aleatorias</a><ul>
+<li class="chapter" data-level="14.1" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#clases-de-variables-aleatorias"><i class="fa fa-check"></i><b>14.1</b> Clases de variables aleatorias</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#variable-aleatoria-discreta"><i class="fa fa-check"></i><b>14.1.1</b> Variable aleatoria discreta</a></li>
+<li class="chapter" data-level="14.1.2" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#variable-aleatoria-continua"><i class="fa fa-check"></i><b>14.1.2</b> Variable aleatoria continua</a></li>
+<li class="chapter" data-level="14.1.3" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#variable-aleatoria-mixta"><i class="fa fa-check"></i><b>14.1.3</b> Variable aleatoria mixta</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#función-de-probabilidad-de-una-variable-aleatoria"><i class="fa fa-check"></i><b>14.2</b> Función de probabilidad de una variable aleatoria</a><ul>
+<li class="chapter" data-level="14.2.1" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#función-de-probabilidad-de-una-variable-aleatorias-discreta"><i class="fa fa-check"></i><b>14.2.1</b> Función de probabilidad de una variable aleatorias discreta</a></li>
+<li class="chapter" data-level="14.2.2" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#función-de-probabilidad-de-una-variable-aleatoria-continua"><i class="fa fa-check"></i><b>14.2.2</b> Función de probabilidad de una variable aleatoria continua</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#función-de-distribución-de-una-variable-aleatoria"><i class="fa fa-check"></i><b>14.3</b> Función de distribución de una variable aleatoria</a><ul>
+<li class="chapter" data-level="14.3.1" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#función-de-distribución-de-una-variable-aleatoria-discreta"><i class="fa fa-check"></i><b>14.3.1</b> Función de distribución de una variable aleatoria discreta</a></li>
+<li class="chapter" data-level="14.3.2" data-path="variables-aleatorias.html"><a href="variables-aleatorias.html#función-de-distribución-de-una-variable-aleatoria-continua"><i class="fa fa-check"></i><b>14.3.2</b> Función de distribución de una variable aleatoria continua</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="estadigrafos-de-la-variables-aleatorias.html"><a href="estadigrafos-de-la-variables-aleatorias.html"><i class="fa fa-check"></i><b>15</b> Estadigrafos de la variables aleatorias</a><ul>
+<li class="chapter" data-level="15.1" data-path="estadigrafos-de-la-variables-aleatorias.html"><a href="estadigrafos-de-la-variables-aleatorias.html#esperanza-matematica"><i class="fa fa-check"></i><b>15.1</b> esperanza matematica</a></li>
+<li class="chapter" data-level="15.2" data-path="estadigrafos-de-la-variables-aleatorias.html"><a href="estadigrafos-de-la-variables-aleatorias.html#medidas-de-tendencia-central"><i class="fa fa-check"></i><b>15.2</b> Medidas de tendencia central</a></li>
+<li class="chapter" data-level="15.3" data-path="estadigrafos-de-la-variables-aleatorias.html"><a href="estadigrafos-de-la-variables-aleatorias.html#medidas-de-variación"><i class="fa fa-check"></i><b>15.3</b> Medidas de variación</a></li>
+<li class="chapter" data-level="15.4" data-path="estadigrafos-de-la-variables-aleatorias.html"><a href="estadigrafos-de-la-variables-aleatorias.html#cuantiles"><i class="fa fa-check"></i><b>15.4</b> Cuantiles</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="variables-aleatorias-bidimensionales.html"><a href="variables-aleatorias-bidimensionales.html"><i class="fa fa-check"></i><b>16</b> Variables aleatorias bidimensionales</a><ul>
+<li class="chapter" data-level="16.1" data-path="variables-aleatorias-bidimensionales.html"><a href="variables-aleatorias-bidimensionales.html#distribuciones-marginales"><i class="fa fa-check"></i><b>16.1</b> Distribuciones marginales</a></li>
+<li class="chapter" data-level="16.2" data-path="variables-aleatorias-bidimensionales.html"><a href="variables-aleatorias-bidimensionales.html#distribuciones"><i class="fa fa-check"></i><b>16.2</b> Distribuciones</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="distribuciones-discreta-importantes.html"><a href="distribuciones-discreta-importantes.html"><i class="fa fa-check"></i><b>17</b> Distribuciones discreta importantes</a><ul>
+<li class="chapter" data-level="17.1" data-path="distribuciones-discreta-importantes.html"><a href="distribuciones-discreta-importantes.html#variable-aleatoria-discreta-binomial"><i class="fa fa-check"></i><b>17.1</b> Variable aleatoria discreta binomial</a></li>
+<li class="chapter" data-level="17.2" data-path="distribuciones-discreta-importantes.html"><a href="distribuciones-discreta-importantes.html#variable-aleatoria-discreta-poisson"><i class="fa fa-check"></i><b>17.2</b> Variable aleatoria discreta Poisson</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="distribuciones-continuas-importantes.html"><a href="distribuciones-continuas-importantes.html"><i class="fa fa-check"></i><b>18</b> Distribuciones continuas importantes</a><ul>
+<li class="chapter" data-level="18.1" data-path="distribuciones-continuas-importantes.html"><a href="distribuciones-continuas-importantes.html#variable-aleatoria-continua-normal"><i class="fa fa-check"></i><b>18.1</b> Variable aleatoria continua normal</a></li>
+<li class="chapter" data-level="18.2" data-path="distribuciones-continuas-importantes.html"><a href="distribuciones-continuas-importantes.html#variable-aleatoria-continua-gamma"><i class="fa fa-check"></i><b>18.2</b> Variable aleatoria continua gamma</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="distribuciones-muestrales.html"><a href="distribuciones-muestrales.html"><i class="fa fa-check"></i><b>19</b> Distribuciones muestrales</a></li>
+<li class="chapter" data-level="20" data-path="estimación.html"><a href="estimación.html"><i class="fa fa-check"></i><b>20</b> Estimación</a></li>
+<li class="chapter" data-level="21" data-path="prueba-de-hipótesis.html"><a href="prueba-de-hipótesis.html"><i class="fa fa-check"></i><b>21</b> Prueba de hipótesis</a></li>
+<li class="appendix"><span><b>Apendice</b></span></li>
+<li class="chapter" data-level="A" data-path="sumatorias.html"><a href="sumatorias.html"><i class="fa fa-check"></i><b>A</b> Sumatorias</a><ul>
+<li class="chapter" data-level="A.1" data-path="sumatorias.html"><a href="sumatorias.html#ee"><i class="fa fa-check"></i><b>A.1</b> ee</a></li>
+<li class="chapter" data-level="A.2" data-path="sumatorias.html"><a href="sumatorias.html#eeeee"><i class="fa fa-check"></i><b>A.2</b> eeeee</a></li>
+<li class="chapter" data-level="A.3" data-path="sumatorias.html"><a href="sumatorias.html#algebra-de-matrices"><i class="fa fa-check"></i><b>A.3</b> Algebra de matrices</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Elementos de la estadística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estimación" class="section level1">
+<h1><span class="header-section-number">Capítulo 20</span> Estimación</h1>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="distribuciones-muestrales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="prueba-de-hipótesis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["E_1.pdf", "E_1.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -111,7 +111,7 @@
 \providecommand{\subtitle}[1]{}
 \subtitle{estadística descriptiva y probabilidades}
 \author{Ricardo Michel MALLQUI BAÑOS}
-\date{2020-04-02}
+\date{2020-04-04}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -314,14 +314,16 @@ It is not the same \texttt{x} as the one in R.
 
 }
 
-\caption{Regresion lineal}\label{fig:ww1w}
+\caption{Regresión lineal}\label{fig:ww1w}
 \end{figure}
 
-\[f(x)=-28.285+11.351x+-0.906x^2+0.083x^3\]
+\[f(x)=-34.093+13.987x+-1.167x^2+0.089x^3\]
 
-\[f(28)=1392\]
-\[f(29)=1553\]
-\[f(300)=\ensuremath{2.1514155\times 10^{6}}\]
+\[f(29)=1571\]
+\[f(30)=1750\]
+\[f(39)=4041\]
+\[f(100)=\ensuremath{7.9107\times 10^{4}}\]
+\[f(360)=\ensuremath{4.0252117\times 10^{6}}\]
 
 \url{https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html\#/bda7594740fd40299423467b48e9ecf6}
 
@@ -679,17 +681,29 @@ x_{21} & x_{22} & x_{23}
 \hypertarget{part-probabilidades}{%
 \part{Probabilidades}\label{part-probabilidades}}
 
-\hypertarget{frecuencia-relativa-cluxe1sica}{%
-\chapter{Frecuencia relativa clásica}\label{frecuencia-relativa-cluxe1sica}}
+\hypertarget{experimento-aleatorio}{%
+\chapter{Experimento aleatorio}\label{experimento-aleatorio}}
 
-\hypertarget{calculando}{%
-\chapter{Calculando}\label{calculando}}
+\hypertarget{uxe1lgebra-de-eventos}{%
+\chapter{Álgebra de eventos}\label{uxe1lgebra-de-eventos}}
 
-\hypertarget{variable-aleatoria}{%
-\chapter{Variable aleatoria}\label{variable-aleatoria}}
+\hypertarget{tuxe9cnicas-de-conteo}{%
+\chapter{Técnicas de conteo}\label{tuxe9cnicas-de-conteo}}
 
-\hypertarget{variable-acumulativa}{%
-\chapter{Variable acumulativa}\label{variable-acumulativa}}
+\hypertarget{definiciuxf3n-de-probabilidad}{%
+\chapter{Definición de probabilidad}\label{definiciuxf3n-de-probabilidad}}
+
+\hypertarget{probabilidad-condicional}{%
+\chapter{Probabilidad condicional}\label{probabilidad-condicional}}
+
+\hypertarget{teorema-de-bayes}{%
+\chapter{Teorema de Bayes}\label{teorema-de-bayes}}
+
+\hypertarget{eventos-independientes-y-secuencias-de-experimentos}{%
+\chapter{Eventos independientes y secuencias de experimentos}\label{eventos-independientes-y-secuencias-de-experimentos}}
+
+\hypertarget{probabilidad-en-espacio}{%
+\chapter{Probabilidad en espacio}\label{probabilidad-en-espacio}}
 
 \hypertarget{part-inferencia-estaduxedstica}{%
 \part{Inferencia estadística}\label{part-inferencia-estaduxedstica}}
@@ -697,13 +711,80 @@ x_{21} & x_{22} & x_{23}
 \hypertarget{variables-aleatorias}{%
 \chapter{Variables aleatorias}\label{variables-aleatorias}}
 
-\hypertarget{discretas-1}{%
-\section{Discretas}\label{discretas-1}}
+\BeginKnitrBlock{definition}[Variable aleatoria]
+\protect\hypertarget{def:unnamed-chunk-9}{}{\label{def:unnamed-chunk-9} \iffalse (Variable aleatoria) \fi{} }Sea \(\Omega\) un espacio muestral asociado a una experimento aleatorio \(\epsilon\) y \(\omega\in\Omega\), entonces se genera la función \textbf{variable aleatoria}
+\begin{align*}
+  X:\Omega&\longrightarrow \mathbb{R}\\
+  \omega&\longmapsto X(\omega)
+\end{align*}
+\EndKnitrBlock{definition}
 
-\[p(x)=e^3\]
+es decir a cada elemento de \(\Omega\) se le asocia un número real \(\mathbb{R}\), además la probabilidad de \(x\in \mathbb{R}\) es \(P[x]= \sum^{n}_{i=1}P\left[\omega_i\right]\) donde \(\omega_i\in X^{-1}(x)\). La definición indica por otro lado que un espacio muestral \(\Omega\) puede genera diferentes variables aleatorias. Por ejemplo el espacio muestral de lanzar una monedas tres veces es \(\omega= \left\{ccc,ccs,csc,scc,css,scs,ssc,sss\right\}\) además sea \(n_c\) es número de caras y \(n_s\) el número de sellos, es posibles generar dos o mas variables aleatorias por ejemplo:
 
-\hypertarget{continuas-1}{%
-\section{Continuas}\label{continuas-1}}
+\begin{itemize}
+\tightlist
+\item
+  \(X(\omega)=n_c\) entonces el rango de \(X\) es \(R_X \left\{3,2,1,0\right\}\)
+  pues \begin{align*}
+  3&=X(ccc)&\\
+  2&=X(ccs)=X(csc)=X(scc)&\\
+  1&=X(css)=X(scs)=X(ssc)&\\
+  0&=X(sss)&
+  \end{align*}
+\item
+  \(X(\omega)=n_c-n_s\) entonces las imagenes de \(X\) son \(R_X= \left\{3,1,-1,-3\right\}\) en efecto
+  \begin{align*}
+  3&=X(ccc)&\\
+  1&=X(ccs)=X(csc)=X(scc)&\\
+  -1&=X(css)=X(scs)=X(ssc)&\\
+  -3&=X(sss).&
+  \end{align*}
+\end{itemize}
+
+Estos subconjuntos de \(\mathbb{R}\) también son espacios muestrales pues el conjunto de elementos de \(\Omega\) con imagen dentro de estos valores reales \(x\) en \(\mathbb{R}\) es un elemento de \(2^{\Omega}\) es decir un evento por lo tanto tiene una determinada probabilidad \(P[x]\), en el primer caso \(X(\omega)=n_c\) tienen probabilidades\\
+\begin{align*}
+  P(3)&=P[ccc]= \frac{1}{8}\\
+  P(2)&=P[ccs]=P[csc]=P[scc]=\frac{3}{8}\\
+  P(1)&=P[css]=P[scs]=P[ssc]=\frac{3}{8}\\
+  P(0)&=P[sss]=\frac{1}{8}
+\end{align*}
+que es lo mismo para el segundo caso \(X(\omega)=n_c-n_s\).
+\BeginKnitrBlock{definition}[Eventos equivalentes]
+\protect\hypertarget{def:unnamed-chunk-10}{}{\label{def:unnamed-chunk-10} \iffalse (Eventos equivalentes) \fi{} }Sea \(\Omega\) un espacio muestral asociado a una experimento aleatorio \(\epsilon\) y \(X\) una variable aleatoria con rango \(R_X\) definida sobre \(\Omega\). Dos eventos \(W\in\Omega\) y \(E_X\in R_X\) son \textbf{eventos equivalentes} si existe la relación
+\[W= \left\{\omega\in\Omega/X(\omega)=E_X\right\}\] es decir \(E_X\) consta de todos los elementos en \(\Omega\) para los cuales \(X(\omega)\in W\)
+\EndKnitrBlock{definition}
+
+\hypertarget{clases-de-variables-aleatorias}{%
+\section{Clases de variables aleatorias}\label{clases-de-variables-aleatorias}}
+
+\hypertarget{variable-aleatoria-discreta}{%
+\subsection{Variable aleatoria discreta}\label{variable-aleatoria-discreta}}
+
+\(R_X\) es \emph{finitox} o \emph{infinitopP} contable (no necesarimente enteros)
+\(R_X= \left\{x_1,x_2,\ldots,x_n\ldots\right\}\)
+
+\[p_X(x)=p(1-p)^{x-1}\] \(x\in \mathbb{Z}^+\) \(p\in[0,1]\)
+
+\hypertarget{variable-aleatoria-continua}{%
+\subsection{Variable aleatoria continua}\label{variable-aleatoria-continua}}
+
+\(R_X\) abarca cualquier intervalo en la recta numerica
+
+\[F_X(x)=P[X=x]\]
+
+\begin{itemize}
+\tightlist
+\item
+  \(0\leq F_X(x)\leq 1\)
+\item
+  \(F_X(-\infty)=0\)
+\item
+  \(F_X(\infty)=1\)
+\item
+  \(P(X<x)=F_X(x^-)\)
+\item
+  \(P(a\leq X\leq b)=F_X(b)-F_X(a^-)\)
+\end{itemize}
 
 Sea \(X\) una VA continua con rango \(R_{X}\)
 La funcion de densidad de probabilidad asociado a una variable aleatoria \(f(x)\)
@@ -716,17 +797,85 @@ La funcion de densidad de probabilidad asociado a una variable aleatoria \(f(x)\
   \(\int_{R_{X}} f(x)dx=1\) o \(\int_{-\infty}^\infty f(x)dx=1\)
 \end{itemize}
 
-\hypertarget{calculando-1}{%
-\chapter{Calculando}\label{calculando-1}}
+\hypertarget{variable-aleatoria-mixta-discreta-y-continua}{%
+\subsection{Variable aleatoria mixta: discreta y continua}\label{variable-aleatoria-mixta-discreta-y-continua}}
 
-\hypertarget{variable-aleatoria-1}{%
-\chapter{Variable aleatoria}\label{variable-aleatoria-1}}
+\hypertarget{funciuxf3n-de-densidad}{%
+\section{Función de densidad}\label{funciuxf3n-de-densidad}}
 
-\hypertarget{variable-acumulativa-1}{%
-\chapter{Variable acumulativa}\label{variable-acumulativa-1}}
+\hypertarget{variable-aleatorias-discreta}{%
+\subsection{Variable aleatorias discreta}\label{variable-aleatorias-discreta}}
 
-\hypertarget{ww}{%
-\chapter{ww}\label{ww}}
+\BeginKnitrBlock{definition}[]
+\protect\hypertarget{def:unnamed-chunk-11}{}{\label{def:unnamed-chunk-11} \iffalse () \fi{} }ww
+\EndKnitrBlock{definition}
+
+\hypertarget{variable-aleatorias-continua}{%
+\subsection{Variable aleatorias continua}\label{variable-aleatorias-continua}}
+
+\hypertarget{funciuxf3n-de-distribuciuxf3n}{%
+\section{Función de distribución}\label{funciuxf3n-de-distribuciuxf3n}}
+
+\hypertarget{variable-aleatoria-discreta-1}{%
+\subsection{Variable aleatoria discreta}\label{variable-aleatoria-discreta-1}}
+
+\BeginKnitrBlock{definition}[]
+\protect\hypertarget{def:unnamed-chunk-12}{}{\label{def:unnamed-chunk-12} \iffalse () \fi{} }ww
+\EndKnitrBlock{definition}
+
+\hypertarget{variable-aleatoria-continua-1}{%
+\subsection{Variable aleatoria continua}\label{variable-aleatoria-continua-1}}
+
+\hypertarget{estadigrafos-de-la-variables-aleatorias}{%
+\chapter{Estadigrafos de la variables aleatorias}\label{estadigrafos-de-la-variables-aleatorias}}
+
+\hypertarget{esperanza-matematica}{%
+\section{esperanza matematica}\label{esperanza-matematica}}
+
+\hypertarget{medidas-de-tendencia-central-1}{%
+\section{Medidas de tendencia central}\label{medidas-de-tendencia-central-1}}
+
+\hypertarget{medidas-de-variaciuxf3n}{%
+\section{Medidas de variación}\label{medidas-de-variaciuxf3n}}
+
+\hypertarget{cuantiles}{%
+\section{Cuantiles}\label{cuantiles}}
+
+\hypertarget{variables-aleatorias-bidimensionales}{%
+\chapter{Variables aleatorias bidimensionales}\label{variables-aleatorias-bidimensionales}}
+
+\hypertarget{distribuciones-marginales}{%
+\section{Distribuciones marginales}\label{distribuciones-marginales}}
+
+\hypertarget{distribuciones}{%
+\section{Distribuciones}\label{distribuciones}}
+
+\hypertarget{distribuciones-discreta-importantes}{%
+\chapter{Distribuciones discreta importantes}\label{distribuciones-discreta-importantes}}
+
+\hypertarget{variable-aleatoria-discreta-binomial}{%
+\section{Variable aleatoria discreta binomial}\label{variable-aleatoria-discreta-binomial}}
+
+\hypertarget{variable-aleatoria-discreta-poisson}{%
+\section{Variable aleatoria discreta Poisson}\label{variable-aleatoria-discreta-poisson}}
+
+\hypertarget{distribuciones-continuas-importantes}{%
+\chapter{Distribuciones continuas importantes}\label{distribuciones-continuas-importantes}}
+
+\hypertarget{variable-aleatoria-continua-normal}{%
+\section{Variable aleatoria continua normal}\label{variable-aleatoria-continua-normal}}
+
+\hypertarget{variable-aleatoria-continua-gamma}{%
+\section{Variable aleatoria continua gamma}\label{variable-aleatoria-continua-gamma}}
+
+\hypertarget{distribuciones-muestrales}{%
+\chapter{Distribuciones muestrales}\label{distribuciones-muestrales}}
+
+\hypertarget{estimaciuxf3n}{%
+\chapter{Estimación}\label{estimaciuxf3n}}
+
+\hypertarget{prueba-de-hipuxf3tesis}{%
+\chapter{Prueba de hipótesis}\label{prueba-de-hipuxf3tesis}}
 
 \hypertarget{appendix-apendice}{%
 \appendix \addcontentsline{toc}{chapter}{\appendixname}}
@@ -798,7 +947,7 @@ Sean las matrices \(A=[a_{ij}]_{n\times m}\) y \(B=[b_{ij}]_{p\times q}\) entonc
 donde \(i=1,2,\ldots n\) y \(j=1,2,\ldots m\)
 
 \BeginKnitrBlock{example}
-\protect\hypertarget{exm:unnamed-chunk-9}{}{\label{exm:unnamed-chunk-9} }Sean \(\begin{pmatrix} 3&-1&2\\ 2&-1&2\\ 1&-1&0\\ 5&0&0\\ \end{pmatrix}_{4\times 3}\) y \(\begin{pmatrix} 0&-1&2&2&0\\ 1&-1&-2&1&1\\ 3&-1&-3&5&2\\ \end{pmatrix}_{3\times 5}\) entonces \(A\cdot B=\begin{pmatrix} 5&-4&2&15&3\\ 5&-3&0&13&3\\ -1&0&4&1&-1\\ 0&-5&10&10&0\\ \end{pmatrix}_{4\times 5}\)
+\protect\hypertarget{exm:unnamed-chunk-13}{}{\label{exm:unnamed-chunk-13} }Sean \(\begin{pmatrix} 3&-1&2\\ 2&-1&2\\ 1&-1&0\\ 5&0&0\\ \end{pmatrix}_{4\times 3}\) y \(\begin{pmatrix} 0&-1&2&2&0\\ 1&-1&-2&1&1\\ 3&-1&-3&5&2\\ \end{pmatrix}_{3\times 5}\) entonces \(A\cdot B=\begin{pmatrix} 5&-4&2&15&3\\ 5&-3&0&13&3\\ -1&0&4&1&-1\\ 0&-5&10&10&0\\ \end{pmatrix}_{4\times 5}\)
 \EndKnitrBlock{example}
 
 En caso de ser posible la multiplicación entre \(A\), \(B\) y \(C\) entonces se verfican las siguientes propiedades
