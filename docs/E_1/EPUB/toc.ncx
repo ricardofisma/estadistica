@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:8a7e945c-3dfe-44b3-94fe-08358b38518e" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>Elementos de la estadística</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-0">
+      <navLabel>
+        <text>Elementos de la estadística</text>
+      </navLabel>
+      <content src="text/title_page.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-1">
+      <navLabel>
+        <text>Elementos de la estadística</text>
+      </navLabel>
+      <content src="text/ch001.xhtml#elementos-de-la-estadística" />
+    </navPoint>
+    <navPoint id="navPoint-2">
+      <navLabel>
+        <text>Resumen</text>
+      </navLabel>
+      <content src="text/ch002.xhtml#resumen" />
+    </navPoint>
+    <navPoint id="navPoint-3">
+      <navLabel>
+        <text>1 Prerrequisitos</text>
+      </navLabel>
+      <content src="text/ch003.xhtml#prerrequisitos" />
+    </navPoint>
+    <navPoint id="navPoint-4">
+      <navLabel>
+        <text>2 Variables</text>
+      </navLabel>
+      <content src="text/ch004.xhtml#variables" />
+      <navPoint id="navPoint-5">
+        <navLabel>
+          <text>2.0.1 Nominales</text>
+        </navLabel>
+        <content src="text/ch004.xhtml#nominales" />
+      </navPoint>
+      <navPoint id="navPoint-6">
+        <navLabel>
+          <text>2.0.2 Ordinales</text>
+        </navLabel>
+        <content src="text/ch004.xhtml#ordinales" />
+      </navPoint>
+      <navPoint id="navPoint-7">
+        <navLabel>
+          <text>2.1 Variables cuantitativas</text>
+        </navLabel>
+        <content src="text/ch004.xhtml#variables-cuantitativas" />
+        <navPoint id="navPoint-8">
+          <navLabel>
+            <text>2.1.1 Discretas</text>
+          </navLabel>
+          <content src="text/ch004.xhtml#discretas" />
+        </navPoint>
+        <navPoint id="navPoint-9">
+          <navLabel>
+            <text>2.1.2 Continuas</text>
+          </navLabel>
+          <content src="text/ch004.xhtml#continuas" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-10">
+      <navLabel>
+        <text>3 Característica de los datos</text>
+      </navLabel>
+      <content src="text/ch005.xhtml#característica-de-los-datos" />
+    </navPoint>
+    <navPoint id="navPoint-11">
+      <navLabel>
+        <text>4 Población, muestra y estadística</text>
+      </navLabel>
+      <content src="text/ch006.xhtml#población-muestra-y-estadística" />
+    </navPoint>
+    <navPoint id="navPoint-12">
+      <navLabel>
+        <text>5 Organización de datos en tablas de frecuencias</text>
+      </navLabel>
+      <content src="text/ch007.xhtml#organización-de-datos-en-tablas-de-frecuencias" />
+    </navPoint>
+    <navPoint id="navPoint-13">
+      <navLabel>
+        <text>6 Matriz y rango</text>
+      </navLabel>
+      <content src="text/ch008.xhtml#matriz-y-rango" />
+    </navPoint>
+    <navPoint id="navPoint-14">
+      <navLabel>
+        <text>7 Distribució n de frecuencias</text>
+      </navLabel>
+      <content src="text/ch009.xhtml#distribució-n-de-frecuencias" />
+    </navPoint>
+    <navPoint id="navPoint-15">
+      <navLabel>
+        <text>8 Gráficos estadísticos</text>
+      </navLabel>
+      <content src="text/ch010.xhtml#gráficos-estadísticos" />
+    </navPoint>
+    <navPoint id="navPoint-16">
+      <navLabel>
+        <text>9 Medidas de tendencia central</text>
+      </navLabel>
+      <content src="text/ch011.xhtml#medidas-de-tendencia-central" />
+      <navPoint id="navPoint-17">
+        <navLabel>
+          <text>9.1 La media (\overline{x})</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#la-media-overlinex" />
+        <navPoint id="navPoint-18">
+          <navLabel>
+            <text>9.1.1 Media de datos no agrupados</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#media-de-datos-no-agrupados" />
+        </navPoint>
+        <navPoint id="navPoint-19">
+          <navLabel>
+            <text>9.1.2 Media de datos agrupados</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#media-de-datos-agrupados" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-20">
+        <navLabel>
+          <text>9.2 La moda (Mo)</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#la-moda-mo" />
+        <navPoint id="navPoint-21">
+          <navLabel>
+            <text>9.2.1 Moda de datos no tabulados</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#moda-de-datos-no-tabulados" />
+        </navPoint>
+        <navPoint id="navPoint-22">
+          <navLabel>
+            <text>9.2.2 Moda de datos tabulados</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#moda-de-datos-tabulados" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-23">
+        <navLabel>
+          <text>9.3 la mediana (Me)</text>
+        </navLabel>
+        <content src="text/ch011.xhtml#la-mediana-me" />
+        <navPoint id="navPoint-24">
+          <navLabel>
+            <text>9.3.1 Mediana de datos no tabulados</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#mediana-de-datos-no-tabulados" />
+        </navPoint>
+        <navPoint id="navPoint-25">
+          <navLabel>
+            <text>9.3.2 Mediana de datos tabulados</text>
+          </navLabel>
+          <content src="text/ch011.xhtml#mediana-de-datos-tabulados" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-26">
+      <navLabel>
+        <text>10 Medidas de dispersión</text>
+      </navLabel>
+      <content src="text/ch012.xhtml#medidas-de-dispersión" />
+    </navPoint>
+    <navPoint id="navPoint-27">
+      <navLabel>
+        <text>11 Medidas de asimetría</text>
+      </navLabel>
+      <content src="text/ch013.xhtml#medidas-de-asimetría" />
+    </navPoint>
+    <navPoint id="navPoint-28">
+      <navLabel>
+        <text>12 Experimento aleatorio</text>
+      </navLabel>
+      <content src="text/ch014.xhtml#experimento-aleatorio" />
+    </navPoint>
+    <navPoint id="navPoint-29">
+      <navLabel>
+        <text>13 Álgebra de eventos</text>
+      </navLabel>
+      <content src="text/ch015.xhtml#álgebra-de-eventos" />
+    </navPoint>
+    <navPoint id="navPoint-30">
+      <navLabel>
+        <text>14 Técnicas de conteo</text>
+      </navLabel>
+      <content src="text/ch016.xhtml#técnicas-de-conteo" />
+    </navPoint>
+    <navPoint id="navPoint-31">
+      <navLabel>
+        <text>15 Definición de probabilidad</text>
+      </navLabel>
+      <content src="text/ch017.xhtml#definición-de-probabilidad" />
+    </navPoint>
+    <navPoint id="navPoint-32">
+      <navLabel>
+        <text>16 Probabilidad condicional</text>
+      </navLabel>
+      <content src="text/ch018.xhtml#probabilidad-condicional" />
+    </navPoint>
+    <navPoint id="navPoint-33">
+      <navLabel>
+        <text>17 Teorema de Bayes</text>
+      </navLabel>
+      <content src="text/ch019.xhtml#teorema-de-bayes" />
+    </navPoint>
+    <navPoint id="navPoint-34">
+      <navLabel>
+        <text>18 Eventos independientes y secuencias de experimentos</text>
+      </navLabel>
+      <content src="text/ch020.xhtml#eventos-independientes-y-secuencias-de-experimentos" />
+    </navPoint>
+    <navPoint id="navPoint-35">
+      <navLabel>
+        <text>19 Probabilidad en espacio</text>
+      </navLabel>
+      <content src="text/ch021.xhtml#probabilidad-en-espacio" />
+    </navPoint>
+    <navPoint id="navPoint-36">
+      <navLabel>
+        <text>20 Variables aleatorias</text>
+      </navLabel>
+      <content src="text/ch022.xhtml#variables-aleatorias" />
+      <navPoint id="navPoint-37">
+        <navLabel>
+          <text>20.1 Clases de variables aleatorias</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#clases-de-variables-aleatorias" />
+        <navPoint id="navPoint-38">
+          <navLabel>
+            <text>20.1.1 Variable aleatoria discreta</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#variable-aleatoria-discreta" />
+        </navPoint>
+        <navPoint id="navPoint-39">
+          <navLabel>
+            <text>20.1.2 Variable aleatoria continua</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#variable-aleatoria-continua" />
+        </navPoint>
+        <navPoint id="navPoint-40">
+          <navLabel>
+            <text>20.1.3 Variable aleatoria mixta</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#variable-aleatoria-mixta" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-41">
+        <navLabel>
+          <text>20.2 Función de probabilidad de una variable aleatoria</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#función-de-probabilidad-de-una-variable-aleatoria" />
+        <navPoint id="navPoint-42">
+          <navLabel>
+            <text>20.2.1 Función de probabilidad de una variable aleatorias discreta</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#función-de-probabilidad-de-una-variable-aleatorias-discreta" />
+        </navPoint>
+        <navPoint id="navPoint-43">
+          <navLabel>
+            <text>20.2.2 Función de probabilidad de una variable aleatoria continua</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#función-de-probabilidad-de-una-variable-aleatoria-continua" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-44">
+        <navLabel>
+          <text>20.3 Función de distribución de una variable aleatoria</text>
+        </navLabel>
+        <content src="text/ch022.xhtml#función-de-distribución-de-una-variable-aleatoria" />
+        <navPoint id="navPoint-45">
+          <navLabel>
+            <text>20.3.1 Función de distribución de una variable aleatoria discreta</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#función-de-distribución-de-una-variable-aleatoria-discreta" />
+        </navPoint>
+        <navPoint id="navPoint-46">
+          <navLabel>
+            <text>20.3.2 Función de distribución de una variable aleatoria continua</text>
+          </navLabel>
+          <content src="text/ch022.xhtml#función-de-distribución-de-una-variable-aleatoria-continua" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-47">
+      <navLabel>
+        <text>21 Parámetros de una variable aleatoria</text>
+      </navLabel>
+      <content src="text/ch023.xhtml#parámetros-de-una-variable-aleatoria" />
+      <navPoint id="navPoint-48">
+        <navLabel>
+          <text>21.1 Esperanza matemática</text>
+        </navLabel>
+        <content src="text/ch023.xhtml#esperanza-matemática" />
+      </navPoint>
+      <navPoint id="navPoint-49">
+        <navLabel>
+          <text>21.2 Medidas de variación</text>
+        </navLabel>
+        <content src="text/ch023.xhtml#medidas-de-variación" />
+      </navPoint>
+      <navPoint id="navPoint-50">
+        <navLabel>
+          <text>21.3 Medidas de posición</text>
+        </navLabel>
+        <content src="text/ch023.xhtml#medidas-de-posición" />
+      </navPoint>
+      <navPoint id="navPoint-51">
+        <navLabel>
+          <text>21.4 Medidas de curtosis</text>
+        </navLabel>
+        <content src="text/ch023.xhtml#medidas-de-curtosis" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-52">
+      <navLabel>
+        <text>22 Variables aleatorias bidimensionales</text>
+      </navLabel>
+      <content src="text/ch024.xhtml#variables-aleatorias-bidimensionales" />
+      <navPoint id="navPoint-53">
+        <navLabel>
+          <text>22.1 Distribuciones marginales</text>
+        </navLabel>
+        <content src="text/ch024.xhtml#distribuciones-marginales" />
+      </navPoint>
+      <navPoint id="navPoint-54">
+        <navLabel>
+          <text>22.2 Distribuciones</text>
+        </navLabel>
+        <content src="text/ch024.xhtml#distribuciones" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-55">
+      <navLabel>
+        <text>23 Distribuciones discreta importantes</text>
+      </navLabel>
+      <content src="text/ch025.xhtml#distribuciones-discreta-importantes" />
+      <navPoint id="navPoint-56">
+        <navLabel>
+          <text>23.1 Variable aleatoria discreta binomial</text>
+        </navLabel>
+        <content src="text/ch025.xhtml#variable-aleatoria-discreta-binomial" />
+      </navPoint>
+      <navPoint id="navPoint-57">
+        <navLabel>
+          <text>23.2 Variable aleatoria discreta Poisson</text>
+        </navLabel>
+        <content src="text/ch025.xhtml#variable-aleatoria-discreta-poisson" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-58">
+      <navLabel>
+        <text>24 Distribuciones continuas importantes</text>
+      </navLabel>
+      <content src="text/ch026.xhtml#distribuciones-continuas-importantes" />
+      <navPoint id="navPoint-59">
+        <navLabel>
+          <text>24.1 Variable aleatoria continua normal</text>
+        </navLabel>
+        <content src="text/ch026.xhtml#variable-aleatoria-continua-normal" />
+      </navPoint>
+      <navPoint id="navPoint-60">
+        <navLabel>
+          <text>24.2 Variable aleatoria continua gamma</text>
+        </navLabel>
+        <content src="text/ch026.xhtml#variable-aleatoria-continua-gamma" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-61">
+      <navLabel>
+        <text>25 Distribuciones muestrales</text>
+      </navLabel>
+      <content src="text/ch027.xhtml#distribuciones-muestrales" />
+    </navPoint>
+    <navPoint id="navPoint-62">
+      <navLabel>
+        <text>26 Estimación</text>
+      </navLabel>
+      <content src="text/ch028.xhtml#estimación" />
+    </navPoint>
+    <navPoint id="navPoint-63">
+      <navLabel>
+        <text>27 Prueba de hipótesis</text>
+      </navLabel>
+      <content src="text/ch029.xhtml#prueba-de-hipótesis" />
+    </navPoint>
+    <navPoint id="navPoint-64">
+      <navLabel>
+        <text>Apendice</text>
+      </navLabel>
+      <content src="text/ch030.xhtml#apendice" />
+    </navPoint>
+    <navPoint id="navPoint-65">
+      <navLabel>
+        <text>28 Sumatorias</text>
+      </navLabel>
+      <content src="text/ch031.xhtml#sumatorias" />
+      <navPoint id="navPoint-66">
+        <navLabel>
+          <text>28.1 eeeee</text>
+        </navLabel>
+        <content src="text/ch031.xhtml#eeeee" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-67">
+      <navLabel>
+        <text>29 Matrices</text>
+      </navLabel>
+      <content src="text/ch032.xhtml#matrices" />
+      <navPoint id="navPoint-68">
+        <navLabel>
+          <text>29.1 Algebra de matrices</text>
+        </navLabel>
+        <content src="text/ch032.xhtml#algebra-de-matrices" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-69">
+      <navLabel>
+        <text>Referencias</text>
+      </navLabel>
+      <content src="text/ch033.xhtml#referencias" />
+    </navPoint>
+  </navMap>
+</ncx>
