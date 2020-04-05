@@ -133,10 +133,10 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="21" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html"><i class="fa fa-check"></i><b>21</b> Parámetros de una variable aleatoria</a><ul>
-<li class="chapter" data-level="21.1" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#esperanza-matemática"><i class="fa fa-check"></i><b>21.1</b> esperanza matemática</a></li>
-<li class="chapter" data-level="21.2" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#medidas-de-tendencia-central-1"><i class="fa fa-check"></i><b>21.2</b> Medidas de tendencia central</a></li>
-<li class="chapter" data-level="21.3" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#medidas-de-variación"><i class="fa fa-check"></i><b>21.3</b> Medidas de variación</a></li>
-<li class="chapter" data-level="21.4" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#cuantiles"><i class="fa fa-check"></i><b>21.4</b> Cuantiles</a></li>
+<li class="chapter" data-level="21.1" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#esperanza-matemática"><i class="fa fa-check"></i><b>21.1</b> Esperanza matemática</a></li>
+<li class="chapter" data-level="21.2" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#medidas-de-variación"><i class="fa fa-check"></i><b>21.2</b> Medidas de variación</a></li>
+<li class="chapter" data-level="21.3" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#medidas-de-posición"><i class="fa fa-check"></i><b>21.3</b> Medidas de posición</a></li>
+<li class="chapter" data-level="21.4" data-path="parámetros-de-una-variable-aleatoria.html"><a href="parámetros-de-una-variable-aleatoria.html#medidas-de-curtosis"><i class="fa fa-check"></i><b>21.4</b> Medidas de curtosis</a></li>
 </ul></li>
 <li class="chapter" data-level="22" data-path="variables-aleatorias-bidimensionales.html"><a href="variables-aleatorias-bidimensionales.html"><i class="fa fa-check"></i><b>22</b> Variables aleatorias bidimensionales</a><ul>
 <li class="chapter" data-level="22.1" data-path="variables-aleatorias-bidimensionales.html"><a href="variables-aleatorias-bidimensionales.html#distribuciones-marginales"><i class="fa fa-check"></i><b>22.1</b> Distribuciones marginales</a></li>
@@ -190,22 +190,22 @@
 </div>
 
 <p>es decir a cada elemento de <span class="math inline">\(\Omega\)</span> se le asocia un número real <span class="math inline">\(\mathbb{R}\)</span>, además la probabilidad de <span class="math inline">\(x\in \mathbb{R}\)</span> es <span class="math inline">\(P[x]= \sum^{n}_{i=1}P\left[\omega_i\right]\)</span> donde <span class="math inline">\(\omega_i\in X^{-1}(x)\)</span>. La definición indica por otro lado que un espacio muestral <span class="math inline">\(\Omega\)</span> puede genera diferentes variables aleatorias. Por ejemplo el espacio muestral de lanzar una monedas tres veces es <span class="math inline">\(\omega= \left\{ccc,ccs,csc,scc,css,scs,ssc,sss\right\}\)</span> además sea <span class="math inline">\(n_c\)</span> es número de caras y <span class="math inline">\(n_s\)</span> el número de sellos, es posibles generar dos o mas variables aleatorias por ejemplo:</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li><span class="math inline">\(X(\omega)=n_c\)</span> entonces el rango de <span class="math inline">\(X\)</span> es <span class="math inline">\(R_X \left\{3,2,1,0\right\}\)</span>
 pues <span class="math display">\[\begin{align*}
-3&amp;=X(ccc)&amp;\\
-2&amp;=X(ccs)=X(csc)=X(scc)&amp;\\
-1&amp;=X(css)=X(scs)=X(ssc)&amp;\\
-0&amp;=X(sss)&amp;
+  3&amp;=X(ccc)&amp;\\
+  2&amp;=X(ccs)=X(csc)=X(scc)&amp;\\
+  1&amp;=X(css)=X(scs)=X(ssc)&amp;\\
+  0&amp;=X(sss)&amp;
 \end{align*}\]</span></li>
 <li><span class="math inline">\(X(\omega)=n_c-n_s\)</span> entonces las imagenes de <span class="math inline">\(X\)</span> son <span class="math inline">\(R_X= \left\{3,1,-1,-3\right\}\)</span> en efecto
 <span class="math display">\[\begin{align*}
-3&amp;=X(ccc)&amp;\\
-1&amp;=X(ccs)=X(csc)=X(scc)&amp;\\
--1&amp;=X(css)=X(scs)=X(ssc)&amp;\\
--3&amp;=X(sss).&amp;
+  3&amp;=X(ccc)&amp;\\
+  1&amp;=X(ccs)=X(csc)=X(scc)&amp;\\
+  -1&amp;=X(css)=X(scs)=X(ssc)&amp;\\
+  -3&amp;=X(sss).&amp;
 \end{align*}\]</span></li>
-</ul>
+</ol>
 Estos subconjuntos de <span class="math inline">\(\mathbb{R}\)</span> también son espacios muestrales pues el conjunto de elementos de <span class="math inline">\(\Omega\)</span> con imagen dentro de estos valores reales <span class="math inline">\(x\)</span> en <span class="math inline">\(\mathbb{R}\)</span> es un elemento de <span class="math inline">\(2^{\Omega}\)</span> es decir un evento por lo tanto tiene una determinada probabilidad <span class="math inline">\(P[x]\)</span>, en el primer caso <span class="math inline">\(X(\omega)=n_c\)</span> tienen probabilidades<br />
 <span class="math display">\[\begin{align*}
   P(3)&amp;=P[ccc]= \frac{1}{8}\\
@@ -228,23 +228,23 @@ que es lo mismo para el segundo caso <span class="math inline">\(X(\omega)=n_c-n
 <span class="math inline">\(R_X= \left\{x_1,x_2,\ldots,x_n\ldots\right\}\)</span></p>
 <p><span class="math display">\[p_X(x)=p(1-p)^{x-1}\]</span> <span class="math inline">\(x\in \mathbb{Z}^+\)</span> <span class="math inline">\(p\in[0,1]\)</span></p>
 <p><span class="math display">\[F_X(x)=P[X=x]\]</span></p>
-<ul>
+<ol style="list-style-type: decimal">
 <li><span class="math inline">\(0\leq F_X(x)\leq 1\)</span></li>
 <li><span class="math inline">\(F_X(-\infty)=0\)</span></li>
 <li><span class="math inline">\(F_X(\infty)=1\)</span></li>
 <li><span class="math inline">\(P(X&lt;x)=F_X(x^-)\)</span></li>
 <li><span class="math inline">\(P(a\leq X\leq b)=F_X(b)-F_X(a^-)\)</span></li>
-</ul>
+</ol>
 </div>
 <div id="variable-aleatoria-continua" class="section level3">
 <h3><span class="header-section-number">20.1.2</span> Variable aleatoria continua</h3>
 <p><span class="math inline">\(R_X\)</span> abarca cualquier intervalo en la recta numerica</p>
 <p>Sea <span class="math inline">\(X\)</span> una VA continua con rango <span class="math inline">\(R_{X}\)</span>
-La funcion de densidad de probabilidad asociado a una variable aleatoria <span class="math inline">\(f(x)\)</span></p>
-<ul>
+La función de densidad de probabilidad asociado a una variable aleatoria <span class="math inline">\(f(x)\)</span></p>
+<ol style="list-style-type: decimal">
 <li><span class="math inline">\(f(x)\leq 0\)</span>, <span class="math inline">\(x\in R_{X}\)</span></li>
 <li><span class="math inline">\(\int_{R_{X}} f(x)dx=1\)</span> o <span class="math inline">\(\int_{-\infty}^\infty f(x)dx=1\)</span></li>
-</ul>
+</ol>
 </div>
 <div id="variable-aleatoria-mixta" class="section level3">
 <h3><span class="header-section-number">20.1.3</span> Variable aleatoria mixta</h3>
@@ -257,11 +257,11 @@ La funcion de densidad de probabilidad asociado a una variable aleatoria <span c
 <h3><span class="header-section-number">20.2.1</span> Función de probabilidad de una variable aleatorias discreta</h3>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-11" class="definition"><strong>Definición 20.3  (Funcion o ley de probabilidad)  </strong></span>Sea <span class="math inline">\(X\)</span> una variable aleatoria con rango <span class="math inline">\(R_X\)</span>. Una funcion definida por <span class="math display">\[p(x)=P[X=x]= \sum^{}_{ \left\{\omega \in \Omega:X(\omega)=x\right\}}P\left[\left\{\omega\right\}\right]\]</span></p>
-<ul>
+<p><span id="def:unnamed-chunk-11" class="definition"><strong>Definición 20.3  (Función o ley de probabilidad)  </strong></span>Sea <span class="math inline">\(X\)</span> una variable aleatoria con rango <span class="math inline">\(R_X\)</span>. Una función definida por <span class="math display">\[p(x)=P[X=x]= \sum^{}_{ \left\{\omega \in \Omega:X(\omega)=x\right\}}P\left[\left\{\omega\right\}\right]\]</span></p>
+<ol style="list-style-type: decimal">
 <li><span class="math inline">\(p(x)&gt;0\)</span>, <span class="math inline">\(x\in R_X\)</span></li>
 <li><span class="math inline">\(\sum_{x\in R_X}p(x)=P[X=x]=1\)</span></li>
-</ul>
+</ol>
 </div>
 
 <p>El conjunto de pares ordenados <span class="math inline">\(\left(x,p(x)\right)\)</span>, <span class="math inline">\(x\in R_X\)</span> recibe el nombre de <em>distribución de probabildiad de <span class="math inline">\(X\)</span></em></p>
@@ -271,10 +271,10 @@ La funcion de densidad de probabilidad asociado a una variable aleatoria <span c
 
 <div class="definition">
 <p><span id="def:unnamed-chunk-12" class="definition"><strong>Definición 20.4  (Función de densidad de probabilidad)  </strong></span>Sea <span class="math inline">\(X\)</span> una variable aleatoria con rango <span class="math inline">\(R_X\)</span>. La función <span class="math inline">\(f(x)\)</span> definida sobre <span class="math inline">\(R_X\)</span></p>
-<ul>
+<ol style="list-style-type: decimal">
 <li><span class="math inline">\(f(x)&gt;0\)</span>, <span class="math inline">\(x\in R_X\)</span> o <span class="math inline">\(f(x)&gt;0\)</span>, <span class="math inline">\(x\in \mathbb{R}\)</span></li>
 <li><span class="math inline">\(\int_{R_X}f(x)dx=1\)</span> o <span class="math inline">\(\int_{-\infty}^{\infty}f(x)dx=1\)</span></li>
-</ul>
+</ol>
 </div>
 
 </div>
@@ -294,7 +294,7 @@ recie el nombre de función de distribución de <span class="math inline">\(X\)<
 <h3><span class="header-section-number">20.3.2</span> Función de distribución de una variable aleatoria continua</h3>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-14" class="definition"><strong>Definición 20.6  (Función de distribución)  </strong></span>Sea Sea <span class="math inline">\(X\)</span> una variable aleatoria con función de densidad <span class="math inline">\(f(x)\)</span>. La función
+<p><span id="def:unnamed-chunk-14" class="definition"><strong>Definición 20.6  (Función de distribución)  </strong></span>Sea <span class="math inline">\(X\)</span> una variable aleatoria con función de densidad <span class="math inline">\(f(x)\)</span>. La función
 <span class="math display">\[F(x)=P[X\leq x]=\int_{-\infty}^{x}f(t)dt, \text{ $\forall x\in R_X$}\]</span></p>
 </div>
 
