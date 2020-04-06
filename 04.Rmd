@@ -1,9 +1,15 @@
-# Organización de datos en tablas de frecuencias
+# Organización de datos en tablas de frecuencias 
+<!-- str -->
 ```{r,echo=F}
 xw = 'Es decir los elementos son demagogos y déspotas' 
 x1 = 'Es decir los elementos son demagogos y déspotas' 
+integrate(dnorm, -1.96, 1.96)$ value
+integrate(dnorm, -Inf, Inf, abs.tol = 0)$value
+
 ```
-* `r xw`
+\[\Phi_{\mu ,\sigma ^{2}}(x)=\frac {1}{\sigma {\sqrt {2\pi }}}\int_{-\infty }^{200}e^{-{\frac {(u-\mu )^{2}}{2\sigma ^{2}}}}du\]
+* $$\frac {1}{20\sqrt{2\pi }}\int_{-\infty }^{`r r1<-300` `r r1`}e^{- \frac{1}{2}\left(\frac{z-200}{20}\right)^2}dz=`r integrate(dnorm, mean=200, sd=20, lower= -Inf, upper= r1, abs.tol = 0)$value`$$
+* `r integrate(dnorm, -1.96, 1.96)$ value` also `r xw`
 * `r x1`
 Tabla \@ref(tab:ww1)
 
@@ -16,21 +22,38 @@ Table: (\#tab:ww1) Caption
 | `r x1`    |3|w| \( \sum^{n}_{i=1}{f_i}\)| extension to be used for dest files. |
 
 
+variable aleatoria Variable aleatoria entonces 
+```{r label, options}
 
+```
+`r exp(1)` `r pnorm(1.96)` `r pnorm(81, 85, 5, lower.tail = FALSE)`
 
+`r log(9,3)`
 
 The value of `x` in the Python session is `r xw`.
 It is not the same `x` as the one in R.
 
 ```{r ww1w, fig.cap='Regresión lineal',  fig.width = 5, fig.asp=.75, fig.align='center', echo=FALSE,warning = FALSE,message = FALSE,tidy=FALSE}
-w <- c(1, 2, 3, 4, 5 , 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20, 21, 22, 23, 24, 25, 26,27,28,29,30)
-ww <- c(1, 1, 6, 7, 11, 11, 15, 28, 38, 43, 86, 117, 145, 234, 234, 318, 363, 395, 416, 480, 580, 635, 671, 852, 950, 1065,1323,1414,1595,1746)
+w <- c(1, 2, 3, 4, 5 , 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20, 21, 22, 23, 24, 25, 26,27,28,29,30,31)
+ww <- c(1, 1, 6, 7, 11, 11, 15, 28, 38, 43, 86, 117, 145, 234, 234, 318, 363, 395, 416, 480, 580, 635, 671, 852, 950, 1065,1323,1414,1595,1746,2281)
 f <- lm(ww ~ poly(w, 3, raw=TRUE))
+str(f)
+
 #coef(f)
 #summary(f)
 library(ggplot2)
 library(ggthemes)
 library(ggrepel)
+
+x <-w
+y <- ww
+m <- nls(y ~ a + b * I(x^z), start = list(a = 1, b = 1, z = 1))
+m
+str(m)
+plot(y ~ x)
+lines(x, fitted(m), lty = 2, col = "red", lwd = 2)
+t=function(x) 2.45118 + 0.03943*x^(3.14274) 
+t(100)
 
 ggplot(, aes(x = w, y = ww)) + theme(text=element_text(family="serif", size=12)) + 
   geom_point(color = "red", size = 2) + labs(x = "Número de días desde 5/3/20:1",y="Número de casos")+geom_label_repel(aes(label = ww, family="serif"),size = 5,
@@ -48,7 +71,7 @@ w=function(x) f$coefficients[1]+f$coefficients[2]*x+f$coefficients[3]*x^2+f$coef
 |\(f(30)_{\text{04 abril}}=`r round(w(30),0)`\) | \(f(31)_{\text{05 abril}}=`r round(w(31),0)`\) | \(f(32)=`r round(w(32),0)`\) |
 |\(f(33)=`r round(w(33),0)`\) | \(f(34)=`r round(w(34),0)`\) | \(f(35)=`r round(w(35),0)`\) |
 |\(f(36)=`r round(w(36),0)`\) | \(f(37)=`r round(w(37),0)`\) | \(f(38)=`r round(w(38),0)`\) |
-|**\(f(39)=`r round(w(39),0)`\)** | \(f(40)=`r round(w(40),0)`\) | \(f(41)=`r round(w(41),0)`\) |
+|**\(f(39)_{\text{-}}=`r round(w(39),0)`\)** | \(f(40)=`r round(w(40),0)`\) | \(f(41)=`r round(w(41),0)`\) |
 |\(f(100)=`r round(w(100),0)`\) |\(f(360)=`r round(w(360),0)`\) | \(f(370)=`r round(w(370),0)`\) |
 
 
