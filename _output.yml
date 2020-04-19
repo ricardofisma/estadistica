@@ -1,7 +1,7 @@
 bookdown::gitbook:
   includes:
     in_header: mathjax.html
-  css: style.css
+  css: style.css  
   config:
     fontsettings:
       theme: sepia
